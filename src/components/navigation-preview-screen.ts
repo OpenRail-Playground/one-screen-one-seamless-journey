@@ -95,14 +95,14 @@ export class NavigationPreviewScreen extends HTMLElement {
 
     this.innerHTML = `
       <db-button variant="ghost" icon="arrow_left" type="button" data-action="back">Zurück</db-button>
-      <db-card>
-        <h2>Ihr Weg zum Ersatzbus</h2>
+      <h2>Ihr Weg zum Ersatzbus</h2>
+      <db-card style="background-color: var(--app-white); margin-block-end: var(--db-spacing-fixed-md);">
         ${summaryHtml}
-        <div class="navigation-preview__actions">
-          <db-button variant="brand" type="button" data-action="start-standard" width="full">Navigation starten</db-button>
-          <db-button variant="outlined" icon="person_with_wheelchair" type="button" data-action="start-accessible" width="full">Barrierefreie Navigation</db-button>
-        </div>
       </db-card>
+      <div class="navigation-preview__actions">
+        <db-button variant="brand" type="button" data-action="start-standard" width="full">Navigation starten</db-button>
+        <db-button variant="outlined" icon="person_with_wheelchair" type="button" data-action="start-accessible" width="full">Barrierefreie Navigation</db-button>
+      </div>
     `;
   }
 
