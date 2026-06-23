@@ -20,15 +20,25 @@ import type { Connection } from '../types/index.js';
  */
 export function renderConfirmationContent(connection: Connection): string {
   return `
-    <db-card>
-      <h2>Ist das deine geplante Verbindung?</h2>
-      <ri-vehicle-route id="journey-route"></ri-vehicle-route>
-      <p data-field="disruption" class="disruption-notice">${escapeHtml(connection.disruption)}</p>
-      <div class="confirmation-actions">
-        <db-button variant="brand" type="button" data-action="confirm" width="full">Ja</db-button>
-        <db-button variant="outlined" type="button" data-action="reject" width="full">Nein</db-button>
-      </div>
+    <h2>Ist das deine geplante Verbindung?</h2>
+    <db-card style="background-color: var(--app-white); margin-block-end: var(--db-spacing-fixed-md);">
+      <ri-transport-tag
+        category="INTERCITY_TRAIN"
+        type="HIGH_SPEED_TRAIN"
+        line="754"
+        label="RJ 754"
+        show-icon
+        static-mode
+        style="margin-block-end: var(--db-spacing-fixed-xs);"
+      ></ri-transport-tag>
+      <ri-vehicle-route id="journey-route">
+        <span slot="station-1" class="db-infotext" data-semantic="warning">Hält nur zum Aussteigen</span>
+      </ri-vehicle-route>
     </db-card>
+    <div class="confirmation-actions">
+      <db-button variant="brand" type="button" data-action="confirm" width="full">Ja</db-button>
+      <db-button variant="outlined" type="button" data-action="reject" width="full">Nein</db-button>
+    </div>
   `;
 }
 
@@ -125,7 +135,8 @@ export class JourneyConfirmationScreen extends HTMLElement {
       name: string,
       time: string,
       platform: string,
-      id: string
+      id: string,
+      cancelled = false
     ) => ({
       type,
       stopPlace: { name },
@@ -135,7 +146,7 @@ export class JourneyConfirmationScreen extends HTMLElement {
       timeSchedule: `${baseDate}${time}:00${tz}`,
       timeType: 'SCHEDULE',
       arrivalOrDepartureID: id,
-      cancelled: false,
+      cancelled,
       additional: false,
     });
 
@@ -143,9 +154,9 @@ export class JourneyConfirmationScreen extends HTMLElement {
       info: { journeyCancelled: false },
       events: [
         makeEvent('DEPARTURE', 'Flughafen Wien', '08:02', '1D-F', 'flughafen-wien-dep'),
-        makeEvent('DEPARTURE', 'Wien Hbf', '08:24', '8A-B', 'wien-hbf-dep'),
-        makeEvent('DEPARTURE', 'Wien Meidling', '08:31', '5', 'wien-meidling-dep'),
-        makeEvent('ARRIVAL', 'Wiener Neustadt Hbf', '08:57', '4', 'wr-neustadt-arr'),
+        { ...makeEvent('DEPARTURE', 'Wien Hbf', '08:24', '8A-B', 'wien-hbf-dep'), cancelled: false },
+        makeEvent('DEPARTURE', 'Wien Meidling', '08:31', '5', 'wien-meidling-dep', true),
+        makeEvent('ARRIVAL', 'Wiener Neustadt Hbf', '08:57', '4', 'wr-neustadt-arr', true),
       ],
     };
   }
