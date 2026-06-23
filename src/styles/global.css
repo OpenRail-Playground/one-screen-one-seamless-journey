@@ -145,13 +145,6 @@ map-view {
   width: 100%;
 }
 
-/* === Bus Departure Info === */
-
-bus-departure-info {
-  display: block;
-  width: 100%;
-}
-
 /* === Screen Components === */
 
 journey-confirmation-screen,
@@ -229,17 +222,7 @@ milestone-card .milestone-card__arrow--vertical {
   color: var(--app-on-panel);
 }
 
-/* The map view + departure info panels share the navy look */
-.navigation-screen__departure-info db-card,
-bus-departure-info db-card {
-  background-color: var(--app-panel-bg);
-  color: var(--app-on-panel);
-  border-radius: var(--db-border-radius-md);
-}
-
-bus-departure-info db-card * {
-  color: var(--app-on-panel);
-}
+/* The map view panels share the navy look */
 
 /* Dot indicator: inactive navy-translucent, active solid navy */
 dot-indicator .dot-indicator__dot {
