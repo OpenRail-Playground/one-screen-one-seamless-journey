@@ -21,19 +21,14 @@ const sampleConnection: Connection = {
 };
 
 describe('renderConfirmationContent', () => {
-  it('includes trainNumber in the output', () => {
-    const html = renderConfirmationContent(sampleConnection);
-    expect(html).toContain('RE 50');
-  });
-
-  it('includes routeName in the output', () => {
-    const html = renderConfirmationContent(sampleConnection);
-    expect(html).toContain('Wien - Wiener Neustadt');
-  });
-
   it('includes disruption in the output', () => {
     const html = renderConfirmationContent(sampleConnection);
     expect(html).toContain('Streckensperrung zwischen Wien Meidling und Wiener Neustadt');
+  });
+
+  it('includes ri-vehicle-route element', () => {
+    const html = renderConfirmationContent(sampleConnection);
+    expect(html).toContain('<ri-vehicle-route');
   });
 
   it('renders a db-card element', () => {
@@ -57,17 +52,15 @@ describe('renderConfirmationContent', () => {
     expect(html).toContain('>Nein</db-button>');
   });
 
-  it('uses German labels for field descriptions', () => {
+  it('uses German heading text', () => {
     const html = renderConfirmationContent(sampleConnection);
-    expect(html).toContain('Zugnummer');
-    expect(html).toContain('Strecke');
-    expect(html).toContain('Störung');
+    expect(html).toContain('Ist das deine geplante Verbindung?');
   });
 
-  it('escapes HTML special characters in connection fields', () => {
+  it('escapes HTML special characters in disruption field', () => {
     const malicious: Connection = {
       ...sampleConnection,
-      trainNumber: '<script>alert("xss")</script>',
+      disruption: '<script>alert("xss")</script>',
     };
     const html = renderConfirmationContent(malicious);
     expect(html).not.toContain('<script>');
@@ -116,8 +109,7 @@ describe('JourneyConfirmationScreen element', () => {
 
   it('renders connection details when connection is set', () => {
     element.connection = sampleConnection;
-    expect(element.innerHTML).toContain('RE 50');
-    expect(element.innerHTML).toContain('Wien - Wiener Neustadt');
+    expect(element.innerHTML).toContain('ri-vehicle-route');
     expect(element.innerHTML).toContain('Streckensperrung zwischen Wien Meidling und Wiener Neustadt');
   });
 
@@ -144,6 +136,6 @@ describe('JourneyConfirmationScreen element', () => {
   it('exposes rendered content via getRenderedContent()', () => {
     element.connection = sampleConnection;
     const content = element.getRenderedContent();
-    expect(content).toContain('RE 50');
+    expect(content).toContain('ri-vehicle-route');
   });
 });

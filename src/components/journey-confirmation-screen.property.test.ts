@@ -34,27 +34,26 @@ const connectionArbitrary: fc.Arbitrary<Connection> = fc.record({
   disruption: fc.string({ minLength: 1 }),
 });
 
-describe('Feature: rail-replacement-navigation, Property 3: Journey Confirmation Renders All Connection Fields', () => {
+describe('Feature: rail-replacement-navigation, Property 3: Journey Confirmation Renders Connection Info', () => {
   /**
    * **Validates: Requirements 2.1**
    *
-   * For any valid Connection object with trainNumber, routeName, and disruption,
-   * the Journey Confirmation Screen renderer should produce output containing
-   * all three field values.
+   * For any valid Connection object, the Journey Confirmation Screen renderer
+   * should produce output containing the disruption text (escaped) and the
+   * ri-vehicle-route element for displaying the journey.
    */
 
-  it('rendered output contains the escaped trainNumber, routeName, and disruption for any valid Connection', () => {
+  it('rendered output contains the escaped disruption and ri-vehicle-route for any valid Connection', () => {
     fc.assert(
       fc.property(connectionArbitrary, (connection) => {
         const output = renderConfirmationContent(connection);
 
-        const escapedTrainNumber = escapeHtml(connection.trainNumber);
-        const escapedRouteName = escapeHtml(connection.routeName);
         const escapedDisruption = escapeHtml(connection.disruption);
 
-        expect(output).toContain(escapedTrainNumber);
-        expect(output).toContain(escapedRouteName);
+        // Disruption is still rendered as HTML text
         expect(output).toContain(escapedDisruption);
+        // Journey visualization is via the ri-vehicle-route web component
+        expect(output).toContain('<ri-vehicle-route');
       }),
       { numRuns: 100 }
     );
