@@ -31,7 +31,6 @@ import './swipe-container';
 import './milestone-card';
 import './dot-indicator';
 import './map-view';
-import './bus-departure-info';
 
 export class NavigationScreen extends HTMLElement {
   private _milestones: Milestone[] = [];
@@ -141,9 +140,6 @@ export class NavigationScreen extends HTMLElement {
             ${this._renderMapView()}
           </db-tab-panel>
         </db-tabs>
-        <div class="navigation-screen__departure-info">
-          <bus-departure-info stationid="${this._stationId}"></bus-departure-info>
-        </div>
       </div>
       <style>
         .navigation-screen {

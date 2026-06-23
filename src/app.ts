@@ -20,7 +20,6 @@ import './components/journey-confirmation-screen.js';
 import './components/connection-overview-screen.js';
 import './components/navigation-preview-screen.js';
 import './components/navigation-screen.js';
-import './components/bus-departure-info.js';
 import './components/milestone-card.js';
 import './components/dot-indicator.js';
 import './components/swipe-container.js';

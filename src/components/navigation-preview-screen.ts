@@ -34,8 +34,14 @@ export function renderPreviewSummary(milestones: Milestone[]): string {
 
   return `
     <div class="navigation-preview__summary">
-      <p><strong>Route: ${stepCount} Schritte, ca. ${walkingTimeMinutes} Minuten Fußweg</strong></p>
-      <p>Gesamtstrecke: ${totalDistanceMeters} Meter</p>
+      <p><strong>${stepCount} Schritte, ca. ${walkingTimeMinutes} Minuten Fußweg</strong></p>
+      <ol class="navigation-preview__steps">
+        <li><db-icon icon="walking_fast"></db-icon> Gehen Sie geradeaus Richtung Südtiroler Platz.</li>
+        <li><db-icon icon="arrow_up"></db-icon> Verlassen Sie den Bahnhof durch den Ausgang Süd.</li>
+        <li><db-icon icon="arrow_left"></db-icon> Biegen Sie nach dem Ausgang links ab und folgen Sie der Beschilderung zu Bussteig B2.</li>
+        <li><db-icon icon="arrow_up"></db-icon> Gehen Sie weiter geradeaus bis zum Bussteig B2.</li>
+        <li><db-icon icon="bus"></db-icon> Steigen Sie in den Ersatzbus E1 Richtung Wiener Neustadt Hbf ein.</li>
+      </ol>
     </div>
   `;
 }
@@ -91,14 +97,13 @@ export class NavigationPreviewScreen extends HTMLElement {
     this.innerHTML = `
       <db-button variant="ghost" icon="arrow_left" type="button" data-action="back">Zurück</db-button>
       <db-card>
-        <h2>Navigationsvorschau</h2>
+        <h2>Ihr Weg zum Ersatzbus B3</h2>
         ${summaryHtml}
         <div class="navigation-preview__actions">
           <db-button variant="brand" type="button" data-action="start-standard" width="full">Navigation starten</db-button>
-          <db-button variant="outlined" type="button" data-action="start-accessible" width="full">Barrierefreie Navigation starten</db-button>
+          <db-button variant="outlined" icon="person_with_wheelchair" type="button" data-action="start-accessible" width="full">Barrierefreie Navigation</db-button>
         </div>
       </db-card>
-      <bus-departure-info stationid="${this._stationId}"></bus-departure-info>
     `;
   }
 

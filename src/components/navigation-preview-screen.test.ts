@@ -103,13 +103,6 @@ describe('NavigationPreviewScreen element', () => {
     expect(element.innerHTML).toContain('3 Schritte');
   });
 
-  it('includes bus-departure-info component', () => {
-    element.stationId = 'WIEN-HBF';
-    element.milestones = sampleMilestones;
-    expect(element.innerHTML).toContain('<bus-departure-info');
-    expect(element.innerHTML).toContain('stationid="WIEN-HBF"');
-  });
-
   it('navigates to #navigation when "Navigation starten" is clicked', () => {
     element.milestones = sampleMilestones;
     element.stationId = 'WIEN-HBF';
