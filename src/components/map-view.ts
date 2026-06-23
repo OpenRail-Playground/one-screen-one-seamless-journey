@@ -182,16 +182,19 @@ export class MapViewComponent extends HTMLElement {
 
     const bounds = L.latLngBounds([]);
 
-    // Add route polyline from GeoJSON
-    if (this._routeGeoJSON) {
-      const coordinates = this._routeGeoJSON.coordinates.map(
-        (coord) => [coord[1], coord[0]] as L.LatLngTuple
-      );
-      const polyline = L.polyline(coordinates, {
-        color: '#ec0016', // DB Red
-        weight: 4,
-        opacity: 0.8,
-      }).addTo(this._map);
+    // Draw a line connecting start and target pins
+    if (this._exitLocation && this._busStopLocation) {
+      const polyline = L.polyline(
+        [
+          [this._exitLocation.lat, this._exitLocation.lng],
+          [this._busStopLocation.lat, this._busStopLocation.lng],
+        ],
+        {
+          color: '#ec0016',
+          weight: 4,
+          opacity: 0.8,
+        }
+      ).addTo(this._map);
       bounds.extend(polyline.getBounds());
     }
 
@@ -199,9 +202,9 @@ export class MapViewComponent extends HTMLElement {
     if (this._exitLocation) {
       const exitMarker = L.marker(
         [this._exitLocation.lat, this._exitLocation.lng],
-        { title: 'Ausgang' }
+        { title: 'Gleis 5' }
       ).addTo(this._map);
-      exitMarker.bindPopup('<strong>Ausgang</strong>');
+      exitMarker.bindPopup('<strong>Gleis 5</strong>');
       bounds.extend([this._exitLocation.lat, this._exitLocation.lng]);
     }
 
@@ -209,9 +212,9 @@ export class MapViewComponent extends HTMLElement {
     if (this._busStopLocation) {
       const busStopMarker = L.marker(
         [this._busStopLocation.lat, this._busStopLocation.lng],
-        { title: 'Bushaltestelle' }
+        { title: 'Wien Hauptbahnhof Regionalbusbahnhof' }
       ).addTo(this._map);
-      busStopMarker.bindPopup('<strong>Bushaltestelle</strong>');
+      busStopMarker.bindPopup('<strong>Wien Hauptbahnhof Regionalbusbahnhof</strong>');
       bounds.extend([this._busStopLocation.lat, this._busStopLocation.lng]);
     }
 

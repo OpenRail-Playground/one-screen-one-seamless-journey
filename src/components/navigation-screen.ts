@@ -329,7 +329,26 @@ export class NavigationScreen extends HTMLElement {
     tabItems.forEach((tabItem, index) => {
       tabItem.addEventListener('click', () => {
         const view = index === 0 ? 'text' : 'map';
+        const currentView = appState.getState().activeView;
+        if (view === currentView) return;
         appState.setState({ activeView: view as 'text' | 'map' });
+        const body = this.querySelector('.navigation-screen__body');
+        if (body) {
+          body.innerHTML = view === 'text' ? this._renderTextView() : this._renderMapView();
+          if (view === 'text') {
+            this._setMilestoneCardData();
+            // Re-attach swipe listener
+            const swipeContainer = this.querySelector('swipe-container');
+            if (swipeContainer) {
+              swipeContainer.addEventListener('swipe', ((e: CustomEvent<{ index: number }>) => {
+                this._currentMilestoneIndex = e.detail.index;
+                this._updateMilestoneView();
+              }) as EventListener);
+            }
+          } else {
+            this._setMapViewProperties();
+          }
+        }
       });
     });
   }

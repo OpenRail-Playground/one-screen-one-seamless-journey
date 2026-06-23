@@ -1,9 +1,9 @@
 {
   "stationId": "WIEN-HBF",
   "stationName": "Wien Hbf",
-  "platformId": "7",
-  "exitLocation": { "lat": 48.1854, "lng": 16.3769 },
-  "busStopLocation": { "lat": 48.1848, "lng": 16.3785 },
+  "platformId": "5",
+  "exitLocation": { "lat": 48.18535, "lng": 16.37815 },
+  "busStopLocation": { "lat": 48.18524009635123, "lng": 16.374387794585004 },
   "routeGeoJSON": {
     "type": "LineString",
     "coordinates": [
