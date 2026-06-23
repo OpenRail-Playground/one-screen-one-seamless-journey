@@ -123,7 +123,7 @@ export class MapViewComponent extends HTMLElement {
     this.innerHTML = `
       <div class="map-view">
         <div class="map-view__container" id="map-container"></div>
-        <div class="map-view__walking-info" id="walking-info"></div>
+        <div class="map-view__walking-info" id="walking-info" data-icon="walking_fast"></div>
       </div>
       <style>
         .map-view {
@@ -246,7 +246,7 @@ export class MapViewComponent extends HTMLElement {
         : `${Math.round(totalMeters)} m`;
 
     infoEl.innerHTML = `
-      <span class="map-view__duration">🚶 ca. ${roundedMinutes} Min.</span>
+      <span class="map-view__duration">ca. ${roundedMinutes} Min.</span>
       <span class="map-view__distance"> · ${distanceDisplay}</span>
     `;
   }
