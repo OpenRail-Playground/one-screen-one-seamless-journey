@@ -1,11 +1,13 @@
 @import "@db-ux/db-theme/build/styles/rollup.css";
-@import "src/styles/variables.css";
 @import "@db-ux/core-components/build/styles/rollup.css";
 
 @import '@db-ux-inner-source/ri-extension-components/dist/styles/ri-colors.css';
 
 /* If you want to use the headless components you need this styling as well */
 @import '@db-ux-inner-source/ri-extension-components/dist/headless/index.css';
+
+/* Custom ÖBB palette — imported last so its overrides win the cascade */
+@import "src/styles/variables.css";
 
 
 /* === Base Reset & Typography === */
@@ -26,6 +28,8 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   font: var(--db-type-body-md);
+  background-color: var(--app-bg);
+  color: var(--app-on-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -38,10 +42,20 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   min-height: 100dvh;
+  background-color: var(--app-bg);
+  color: var(--app-on-bg);
   padding-top: env(safe-area-inset-top);
   padding-right: env(safe-area-inset-right);
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
+}
+
+/* Headings use the bold navy-on-yellow incident-board look */
+h1,
+h2,
+h3 {
+  color: var(--app-on-bg);
+  font-family: var(--db-font-family-head, 'DB Neo Screen Head', Helvetica, Arial, sans-serif);
 }
 
 /* === Swipe Container === */
@@ -77,18 +91,19 @@ milestone-card {
 .milestone-card__arrow {
   width: var(--db-sizing-sm);
   height: var(--db-sizing-sm);
-  color: var(--db-adaptive-on-bg-basic-emphasis-90-default);
+  color: var(--app-on-bg);
 }
 
 .milestone-card__arrow--vertical {
   width: var(--db-sizing-sm);
   height: var(--db-sizing-sm);
-  color: var(--db-adaptive-on-bg-basic-emphasis-90-default);
+  color: var(--app-on-bg);
 }
 
 .milestone-card__distance {
   font: var(--db-type-body-sm);
-  color: var(--db-adaptive-on-bg-basic-emphasis-60-default);
+  color: var(--app-navy);
+  font-weight: 700;
 }
 
 .milestone-card__photo-container {
@@ -108,7 +123,8 @@ milestone-card {
 .milestone-card__instruction {
   font: var(--db-type-body-md);
   margin: 0;
-  color: var(--db-adaptive-on-bg-basic-emphasis-90-default);
+  color: var(--app-on-bg);
+  font-weight: 700;
 }
 
 .milestone-card__accessibility {
@@ -188,4 +204,76 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+
+
+/* =====================================================================
+ * ÖBB INFRA incident-board theming
+ * Yellow page, navy panels, white panel text, red disruption accents.
+ * ===================================================================== */
+
+/* Milestone cards render as dark navy panels (like the lower panel in
+ * the incident board), with white content on top. */
+milestone-card db-card {
+  --db-adaptive-bg-basic-level-2-default: var(--app-panel-bg);
+  background-color: var(--app-panel-bg);
+  color: var(--app-on-panel);
+  border-radius: var(--db-border-radius-md);
+  padding: var(--db-spacing-fixed-md);
+}
+
+milestone-card .milestone-card__instruction,
+milestone-card .milestone-card__distance,
+milestone-card .milestone-card__arrow,
+milestone-card .milestone-card__arrow--vertical {
+  color: var(--app-on-panel);
+}
+
+/* The map view + departure info panels share the navy look */
+.navigation-screen__departure-info db-card,
+bus-departure-info db-card {
+  background-color: var(--app-panel-bg);
+  color: var(--app-on-panel);
+  border-radius: var(--db-border-radius-md);
+}
+
+bus-departure-info db-card * {
+  color: var(--app-on-panel);
+}
+
+/* Dot indicator: inactive navy-translucent, active solid navy */
+dot-indicator .dot-indicator__dot {
+  background-color: color-mix(in srgb, var(--app-navy) 35%, transparent);
+}
+
+dot-indicator .dot-indicator__dot--active {
+  background-color: var(--app-navy);
+}
+
+/* Disruption / error text uses the ÖBB red accent */
+.rail-nav-app__error db-card,
+journey-confirmation-screen [data-field="disruption"],
+journey-confirmation-screen [data-field="error"] {
+  color: var(--app-danger);
+  font-weight: 700;
+}
+
+/* Primary (brand) buttons: navy fill, yellow-on-navy is too low contrast,
+ * so use white text on navy as in the board. */
+db-button[variant="brand"]::part(button),
+db-button[variant="brand"] button {
+  background-color: var(--app-navy);
+  color: var(--app-white);
+  border-color: var(--app-navy);
+}
+
+/* Ghost back buttons: navy text/icon on the yellow background */
+db-button[variant="ghost"]::part(button),
+db-button[variant="ghost"] button {
+  color: var(--app-navy);
+}
+
+/* Notifications keep their semantic colors but sit on white for contrast */
+db-notification {
+  border-radius: var(--db-border-radius-sm);
 }

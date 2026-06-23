@@ -1081,3 +1081,48 @@
   --db-burgundy-on-origin-light-default: #fcf8f9;
   --db-burgundy-on-origin-dark-default: #fcf8f9;
 }
+
+
+/* =====================================================================
+ * Custom ÖBB INFRA incident-board palette (complementary overrides)
+ * Adapted from the disruption screen design: bold golden yellow
+ * background, dark navy blue panels/text, and red disruption accents.
+ * Defined after the generated tokens so these win the cascade.
+ * ===================================================================== */
+
+:is(:root, :host) {
+  /* Brand palette */
+  --app-yellow: #fcd500;
+  --app-yellow-hover: #ecc700;
+  --app-navy: #13144e;
+  --app-navy-2: #1b1c66;
+  --app-red: #e2001a;
+  --app-white: #ffffff;
+
+  /* Semantic roles */
+  --app-bg: var(--app-yellow);
+  --app-on-bg: var(--app-navy);
+  --app-panel-bg: var(--app-navy);
+  --app-on-panel: var(--app-white);
+  --app-danger: var(--app-red);
+  --app-header-bg: var(--app-navy);
+  --app-header-on: var(--app-white);
+
+  /* Map DB UX adaptive tokens onto the ÖBB palette so db-* components
+   * (db-card, db-button, db-badge, db-notification …) inherit the look. */
+  --db-adaptive-bg-basic-level-1-default: var(--app-yellow);
+  --db-adaptive-bg-basic-level-2-default: var(--app-white);
+  --db-adaptive-bg-basic-level-3-default: var(--app-navy);
+
+  --db-adaptive-on-bg-basic-emphasis-100-default: var(--app-navy);
+  --db-adaptive-on-bg-basic-emphasis-90-default: var(--app-navy);
+  --db-adaptive-on-bg-basic-emphasis-80-default: var(--app-navy);
+  --db-adaptive-on-bg-basic-emphasis-70-default: #3a3b78;
+  --db-adaptive-on-bg-basic-emphasis-60-default: #55568f;
+
+  /* Brand origin (CTA / primary) becomes ÖBB navy */
+  --db-brand-origin-default: var(--app-navy);
+  --db-brand-origin-hovered: var(--app-navy-2);
+  --db-brand-origin-pressed: #0d0e3a;
+  --db-brand-on-origin-default: var(--app-white);
+}
