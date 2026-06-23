@@ -216,10 +216,8 @@ export class NavigationScreen extends HTMLElement {
         .navigation-screen__nav-controls {
           display: flex;
           align-items: center;
-          justify-content: center;
-          gap: var(--db-spacing-fixed-xs);
+          justify-content: space-between;
           width: 100%;
-          margin-block-start: auto;
         }
         .navigation-screen__nav-controls dot-indicator {
           flex: 1;

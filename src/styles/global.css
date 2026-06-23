@@ -162,8 +162,17 @@ db-button {
   width: 100%;
 }
 
+.navigation-screen__nav-controls db-button {
+  display: inline-flex;
+  width: auto;
+}
+
 db-button + db-button {
   margin-top: var(--db-spacing-fixed-xs);
+}
+
+.navigation-screen__nav-controls db-button + db-button {
+  margin-top: 0;
 }
 
 /* === Cards === */
