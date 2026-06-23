@@ -25,8 +25,8 @@ export function renderConfirmationContent(connection: Connection): string {
       <ri-vehicle-route id="journey-route"></ri-vehicle-route>
       <p data-field="disruption" class="disruption-notice">${escapeHtml(connection.disruption)}</p>
       <div class="confirmation-actions">
-        <db-button variant="brand" type="button" data-action="confirm">Ja</db-button>
-        <db-button variant="outlined" type="button" data-action="reject">Nein</db-button>
+        <db-button variant="brand" type="button" data-action="confirm" width="full">Ja</db-button>
+        <db-button variant="outlined" type="button" data-action="reject" width="full">Nein</db-button>
       </div>
     </db-card>
   `;
@@ -142,39 +142,10 @@ export class JourneyConfirmationScreen extends HTMLElement {
     routeEl.journey = {
       info: { journeyCancelled: false },
       events: [
-        makeEvent('DEPARTURE', 'Breclav', '13:25', '', 'breclav-dep'),
-        makeEvent('DEPARTURE', 'Bernhardsthal', '13:32', 'Gl. 1', 'bernhardsthal-dep'),
-        makeEvent('DEPARTURE', 'Rabensburg', '13:36', 'Gl. 1', 'rabensburg-dep'),
-        makeEvent('DEPARTURE', 'Hohenau', '13:41', 'Gl. 3', 'hohenau-dep'),
-        makeEvent('DEPARTURE', 'Drösing', '13:46', 'Gl. 2', 'droesing-dep'),
-        makeEvent('DEPARTURE', 'Sierndorf an der March', '13:49', 'Gl. 1', 'sierndorf-dep'),
-        makeEvent('DEPARTURE', 'Jedenspeigen', '13:51', 'Gl. 1', 'jedenspeigen-dep'),
-        makeEvent('DEPARTURE', 'Dürnkrut', '13:54', 'Gl. 3', 'duernkrut-dep'),
-        makeEvent('DEPARTURE', 'Stillfried', '13:59', 'Gl. 1', 'stillfried-dep'),
-        makeEvent('DEPARTURE', 'Angern/March', '14:02', 'Gl. 2', 'angern-dep'),
-        makeEvent('DEPARTURE', 'Tallesbrunn', '14:06', 'Gl. 1', 'tallesbrunn-dep'),
-        makeEvent('DEPARTURE', 'Weikendorf-Dörfles', '14:09', 'Gl. 1', 'weikendorf-dep'),
-        makeEvent('DEPARTURE', 'Gänserndorf', '14:15', 'Gl. 3', 'gaenserndorf-dep'),
-        makeEvent('DEPARTURE', 'Deutsch Wagram', '14:25', 'Gl. 3', 'deutsch-wagram-dep'),
-        makeEvent('DEPARTURE', 'Wien Leopoldau', '14:32', 'Gl. 1', 'wien-leopoldau-dep'),
-        makeEvent('DEPARTURE', 'Wien Siemensstraße', '14:35', 'Gl. 1', 'wien-siemensstr-dep'),
-        makeEvent('DEPARTURE', 'Wien Floridsdorf', '14:39', 'Gl. 2', 'wien-floridsdorf-dep'),
-        makeEvent('DEPARTURE', 'Wien Handelskai', '14:42', 'Gl. 1', 'wien-handelskai-dep'),
-        makeEvent('DEPARTURE', 'Wien Traisengasse', '14:44', 'Gl. 1', 'wien-traisengasse-dep'),
-        makeEvent('DEPARTURE', 'Wien Praterstern', '14:48', 'Gl. 1', 'wien-praterstern-dep'),
-        makeEvent('DEPARTURE', 'Wien Mitte', '14:52', 'Gl. 1', 'wien-mitte-dep'),
-        makeEvent('DEPARTURE', 'Wien Rennweg', '14:54', 'Gl. 1', 'wien-rennweg-dep'),
-        makeEvent('DEPARTURE', 'Wien Quartier Belvedere', '14:57', 'Gl. 1', 'wien-belvedere-dep'),
-        makeEvent('DEPARTURE', 'Wien Hbf', '14:59', 'Gl. 1', 'wien-hbf-dep'),
-        makeEvent('DEPARTURE', 'Wien Matzleinsdorfer Platz', '15:01', 'Gl. 1', 'wien-matzleinsdorf-dep'),
-        makeEvent('DEPARTURE', 'Wien Meidling', '15:07', 'Gl. 1', 'wien-meidling-dep'),
-        makeEvent('DEPARTURE', 'Wien Liesing', '15:14', 'Gl. 1', 'wien-liesing-dep'),
-        makeEvent('DEPARTURE', 'Mödling', '15:19', 'Gl. 2', 'moedling-dep'),
-        makeEvent('DEPARTURE', 'Baden b.Wien', '15:27', 'Gl. 1', 'baden-dep'),
-        makeEvent('DEPARTURE', 'Bad Vöslau', '15:32', 'Gl. 1', 'bad-voeslau-dep'),
-        makeEvent('DEPARTURE', 'Leobersdorf', '15:36', 'Gl. 2', 'leobersdorf-dep'),
-        makeEvent('DEPARTURE', 'Felixdorf', '15:41', 'Gl. 1', 'felixdorf-dep'),
-        makeEvent('ARRIVAL', 'Wiener Neustadt Hbf', '15:48', 'Gl. 8C-D', 'wr-neustadt-arr'),
+        makeEvent('DEPARTURE', 'Flughafen Wien', '08:02', '1D-F', 'flughafen-wien-dep'),
+        makeEvent('DEPARTURE', 'Wien Hbf', '08:24', '8A-B', 'wien-hbf-dep'),
+        makeEvent('DEPARTURE', 'Wien Meidling', '08:31', '5', 'wien-meidling-dep'),
+        makeEvent('ARRIVAL', 'Wiener Neustadt Hbf', '08:57', '4', 'wr-neustadt-arr'),
       ],
     };
   }

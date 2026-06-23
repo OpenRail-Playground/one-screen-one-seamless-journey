@@ -166,7 +166,12 @@ export class NavigationScreen extends HTMLElement {
 
     this._attachEventListeners();
     this._setMapViewProperties();
-    this._setMilestoneCardData();
+
+    // Defer milestone card data setting to next microtask to ensure
+    // db-tabs and child elements have fully initialized in the DOM
+    requestAnimationFrame(() => {
+      this._setMilestoneCardData();
+    });
   }
 
   private _renderTextView(): string {
@@ -258,6 +263,14 @@ export class NavigationScreen extends HTMLElement {
     const milestoneCard = this.querySelector('milestone-card') as HTMLElement & { milestone: Milestone | null } | null;
     if (milestoneCard && this._milestones[this._currentMilestoneIndex]) {
       milestoneCard.milestone = this._milestones[this._currentMilestoneIndex];
+    } else if (this._milestones.length > 0) {
+      // Retry after a short delay if the element isn't ready yet
+      setTimeout(() => {
+        const card = this.querySelector('milestone-card') as HTMLElement & { milestone: Milestone | null } | null;
+        if (card) {
+          card.milestone = this._milestones[this._currentMilestoneIndex];
+        }
+      }, 50);
     }
   }
 }
