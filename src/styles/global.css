@@ -1,4 +1,5 @@
 @import "@db-ux/db-theme/build/styles/rollup.css";
+@import "src/styles/variables.css";
 @import "@db-ux/core-components/build/styles/rollup.css";
 
 @import '@db-ux-inner-source/ri-extension-components/dist/styles/ri-colors.css';
