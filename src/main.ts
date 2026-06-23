@@ -7,6 +7,10 @@
 
 import { defineCustomElements } from '@db-ux/wc-core-components';
 import './app.js';
+import '@db-ux-inner-source/ri-extension-components/dist/headless/index.js';
+import '@db-ux-inner-source/ri-extension-components/dist/localization/languages/german.js';
+import '@db-ux-inner-source/ri-extension-components/dist/localization/languages/english.js';
+import '@db-ux-inner-source/ri-extension-components/dist/localization/language-provider.js';
 
 // Register all DB UX web components (Stencil lazy-loading)
 defineCustomElements(window);

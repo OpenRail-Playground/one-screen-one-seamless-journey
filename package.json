@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@db-ux-inner-source/ri-extension-components": "^1.1.1",
     "@db-ux/core-components": "^4.12.1",
     "@db-ux/core-foundations": "^4.12.1",
     "@db-ux/db-theme": "^5.8.0",

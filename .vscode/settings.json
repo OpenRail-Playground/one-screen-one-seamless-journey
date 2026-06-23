@@ -1,2 +1,5 @@
 {
+    "html.customData": [
+		"./node_modules/ri-components/vscode.html-custom-data.json"
+	]
 }

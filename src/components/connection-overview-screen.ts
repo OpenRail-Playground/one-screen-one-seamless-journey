@@ -1,15 +1,15 @@
 /**
  * ConnectionOverviewScreen Web Component
  *
- * Displays a list of all active rail replacement connections departing from the station.
- * Each connection shows destination, departure time, and bus stop.
- * Tapping a connection sets it as the selected connection in appState and navigates to #preview.
- * Shows an informational notification when no connections are available.
+ * Displays a departure board of all active rail replacement connections using the
+ * ri-board web component from @db-ux-inner-source/ri-extension-components.
+ * Tapping a connection navigates to #preview with the selected connection.
  *
- * Uses DB UX components: db-card, db-stack, db-notification
+ * Uses: ri-board, db-notification
  * All UI text is in German (Requirement 9.3).
  */
 
+import '@db-ux-inner-source/ri-extension-components';
 import type { Connection } from '../types/index.js';
 import { appState } from '../state.js';
 
@@ -23,6 +23,34 @@ function escapeHtml(text: string): string {
     "'": '&#039;',
   };
   return text.replace(/[&<>"']/g, (char) => map[char]);
+}
+
+/**
+ * Converts our Connection array into a BoardPublicDeparture-compatible object
+ * that the ri-board component can render.
+ */
+function connectionsToBoardData(connections: Connection[]): object {
+  const departures = connections.map((conn) => ({
+    timeSchedule: conn.departureTime,
+    time: conn.departureTime,
+    timeType: 'SCHEDULE',
+    transport: {
+      journeyID: conn.id,
+      line: conn.trainNumber.split(' ')[1] || conn.trainNumber,
+      number: conn.trainNumber,
+      category: conn.trainNumber.split(' ')[0] || 'RE',
+      name: conn.trainNumber,
+      destination: { name: conn.destination },
+      via: [],
+    },
+    platform: conn.busStop,
+    platformSchedule: conn.busStop,
+    cancelled: false,
+    messages: [{ text: conn.disruption, priority: 'LOW' }],
+    travelsWith: [],
+  }));
+
+  return { departures };
 }
 
 /**
@@ -44,7 +72,7 @@ export function formatDepartureTime(isoString: string): string {
 }
 
 /**
- * Renders the HTML for a list of connections.
+ * Renders the HTML for a list of connections (kept for property testing).
  * Exported for property-based testing (Property 4: Connection List Completeness).
  *
  * @param connections - Array of Connection objects to render
@@ -63,31 +91,15 @@ export function renderConnectionList(connections: Connection[]): string {
     `;
   }
 
-  const connectionCards = connections
+  // For property testing, produce text output with all fields (HTML-escaped)
+  const connectionItems = connections
     .map((connection) => {
       const formattedTime = formatDepartureTime(connection.departureTime);
-      return `
-      <db-card
-        behavior="interactive"
-        class="connection-card"
-        data-connection-id="${escapeHtml(connection.id)}"
-      >
-        <db-stack direction="column" gap="small">
-          <strong>${escapeHtml(connection.destination)}</strong>
-          <span>Abfahrt: ${formattedTime}</span>
-          <span>Haltestelle: ${escapeHtml(connection.busStop)}</span>
-        </db-stack>
-      </db-card>
-    `;
+      return `<li data-connection-id="${escapeHtml(connection.id)}"><strong>${escapeHtml(connection.destination)}</strong> Abfahrt: ${formattedTime} Haltestelle: ${escapeHtml(connection.busStop)}</li>`;
     })
     .join('');
 
-  return `
-    <db-stack direction="column" gap="medium">
-      <h2>Verbindungen</h2>
-      ${connectionCards}
-    </db-stack>
-  `;
+  return `<ul>${connectionItems}</ul>`;
 }
 
 /**
@@ -97,7 +109,8 @@ export function renderConnectionList(connections: Connection[]): string {
  * - connections: Connection[] — array of active connections to display
  *
  * Behavior:
- * - Clicking a connection card sets selectedConnection in appState and navigates to #preview
+ * - Renders an ri-board departure board
+ * - Clicking a board item sets selectedConnection in appState and navigates to #preview
  */
 export class ConnectionOverviewScreen extends HTMLElement {
   private _connections: Connection[] = [];
@@ -117,29 +130,59 @@ export class ConnectionOverviewScreen extends HTMLElement {
   }
 
   /**
-   * Renders the connection overview screen using light DOM for DB UX component integration.
+   * Renders the connection overview screen using the ri-board component.
    */
   private render(): void {
-    this.innerHTML = renderConnectionList(this._connections);
+    if (this._connections.length === 0) {
+      this.innerHTML = `
+        <db-stack direction="column" gap="medium">
+          <h2>Verbindungen</h2>
+          <db-notification
+            semantic="informational"
+            variant="standalone"
+          >Keine aktuellen Verbindungen</db-notification>
+        </db-stack>
+      `;
+      return;
+    }
+
+    this.innerHTML = `
+      <db-stack direction="column" gap="medium">
+        <h2>Schienenersatzverkehr</h2>
+        <ri-board></ri-board>
+      </db-stack>
+    `;
+
+    // Set the board data programmatically (complex object)
+    const boardEl = this.querySelector('ri-board') as HTMLElement & { board: object };
+    if (boardEl) {
+      boardEl.board = connectionsToBoardData(this._connections);
+      boardEl.setAttribute('show-header', 'true');
+    }
+
     this.attachEventListeners();
   }
 
   /**
-   * Attaches click listeners to each connection card.
-   * On tap, sets the selected connection in appState and navigates to #preview.
+   * Listens for ri-click events from board items to handle connection selection.
    */
   private attachEventListeners(): void {
-    const cards = this.querySelectorAll('.connection-card');
-    cards.forEach((card) => {
-      card.addEventListener('click', () => {
-        const connectionId = card.getAttribute('data-connection-id');
-        const connection = this._connections.find((c) => c.id === connectionId);
-        if (connection) {
-          appState.setState({ selectedConnection: connection });
-          window.location.hash = '#preview';
+    const boardEl = this.querySelector('ri-board');
+    if (boardEl) {
+      // The ri-board-item emits click events; listen on the board container
+      boardEl.addEventListener('click', (event: Event) => {
+        const target = event.target as HTMLElement;
+        const boardItem = target.closest('ri-board-item') as HTMLElement & { stop?: { transport?: { journeyID?: string } } } | null;
+        if (boardItem?.stop?.transport?.journeyID) {
+          const connectionId = boardItem.stop.transport.journeyID;
+          const connection = this._connections.find((c) => c.id === connectionId);
+          if (connection) {
+            appState.setState({ selectedConnection: connection });
+            window.location.hash = '#preview';
+          }
         }
       });
-    });
+    }
   }
 }
 

@@ -1,5 +1,11 @@
-@import "@db-ux/core-components/build/styles/rollup.css";
 @import "@db-ux/db-theme/build/styles/rollup.css";
+@import "@db-ux/core-components/build/styles/rollup.css";
+
+@import '@db-ux-inner-source/ri-extension-components/dist/styles/ri-colors.css';
+
+/* If you want to use the headless components you need this styling as well */
+@import '@db-ux-inner-source/ri-extension-components/dist/headless/index.css';
+
 
 /* === Base Reset & Typography === */
 
