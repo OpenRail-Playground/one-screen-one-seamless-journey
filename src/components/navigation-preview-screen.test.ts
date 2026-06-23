@@ -80,10 +80,12 @@ describe('NavigationPreviewScreen element', () => {
     expect(element.innerHTML).toContain('<db-card>');
   });
 
-  it('renders exactly two db-button elements', () => {
+  it('renders exactly two navigation db-button elements plus a back button', () => {
     element.milestones = sampleMilestones;
     const buttons = element.querySelectorAll('db-button');
-    expect(buttons).toHaveLength(2);
+    expect(buttons).toHaveLength(3);
+    const navButtons = element.querySelectorAll('db-button[data-action="start-standard"], db-button[data-action="start-accessible"]');
+    expect(navButtons).toHaveLength(2);
   });
 
   it('renders a "Navigation starten" button', () => {

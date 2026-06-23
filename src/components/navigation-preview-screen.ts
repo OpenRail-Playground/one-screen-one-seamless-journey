@@ -89,6 +89,7 @@ export class NavigationPreviewScreen extends HTMLElement {
     const summaryHtml = renderPreviewSummary(this._milestones);
 
     this.innerHTML = `
+      <db-button variant="ghost" icon="arrow_left" type="button" data-action="back">Zurück</db-button>
       <db-card>
         <h2>Navigationsvorschau</h2>
         ${summaryHtml}
@@ -107,7 +108,9 @@ export class NavigationPreviewScreen extends HTMLElement {
     if (!button) return;
 
     const action = button.getAttribute('data-action');
-    if (action === 'start-standard') {
+    if (action === 'back') {
+      window.location.hash = '#confirmation';
+    } else if (action === 'start-standard') {
       this.startNavigation('standard');
     } else if (action === 'start-accessible') {
       this.startNavigation('accessible');

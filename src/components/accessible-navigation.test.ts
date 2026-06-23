@@ -193,12 +193,15 @@ describe('Accessible Navigation - Integration', () => {
       }
     });
 
-    it('standard route DOES contain stair instructions (confirming routes differ)', () => {
+    it('standard route differs from accessible route (confirming routes are distinct)', () => {
       const standardMilestones = stationRoute.routes.standard;
-      const hasStairInstruction = standardMilestones.some((m) =>
-        m.instruction.toLowerCase().includes('treppe')
-      );
-      expect(hasStairInstruction).toBe(true);
+      const accessibleMilestones = stationRoute.routes.accessible;
+      // Standard route has no accessibilityFeature on any milestone
+      const standardHasFeature = standardMilestones.some((m) => m.accessibilityFeature != null);
+      expect(standardHasFeature).toBe(false);
+      // Accessible route does
+      const accessibleHasFeature = accessibleMilestones.some((m) => m.accessibilityFeature != null);
+      expect(accessibleHasFeature).toBe(true);
     });
   });
 

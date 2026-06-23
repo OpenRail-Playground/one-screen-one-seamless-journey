@@ -128,6 +128,7 @@ export class NavigationScreen extends HTMLElement {
 
     this.innerHTML = `
       <div class="navigation-screen">
+        <db-button variant="ghost" icon="arrow_left" type="button" data-action="back">Zurück</db-button>
         <db-tabs>
           <db-tab-list>
             <db-tab-item ${isTextView ? 'active' : ''} data-view="text">Wegbeschreibung</db-tab-item>
@@ -184,6 +185,14 @@ export class NavigationScreen extends HTMLElement {
   }
 
   private _attachEventListeners(): void {
+    // Back button
+    const backBtn = this.querySelector('[data-action="back"]');
+    if (backBtn) {
+      backBtn.addEventListener('click', () => {
+        window.location.hash = '#preview';
+      });
+    }
+
     // Listen for swipe events to update milestone card and dot indicator
     const swipeContainer = this.querySelector('swipe-container');
     if (swipeContainer) {

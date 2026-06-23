@@ -136,6 +136,7 @@ export class ConnectionOverviewScreen extends HTMLElement {
     if (this._connections.length === 0) {
       this.innerHTML = `
         <db-stack direction="column" gap="medium">
+          <db-button variant="ghost" icon="arrow_left" type="button" data-action="back">Zurück</db-button>
           <h2>Verbindungen</h2>
           <db-notification
             semantic="informational"
@@ -143,11 +144,13 @@ export class ConnectionOverviewScreen extends HTMLElement {
           >Keine aktuellen Verbindungen</db-notification>
         </db-stack>
       `;
+      this.attachEventListeners();
       return;
     }
 
     this.innerHTML = `
       <db-stack direction="column" gap="medium">
+        <db-button variant="ghost" icon="arrow_left" type="button" data-action="back">Zurück</db-button>
         <h2>Schienenersatzverkehr</h2>
         <ri-board></ri-board>
       </db-stack>
@@ -167,6 +170,14 @@ export class ConnectionOverviewScreen extends HTMLElement {
    * Listens for ri-click events from board items to handle connection selection.
    */
   private attachEventListeners(): void {
+    // Back button
+    const backBtn = this.querySelector('[data-action="back"]');
+    if (backBtn) {
+      backBtn.addEventListener('click', () => {
+        window.location.hash = '#confirmation';
+      });
+    }
+
     const boardEl = this.querySelector('ri-board');
     if (boardEl) {
       // The ri-board-item emits click events; listen on the board container
