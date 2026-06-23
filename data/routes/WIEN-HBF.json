@@ -20,12 +20,12 @@
   "connections": [
     {
       "id": "conn-1",
-      "trainNumber": "REX 7",
-      "routeName": "Wien - Wiener Neustadt",
+      "trainNumber": "EC 4020",
+      "routeName": "Praha hl.n. - Villach Hbf",
       "destination": "Wiener Neustadt Hbf",
       "departureTime": "2025-06-15T14:30:00+02:00",
       "busStop": "Bussteig A3",
-      "disruption": "Streckensperrung zwischen Wien Meidling und Wiener Neustadt wegen Gleisbauarbeiten"
+      "disruption": "Streckensperrung zwischen Wien Meidling und Wiener Neustadt Hbf. wegen Gleisbauarbeiten"
     },
     {
       "id": "conn-2",
