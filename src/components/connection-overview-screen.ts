@@ -152,84 +152,46 @@ export class ConnectionOverviewScreen extends HTMLElement {
       <db-stack direction="column" gap="medium">
         <db-button variant="ghost" icon="arrow_left" type="button" data-action="back">Zurück</db-button>
         <h2>Wähle deine geplante Verbindung</h2>
-        <ri-board id="connection-board"></ri-board>
+        <ul class="connection-list">
+          <li>
+            <db-card behavior="interactive" style="background-color: var(--app-white);" data-connection-id="sev-1">
+              <ri-stop>
+                <span slot="time"><strong>08:02</strong></span>
+                <div slot="transportation"><ri-transport-tag category="RE" type="REGIONAL_TRAIN" line="1" label="REX 1" show-icon static-mode></ri-transport-tag></div>
+                <span>Wiener Neustadt Hbf</span>
+                <span slot="tag">Gl. 3</span>
+              </ri-stop>
+            </db-card>
+          </li>
+          <li>
+            <db-card behavior="interactive" style="background-color: var(--app-white);" data-connection-id="sev-2">
+              <ri-stop>
+                <span slot="time"><strong>09:02</strong></span>
+                <div slot="transportation"><ri-transport-tag category="RE" type="REGIONAL_TRAIN" line="1" label="REX 1" show-icon static-mode></ri-transport-tag></div>
+                <span>Wiener Neustadt Hbf</span>
+                <span slot="tag">Gl. 4</span>
+              </ri-stop>
+            </db-card>
+          </li>
+          <li>
+            <db-card behavior="interactive" style="background-color: var(--app-white);" data-connection-id="sev-3">
+              <ri-stop>
+                <span slot="time"><strong>10:02</strong></span>
+                <div slot="transportation"><ri-transport-tag category="RE" type="REGIONAL_TRAIN" line="1" label="REX 1" show-icon static-mode></ri-transport-tag></div>
+                <span>Wiener Neustadt Hbf</span>
+                <span slot="tag">Gl. 3</span>
+              </ri-stop>
+            </db-card>
+          </li>
+        </ul>
       </db-stack>
     `;
-
-    // Set the board data with the fixed SEV bus timetable
-    const boardEl = this.querySelector('#connection-board') as HTMLElement & { board: object; showHeader?: boolean };
-    if (boardEl) {
-      const baseDate = '2025-06-15T';
-      const tz = '+02:00';
-      boardEl.board = {
-        departures: [
-          {
-            timeSchedule: `${baseDate}14:58:00${tz}`,
-            time: `${baseDate}14:58:00${tz}`,
-            timeType: 'SCHEDULE',
-            transport: {
-              journeyID: 'sev-1',
-              line: '1',
-              number: 'REX 1',
-              category: 'RE',
-              name: 'REX 1',
-              destination: { name: 'Wiener Neustadt Hbf' },
-              via: [],
-            },
-            platform: '3',
-            platformSchedule: '3',
-            cancelled: false,
-            messages: [],
-            travelsWith: [],
-          },
-          {
-            timeSchedule: `${baseDate}15:58:00${tz}`,
-            time: `${baseDate}15:58:00${tz}`,
-            timeType: 'SCHEDULE',
-            transport: {
-              journeyID: 'sev-2',
-              line: '1',
-              number: 'REX 1',
-              category: 'RE',
-              name: 'REX 1',
-              destination: { name: 'Wiener Neustadt Hbf' },
-              via: [],
-            },
-            platform: '3',
-            platformSchedule: '3',
-            cancelled: false,
-            messages: [],
-            travelsWith: [],
-          },
-          {
-            timeSchedule: `${baseDate}16:58:00${tz}`,
-            time: `${baseDate}16:58:00${tz}`,
-            timeType: 'SCHEDULE',
-            transport: {
-              journeyID: 'sev-3',
-              line: '1',
-              number: 'REX 1',
-              category: 'RE',
-              name: 'REX 1',
-              destination: { name: 'Wiener Neustadt Hbf' },
-              via: [],
-            },
-            platform: '3',
-            platformSchedule: '3',
-            cancelled: false,
-            messages: [],
-            travelsWith: [],
-          },
-        ],
-      };
-      boardEl.showHeader = true;
-    }
 
     this.attachEventListeners();
   }
 
   /**
-   * Listens for ri-click events from board items to handle connection selection.
+   * Listens for click events on connection cards.
    */
   private attachEventListeners(): void {
     // Back button
@@ -240,22 +202,20 @@ export class ConnectionOverviewScreen extends HTMLElement {
       });
     }
 
-    const boardEl = this.querySelector('ri-board');
-    if (boardEl) {
-      // The ri-board-item emits click events; listen on the board container
-      boardEl.addEventListener('click', (event: Event) => {
-        const target = event.target as HTMLElement;
-        const boardItem = target.closest('ri-board-item') as HTMLElement & { stop?: { transport?: { journeyID?: string } } } | null;
-        if (boardItem?.stop?.transport?.journeyID) {
-          const connectionId = boardItem.stop.transport.journeyID;
+    // Connection card clicks
+    const cards = this.querySelectorAll('[data-connection-id]');
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        const connectionId = card.getAttribute('data-connection-id');
+        if (connectionId) {
           const connection = this._connections.find((c) => c.id === connectionId);
           if (connection) {
             appState.setState({ selectedConnection: connection });
-            window.location.hash = '#preview';
           }
+          window.location.hash = '#preview';
         }
       });
-    }
+    });
   }
 }
 

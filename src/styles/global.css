@@ -276,3 +276,19 @@ db-notification {
 .navigation-preview__summary {
   margin-block-end: var(--db-spacing-fixed-md);
 }
+
+
+/* === Connection List === */
+
+.connection-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--db-spacing-fixed-sm);
+}
+
+.connection-list li {
+  display: block;
+}
