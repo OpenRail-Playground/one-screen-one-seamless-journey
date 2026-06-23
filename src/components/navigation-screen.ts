@@ -209,7 +209,7 @@ export class NavigationScreen extends HTMLElement {
         }
         .navigation-screen__instruction-text {
           font: var(--db-type-body-md);
-          font-weight: 700;
+          font-weight: normal;
           color: var(--app-navy);
           margin: 0;
         }
@@ -219,6 +219,7 @@ export class NavigationScreen extends HTMLElement {
           justify-content: center;
           gap: var(--db-spacing-fixed-xs);
           width: 100%;
+          margin-block-start: auto;
         }
         .navigation-screen__nav-controls dot-indicator {
           flex: 1;
@@ -389,9 +390,13 @@ export class NavigationScreen extends HTMLElement {
       text.textContent = milestone.instruction;
     }
 
+    // Icon per slide: walking_fast, arrow_up, arrow_left, arrow_up, bus
+    const iconNames = ['walking_fast', 'arrow_up', 'arrow_left', 'arrow_up', 'bus'];
+    const iconName = iconNames[this._currentMilestoneIndex] || 'arrow_forward';
+
     const icon = this.querySelector('#milestone-icon') as HTMLElement | null;
     if (icon) {
-      icon.innerHTML = `<db-icon icon="arrow_forward"></db-icon>`;
+      icon.innerHTML = `<db-icon icon="${iconName}"></db-icon>`;
     }
 
     if (!img && this._milestones.length > 0) {
