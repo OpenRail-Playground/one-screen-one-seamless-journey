@@ -82,34 +82,8 @@ milestone-card {
   gap: var(--db-spacing-fixed-sm);
 }
 
-.milestone-card__direction {
-  display: flex;
-  align-items: center;
-  gap: var(--db-spacing-fixed-xs);
-}
-
-.milestone-card__arrow {
-  width: var(--db-sizing-sm);
-  height: var(--db-sizing-sm);
-  color: var(--app-on-bg);
-}
-
-.milestone-card__arrow--vertical {
-  width: var(--db-sizing-sm);
-  height: var(--db-sizing-sm);
-  color: var(--app-on-bg);
-}
-
-.milestone-card__distance {
-  font: var(--db-type-body-sm);
-  color: var(--app-navy);
-  font-weight: 700;
-}
-
 .milestone-card__photo-container {
   width: 100%;
-  overflow: hidden;
-  border-radius: var(--db-border-radius-sm);
 }
 
 .milestone-card__photo {
@@ -117,7 +91,27 @@ milestone-card {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: var(--db-border-radius-sm);
+}
+
+.milestone-card__instruction-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--db-spacing-fixed-xs);
+  padding: 0 var(--db-spacing-fixed-sm);
+}
+
+.milestone-card__arrow {
+  width: var(--db-sizing-sm);
+  height: var(--db-sizing-sm);
+  flex-shrink: 0;
+  color: var(--app-navy);
+}
+
+.milestone-card__arrow--vertical {
+  width: var(--db-sizing-sm);
+  height: var(--db-sizing-sm);
+  flex-shrink: 0;
+  color: var(--app-navy);
 }
 
 .milestone-card__instruction {
@@ -128,7 +122,7 @@ milestone-card {
 }
 
 .milestone-card__accessibility {
-  margin-top: var(--db-spacing-fixed-2xs);
+  padding: 0 var(--db-spacing-fixed-sm);
 }
 
 /* === Dot Indicator === */
@@ -149,11 +143,16 @@ map-view {
 
 journey-confirmation-screen,
 connection-overview-screen,
-navigation-preview-screen,
-navigation-screen {
+navigation-preview-screen {
   display: block;
   width: 100%;
   padding: var(--db-spacing-fixed-sm);
+}
+
+navigation-screen {
+  display: block;
+  width: 100%;
+  padding: 0;
 }
 
 /* === Buttons: full-width on mobile === */
@@ -205,21 +204,10 @@ img {
  * Yellow page, navy panels, white panel text, red disruption accents.
  * ===================================================================== */
 
-/* Milestone cards render as dark navy panels (like the lower panel in
- * the incident board), with white content on top. */
-milestone-card db-card {
-  --db-adaptive-bg-basic-level-2-default: var(--app-panel-bg);
-  background-color: var(--app-panel-bg);
-  color: var(--app-on-panel);
-  border-radius: var(--db-border-radius-md);
-  padding: var(--db-spacing-fixed-md);
-}
-
-milestone-card .milestone-card__instruction,
-milestone-card .milestone-card__distance,
-milestone-card .milestone-card__arrow,
-milestone-card .milestone-card__arrow--vertical {
-  color: var(--app-on-panel);
+/* Milestone cards: no panel background since we removed db-card wrapper */
+milestone-card .milestone-card__instruction-row .milestone-card__arrow,
+milestone-card .milestone-card__instruction-row .milestone-card__arrow--vertical {
+  color: var(--app-navy);
 }
 
 /* The map view panels share the navy look */

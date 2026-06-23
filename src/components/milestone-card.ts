@@ -81,12 +81,7 @@ export function renderMilestoneCard(milestone: Milestone): string {
     accessibilityBadge = `<db-badge semantic="informational" emphasis="strong">${label}</db-badge>`;
   }
 
-  return `<db-card spacing="small">
-  <div class="milestone-card__content">
-    <div class="milestone-card__direction">
-      ${arrowSvg}
-      <span class="milestone-card__distance">${distanceText}</span>
-    </div>
+  return `<div class="milestone-card__content">
     <div class="milestone-card__photo-container">
       <img
         class="milestone-card__photo"
@@ -95,10 +90,12 @@ export function renderMilestoneCard(milestone: Milestone): string {
         onerror="this.onerror=null;this.src='${PLACEHOLDER_IMAGE}';"
       />
     </div>
-    <p class="milestone-card__instruction">${milestone.instruction}</p>
+    <div class="milestone-card__instruction-row">
+      ${arrowSvg}
+      <p class="milestone-card__instruction">${milestone.instruction}</p>
+    </div>
     ${accessibilityBadge ? `<div class="milestone-card__accessibility">${accessibilityBadge}</div>` : ''}
-  </div>
-</db-card>`;
+  </div>`;
 }
 
 export class MilestoneCard extends HTMLElement {

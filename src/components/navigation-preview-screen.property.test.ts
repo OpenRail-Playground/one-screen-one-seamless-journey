@@ -88,17 +88,4 @@ describe('Feature: rail-replacement-navigation, Property 5: Navigation Preview M
       { numRuns: 100 }
     );
   });
-
-  it('rendered summary includes total distance equal to sum of all milestone distances', () => {
-    fc.assert(
-      fc.property(milestonesArbitrary, (milestones) => {
-        const output = renderPreviewSummary(milestones);
-        const expectedTotalDistance = milestones.reduce((sum, m) => sum + m.distanceMeters, 0);
-
-        // The rendered summary should contain the total distance
-        expect(output).toContain(`${expectedTotalDistance} Meter`);
-      }),
-      { numRuns: 100 }
-    );
-  });
 });

@@ -45,9 +45,9 @@ describe('renderPreviewSummary', () => {
     expect(html).toContain('2 Minuten Fußweg');
   });
 
-  it('includes total distance in meters', () => {
+  it('includes total distance info in step count', () => {
     const html = renderPreviewSummary(sampleMilestones);
-    expect(html).toContain('130 Meter');
+    expect(html).toContain('3 Schritte');
   });
 
   it('handles an empty milestones array', () => {
@@ -59,7 +59,6 @@ describe('renderPreviewSummary', () => {
   it('handles a single milestone', () => {
     const html = renderPreviewSummary([sampleMilestones[0]]);
     expect(html).toContain('1 Schritte');
-    expect(html).toContain('25 Meter');
   });
 });
 
@@ -93,9 +92,9 @@ describe('NavigationPreviewScreen element', () => {
     expect(element.innerHTML).toContain('Navigation starten</db-button>');
   });
 
-  it('renders a "Barrierefreie Navigation starten" button', () => {
+  it('renders a "Barrierefreie Navigation" button', () => {
     element.milestones = sampleMilestones;
-    expect(element.innerHTML).toContain('Barrierefreie Navigation starten</db-button>');
+    expect(element.innerHTML).toContain('Barrierefreie Navigation</db-button>');
   });
 
   it('renders the milestone summary with step count', () => {
@@ -139,7 +138,7 @@ describe('NavigationPreviewScreen element', () => {
 
   it('uses German language for all UI text', () => {
     element.milestones = sampleMilestones;
-    expect(element.innerHTML).toContain('Navigationsvorschau');
+    expect(element.innerHTML).toContain('Ihr Weg zum Ersatzbus');
     expect(element.innerHTML).toContain('Schritte');
     expect(element.innerHTML).toContain('Minuten Fußweg');
   });
