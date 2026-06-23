@@ -53,35 +53,35 @@
         "instruction": "Treppe am Ende des Bahnsteigs runter zur Unterführung",
         "direction": "down",
         "distanceMeters": 25,
-        "photoUrl": "/data/photos/WIEN-HBF/step-1.jpg"
+        "photoUrl": "/data/photos/1.jpg"
       },
       {
         "id": 2,
         "instruction": "In der Unterführung links abbiegen, Richtung Ausgang Süd",
         "direction": "west",
         "distanceMeters": 60,
-        "photoUrl": "/data/photos/WIEN-HBF/step-2.jpg"
+        "photoUrl": "/data/photos/2.jpg"
       },
       {
         "id": 3,
         "instruction": "Dem Schild 'Ausgang Süd' folgen, Treppe hoch zum Erdgeschoss",
         "direction": "up",
         "distanceMeters": 20,
-        "photoUrl": "/data/photos/WIEN-HBF/step-3.jpg"
+        "photoUrl": "/data/photos/3.jpg"
       },
       {
         "id": 4,
         "instruction": "Geradeaus durch die Eingangshalle zum Südausgang",
         "direction": "south",
         "distanceMeters": 45,
-        "photoUrl": "/data/photos/WIEN-HBF/step-4.jpg"
+        "photoUrl": "/data/photos/4.jpg"
       },
       {
         "id": 5,
         "instruction": "Rechts abbiegen, den Gehweg entlang bis zum Bussteig A",
         "direction": "east",
         "distanceMeters": 90,
-        "photoUrl": "/data/photos/WIEN-HBF/step-5.jpg"
+        "photoUrl": "/data/photos/5.jpg"
       }
     ],
     "accessible": [
@@ -90,7 +90,7 @@
         "instruction": "Aufzug am Bahnsteigende nehmen zu Ebene 0 (Unterführung)",
         "direction": "down",
         "distanceMeters": 15,
-        "photoUrl": "/data/photos/WIEN-HBF/acc-step-1.jpg",
+        "photoUrl": "/data/photos/1.jpg",
         "accessibilityFeature": "elevator"
       },
       {
@@ -98,7 +98,7 @@
         "instruction": "In der Unterführung dem taktilen Leitsystem Richtung Ausgang Süd folgen",
         "direction": "west",
         "distanceMeters": 65,
-        "photoUrl": "/data/photos/WIEN-HBF/acc-step-2.jpg",
+        "photoUrl": "/data/photos/2.jpg",
         "accessibilityFeature": "tactile-paving"
       },
       {
@@ -106,7 +106,7 @@
         "instruction": "Aufzug zum Erdgeschoss nehmen (Ausgang Süd)",
         "direction": "up",
         "distanceMeters": 15,
-        "photoUrl": "/data/photos/WIEN-HBF/acc-step-3.jpg",
+        "photoUrl": "/data/photos/3.jpg",
         "accessibilityFeature": "elevator"
       },
       {
@@ -114,7 +114,7 @@
         "instruction": "Rampe zum Vorplatz nutzen, dann geradeaus zum Bussteig A",
         "direction": "south",
         "distanceMeters": 100,
-        "photoUrl": "/data/photos/WIEN-HBF/acc-step-4.jpg",
+        "photoUrl": "/data/photos/4.jpg",
         "accessibilityFeature": "ramp"
       }
     ]

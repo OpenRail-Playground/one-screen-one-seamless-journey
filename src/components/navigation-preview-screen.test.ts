@@ -15,21 +15,21 @@ const sampleMilestones: Milestone[] = [
     instruction: 'Treppe am Ende des Bahnsteigs runter zur Unterführung',
     direction: 'down',
     distanceMeters: 25,
-    photoUrl: '/data/photos/WIEN-HBF/step-1.jpg',
+    photoUrl: '/data/photos/1.jpg',
   },
   {
     id: 2,
     instruction: 'In der Unterführung links abbiegen, Richtung Ausgang Süd',
     direction: 'west',
     distanceMeters: 60,
-    photoUrl: '/data/photos/WIEN-HBF/step-2.jpg',
+    photoUrl: '/data/photos/2.jpg',
   },
   {
     id: 3,
     instruction: 'Geradeaus durch die Eingangshalle zum Südausgang',
     direction: 'south',
     distanceMeters: 45,
-    photoUrl: '/data/photos/WIEN-HBF/step-3.jpg',
+    photoUrl: '/data/photos/3.jpg',
   },
 ];
 

@@ -209,7 +209,7 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Aufzug nehmen zu Ebene 0',
         direction: 'down',
         distanceMeters: 15,
-        photoUrl: '/data/photos/WIEN-HBF/acc-step-1.jpg',
+        photoUrl: '/data/photos/1.jpg',
         accessibilityFeature: 'elevator',
       };
 
@@ -224,7 +224,7 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Rampe zum Vorplatz nutzen',
         direction: 'south',
         distanceMeters: 100,
-        photoUrl: '/data/photos/WIEN-HBF/acc-step-4.jpg',
+        photoUrl: '/data/photos/4.jpg',
         accessibilityFeature: 'ramp',
       };
 
@@ -239,7 +239,7 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Dem taktilen Leitsystem folgen',
         direction: 'west',
         distanceMeters: 65,
-        photoUrl: '/data/photos/WIEN-HBF/acc-step-2.jpg',
+        photoUrl: '/data/photos/2.jpg',
         accessibilityFeature: 'tactile-paving',
       };
 
@@ -254,7 +254,7 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Ebenerdigen Übergang nutzen',
         direction: 'east',
         distanceMeters: 30,
-        photoUrl: '/data/photos/WIEN-HBF/acc-step-3.jpg',
+        photoUrl: '/data/photos/3.jpg',
         accessibilityFeature: 'level-crossing',
       };
 
@@ -269,7 +269,7 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Treppe runter',
         direction: 'down',
         distanceMeters: 25,
-        photoUrl: '/data/photos/WIEN-HBF/step-1.jpg',
+        photoUrl: '/data/photos/1.jpg',
       };
 
       const html = renderMilestoneCard(milestone);
