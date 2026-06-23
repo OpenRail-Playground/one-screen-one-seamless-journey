@@ -21,7 +21,7 @@ import type { Connection } from '../types/index.js';
 export function renderConfirmationContent(connection: Connection): string {
   return `
     <db-card>
-      <h2>Ist das Dein Zug?</h2>
+      <h2>Ist das Ihre Verbindung?</h2>
       <dl>
         <dt>Zugnummer</dt>
         <dd data-field="trainNumber">${escapeHtml(connection.trainNumber)}</dd>
