@@ -1,0 +1,184 @@
+@import "@db-ux/core-components/build/styles/rollup.css";
+@import "@db-ux/db-theme/build/styles/rollup.css";
+
+/* === Base Reset & Typography === */
+
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  font: var(--db-type-body-md);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === App Container === */
+
+#app {
+  width: 100%;
+  max-width: var(--db-container-sm);
+  margin: 0 auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: env(safe-area-inset-top);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+}
+
+/* === Swipe Container === */
+
+swipe-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* === Milestone Card === */
+
+milestone-card {
+  display: block;
+  width: 100%;
+}
+
+.milestone-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--db-spacing-fixed-sm);
+}
+
+.milestone-card__direction {
+  display: flex;
+  align-items: center;
+  gap: var(--db-spacing-fixed-xs);
+}
+
+.milestone-card__arrow {
+  width: var(--db-sizing-sm);
+  height: var(--db-sizing-sm);
+  color: var(--db-adaptive-on-bg-basic-emphasis-90-default);
+}
+
+.milestone-card__arrow--vertical {
+  width: var(--db-sizing-sm);
+  height: var(--db-sizing-sm);
+  color: var(--db-adaptive-on-bg-basic-emphasis-90-default);
+}
+
+.milestone-card__distance {
+  font: var(--db-type-body-sm);
+  color: var(--db-adaptive-on-bg-basic-emphasis-60-default);
+}
+
+.milestone-card__photo-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--db-border-radius-sm);
+}
+
+.milestone-card__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--db-border-radius-sm);
+}
+
+.milestone-card__instruction {
+  font: var(--db-type-body-md);
+  margin: 0;
+  color: var(--db-adaptive-on-bg-basic-emphasis-90-default);
+}
+
+.milestone-card__accessibility {
+  margin-top: var(--db-spacing-fixed-2xs);
+}
+
+/* === Dot Indicator === */
+
+dot-indicator {
+  display: block;
+  width: 100%;
+}
+
+/* === Map View === */
+
+map-view {
+  display: block;
+  width: 100%;
+}
+
+/* === Bus Departure Info === */
+
+bus-departure-info {
+  display: block;
+  width: 100%;
+}
+
+/* === Screen Components === */
+
+journey-confirmation-screen,
+connection-overview-screen,
+navigation-preview-screen,
+navigation-screen {
+  display: block;
+  width: 100%;
+  padding: var(--db-spacing-fixed-sm);
+}
+
+/* === Buttons: full-width on mobile === */
+
+db-button {
+  display: block;
+  width: 100%;
+}
+
+db-button + db-button {
+  margin-top: var(--db-spacing-fixed-xs);
+}
+
+/* === Cards === */
+
+db-card {
+  display: block;
+  width: 100%;
+}
+
+/* === Typography readability at 320px minimum === */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* === Images: responsive by default === */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
