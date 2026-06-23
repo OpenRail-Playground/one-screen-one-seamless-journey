@@ -13,11 +13,11 @@ import {
 const sampleConnection: Connection = {
   id: 'conn-1',
   trainNumber: 'RE 50',
-  routeName: 'Frankfurt - Mannheim',
-  destination: 'Mannheim Hbf',
+  routeName: 'Wien - Wiener Neustadt',
+  destination: 'Wiener Neustadt Hbf',
   departureTime: '2025-06-15T14:30:00+02:00',
   busStop: 'Bussteig A3',
-  disruption: 'Streckensperrung zwischen Frankfurt Süd und Darmstadt',
+  disruption: 'Streckensperrung zwischen Wien Meidling und Wiener Neustadt',
 };
 
 describe('renderConfirmationContent', () => {
@@ -28,12 +28,12 @@ describe('renderConfirmationContent', () => {
 
   it('includes routeName in the output', () => {
     const html = renderConfirmationContent(sampleConnection);
-    expect(html).toContain('Frankfurt - Mannheim');
+    expect(html).toContain('Wien - Wiener Neustadt');
   });
 
   it('includes disruption in the output', () => {
     const html = renderConfirmationContent(sampleConnection);
-    expect(html).toContain('Streckensperrung zwischen Frankfurt Süd und Darmstadt');
+    expect(html).toContain('Streckensperrung zwischen Wien Meidling und Wiener Neustadt');
   });
 
   it('renders a db-card element', () => {
@@ -117,8 +117,8 @@ describe('JourneyConfirmationScreen element', () => {
   it('renders connection details when connection is set', () => {
     element.connection = sampleConnection;
     expect(element.innerHTML).toContain('RE 50');
-    expect(element.innerHTML).toContain('Frankfurt - Mannheim');
-    expect(element.innerHTML).toContain('Streckensperrung zwischen Frankfurt Süd und Darmstadt');
+    expect(element.innerHTML).toContain('Wien - Wiener Neustadt');
+    expect(element.innerHTML).toContain('Streckensperrung zwischen Wien Meidling und Wiener Neustadt');
   });
 
   it('renders exactly two db-button elements when connection is set', () => {

@@ -3,18 +3,18 @@ import { RouteDataServiceImpl } from './route-data-service';
 import type { StationRoute } from '../types/index';
 
 const mockStationRoute: StationRoute = {
-  stationId: 'FFM-HBF',
-  stationName: 'Frankfurt (Main) Hbf',
+  stationId: 'WIEN-HBF',
+  stationName: 'Wien Hbf',
   platformId: '7',
   connections: [
     {
       id: 'conn-1',
       trainNumber: 'RE 50',
-      routeName: 'Frankfurt - Mannheim',
-      destination: 'Mannheim Hbf',
+      routeName: 'Wien - Wiener Neustadt',
+      destination: 'Wiener Neustadt Hbf',
       departureTime: '2025-06-15T14:30:00+02:00',
       busStop: 'Bussteig A3',
-      disruption: 'Streckensperrung zwischen Frankfurt Süd und Darmstadt',
+      disruption: 'Streckensperrung zwischen Wien Meidling und Wiener Neustadt',
     },
   ],
   routes: {
@@ -24,14 +24,14 @@ const mockStationRoute: StationRoute = {
         instruction: 'Treppe runter Richtung Ausgang Süd',
         direction: 'down',
         distanceMeters: 30,
-        photoUrl: '/data/photos/FFM-HBF/step-1.jpg',
+        photoUrl: '/data/photos/WIEN-HBF/step-1.jpg',
       },
       {
         id: 2,
         instruction: 'Links abbiegen',
         direction: 'west',
         distanceMeters: 80,
-        photoUrl: '/data/photos/FFM-HBF/step-2.jpg',
+        photoUrl: '/data/photos/WIEN-HBF/step-2.jpg',
       },
     ],
     accessible: [
@@ -40,7 +40,7 @@ const mockStationRoute: StationRoute = {
         instruction: 'Aufzug nehmen zu Ebene 0',
         direction: 'down',
         distanceMeters: 15,
-        photoUrl: '/data/photos/FFM-HBF/acc-step-1.jpg',
+        photoUrl: '/data/photos/WIEN-HBF/acc-step-1.jpg',
         accessibilityFeature: 'elevator',
       },
     ],
@@ -70,9 +70,9 @@ describe('RouteDataServiceImpl', () => {
       });
       vi.stubGlobal('fetch', fetchMock);
 
-      await service.getStationRoute('FFM-HBF', '7');
+      await service.getStationRoute('WIEN-HBF', '7');
 
-      expect(fetchMock).toHaveBeenCalledWith('/data/routes/FFM-HBF.json');
+      expect(fetchMock).toHaveBeenCalledWith('/data/routes/WIEN-HBF.json');
     });
 
     it('returns the parsed StationRoute data', async () => {
@@ -80,10 +80,10 @@ describe('RouteDataServiceImpl', () => {
         json: () => Promise.resolve(mockStationRoute),
       }));
 
-      const result = await service.getStationRoute('FFM-HBF', '7');
+      const result = await service.getStationRoute('WIEN-HBF', '7');
 
-      expect(result.stationId).toBe('FFM-HBF');
-      expect(result.stationName).toBe('Frankfurt (Main) Hbf');
+      expect(result.stationId).toBe('WIEN-HBF');
+      expect(result.stationName).toBe('Wien Hbf');
       expect(result.connections).toHaveLength(1);
       expect(result.routes.standard).toHaveLength(2);
       expect(result.routes.accessible).toHaveLength(1);
@@ -95,8 +95,8 @@ describe('RouteDataServiceImpl', () => {
       });
       vi.stubGlobal('fetch', fetchMock);
 
-      await service.getStationRoute('FFM-HBF', '7');
-      await service.getStationRoute('FFM-HBF', '7');
+      await service.getStationRoute('WIEN-HBF', '7');
+      await service.getStationRoute('WIEN-HBF', '7');
 
       expect(fetchMock).toHaveBeenCalledTimes(1);
     });
@@ -104,8 +104,8 @@ describe('RouteDataServiceImpl', () => {
     it('throws a descriptive error on network failure', async () => {
       vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new TypeError('Failed to fetch')));
 
-      await expect(service.getStationRoute('FFM-HBF', '7')).rejects.toThrow(
-        'Routendaten für Station "FFM-HBF" konnten nicht geladen werden: Netzwerkfehler'
+      await expect(service.getStationRoute('WIEN-HBF', '7')).rejects.toThrow(
+        'Routendaten für Station "WIEN-HBF" konnten nicht geladen werden: Netzwerkfehler'
       );
     });
 
@@ -128,8 +128,8 @@ describe('RouteDataServiceImpl', () => {
         json: () => Promise.reject(new SyntaxError('Unexpected token')),
       }));
 
-      await expect(service.getStationRoute('FFM-HBF', '7')).rejects.toThrow(
-        'Routendaten für Station "FFM-HBF" sind ungültig (JSON-Parsing fehlgeschlagen)'
+      await expect(service.getStationRoute('WIEN-HBF', '7')).rejects.toThrow(
+        'Routendaten für Station "WIEN-HBF" sind ungültig (JSON-Parsing fehlgeschlagen)'
       );
     });
 
@@ -150,18 +150,18 @@ describe('RouteDataServiceImpl', () => {
       vi.stubGlobal('fetch', createFetchMock({
         json: () => Promise.resolve(mockStationRoute),
       }));
-      await service.getStationRoute('FFM-HBF', '7');
+      await service.getStationRoute('WIEN-HBF', '7');
     });
 
     it('returns standard milestones when mode is standard', () => {
-      const milestones = service.getMilestones('FFM-HBF', 'conn-1', 'standard');
+      const milestones = service.getMilestones('WIEN-HBF', 'conn-1', 'standard');
 
       expect(milestones).toHaveLength(2);
       expect(milestones[0].instruction).toBe('Treppe runter Richtung Ausgang Süd');
     });
 
     it('returns accessible milestones when mode is accessible', () => {
-      const milestones = service.getMilestones('FFM-HBF', 'conn-1', 'accessible');
+      const milestones = service.getMilestones('WIEN-HBF', 'conn-1', 'accessible');
 
       expect(milestones).toHaveLength(1);
       expect(milestones[0].instruction).toBe('Aufzug nehmen zu Ebene 0');

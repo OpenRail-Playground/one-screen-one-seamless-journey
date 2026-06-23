@@ -5,7 +5,7 @@
  * and subsequent departures. Shows a notice when real-time data is unavailable.
  *
  * Usage:
- *   <bus-departure-info stationId="FFM-HBF"></bus-departure-info>
+ *   <bus-departure-info stationId="WIEN-HBF"></bus-departure-info>
  *
  * Or set departures directly:
  *   const el = document.querySelector('bus-departure-info');

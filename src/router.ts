@@ -33,7 +33,7 @@ export interface ParsedUrlParams {
  * Parses URL search parameters to extract station and platform identifiers.
  * This function is exported separately to enable property-based testing.
  *
- * @param searchString - The URL search string (e.g., "?station=FFM-HBF&platform=7")
+ * @param searchString - The URL search string (e.g., "?station=WIEN-HBF&platform=7")
  * @returns ParsedUrlParams if both station and platform are present and non-empty, otherwise null
  */
 export function parseUrlParams(searchString: string): ParsedUrlParams | null {

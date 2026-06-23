@@ -74,7 +74,7 @@ describe('DepartureServiceImpl', () => {
     it('fetches and filters departures from API', async () => {
       const futureDeparture: BusDeparture = {
         departureTime: new Date(Date.now() + 60_000).toISOString(),
-        destination: 'Mannheim',
+        destination: 'Wiener Neustadt',
         busStop: 'Bussteig A3',
         isRealtime: true,
       };
@@ -84,16 +84,16 @@ describe('DepartureServiceImpl', () => {
         json: () => Promise.resolve({ departures: [futureDeparture] }),
       }));
 
-      const result = await service.getDepartures('FFM-HBF');
+      const result = await service.getDepartures('WIEN-HBF');
       expect(result).toHaveLength(1);
-      expect(result[0].destination).toBe('Mannheim');
+      expect(result[0].destination).toBe('Wiener Neustadt');
       expect(result[0].isRealtime).toBe(true);
     });
 
     it('returns fallback data on fetch failure', async () => {
       vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('Network error')));
 
-      const result = await service.getDepartures('FFM-HBF');
+      const result = await service.getDepartures('WIEN-HBF');
       expect(result.length).toBeGreaterThan(0);
       expect(result.every((d) => d.isRealtime === false)).toBe(true);
     });
@@ -104,7 +104,7 @@ describe('DepartureServiceImpl', () => {
         status: 500,
       }));
 
-      const result = await service.getDepartures('FFM-HBF');
+      const result = await service.getDepartures('WIEN-HBF');
       expect(result.length).toBeGreaterThan(0);
       expect(result.every((d) => d.isRealtime === false)).toBe(true);
     });
@@ -114,7 +114,7 @@ describe('DepartureServiceImpl', () => {
     it('calls callback immediately with departures', async () => {
       const futureDeparture: BusDeparture = {
         departureTime: new Date(Date.now() + 60_000).toISOString(),
-        destination: 'Mannheim',
+        destination: 'Wiener Neustadt',
         busStop: 'Bussteig A3',
         isRealtime: true,
       };
@@ -125,7 +125,7 @@ describe('DepartureServiceImpl', () => {
       }));
 
       const callback = vi.fn();
-      const unsubscribe = service.subscribeToUpdates('FFM-HBF', callback);
+      const unsubscribe = service.subscribeToUpdates('WIEN-HBF', callback);
 
       // Wait for the initial async call to resolve
       await vi.advanceTimersByTimeAsync(0);
@@ -137,7 +137,7 @@ describe('DepartureServiceImpl', () => {
     it('polls every 30 seconds', async () => {
       const futureDeparture: BusDeparture = {
         departureTime: new Date(Date.now() + 3_600_000).toISOString(),
-        destination: 'Mannheim',
+        destination: 'Wiener Neustadt',
         busStop: 'Bussteig A3',
         isRealtime: true,
       };
@@ -148,7 +148,7 @@ describe('DepartureServiceImpl', () => {
       }));
 
       const callback = vi.fn();
-      service.subscribeToUpdates('FFM-HBF', callback);
+      service.subscribeToUpdates('WIEN-HBF', callback);
 
       // Initial call
       await vi.advanceTimersByTimeAsync(0);
@@ -166,7 +166,7 @@ describe('DepartureServiceImpl', () => {
     it('returns unsubscribe function that stops polling', async () => {
       const futureDeparture: BusDeparture = {
         departureTime: new Date(Date.now() + 3_600_000).toISOString(),
-        destination: 'Mannheim',
+        destination: 'Wiener Neustadt',
         busStop: 'Bussteig A3',
         isRealtime: true,
       };
@@ -177,7 +177,7 @@ describe('DepartureServiceImpl', () => {
       }));
 
       const callback = vi.fn();
-      const unsubscribe = service.subscribeToUpdates('FFM-HBF', callback);
+      const unsubscribe = service.subscribeToUpdates('WIEN-HBF', callback);
 
       // Initial call
       await vi.advanceTimersByTimeAsync(0);

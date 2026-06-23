@@ -5,7 +5,7 @@
  * 1. NavigationPreviewScreen correctly triggers accessible mode
  * 2. RouteDataService returns accessible milestones when mode='accessible'
  * 3. Accessible milestones have accessibilityFeature labels
- * 4. FFM-HBF.json accessible route has no stair/escalator-only instructions
+ * 4. WIEN-HBF.json accessible route has no stair/escalator-only instructions
  * 5. MilestoneCard renders accessibility feature badges for accessible milestones
  *
  * Requirements: 8.1, 8.2, 8.3, 8.4
@@ -17,8 +17,8 @@ import { appState } from '../state.js';
 import { RouteDataServiceImpl, routeDataService } from '../services/route-data-service.js';
 import { renderMilestoneCard } from './milestone-card.js';
 
-// Load the real FFM-HBF route data for integration testing
-import routeData from '../../data/routes/FFM-HBF.json';
+// Load the real WIEN-HBF route data for integration testing
+import routeData from '../../data/routes/WIEN-HBF.json';
 
 const stationRoute = routeData as unknown as StationRoute;
 
@@ -35,7 +35,7 @@ describe('Accessible Navigation - Integration', () => {
 
       // Populate the route data service cache so getMilestones works
       (routeDataService as unknown as { cache: Map<string, StationRoute> }).cache.set(
-        'FFM-HBF',
+        'WIEN-HBF',
         stationRoute
       );
     });
@@ -49,7 +49,7 @@ describe('Accessible Navigation - Integration', () => {
       // 1. Get milestones for accessible mode from routeDataService
       // 2. Set navigationMode, milestones, and currentMilestoneIndex in appState
       // 3. Navigate to #navigation
-      const milestones = routeDataService.getMilestones('FFM-HBF', '', 'accessible');
+      const milestones = routeDataService.getMilestones('WIEN-HBF', '', 'accessible');
 
       appState.setState({
         navigationMode: 'accessible',
@@ -62,7 +62,7 @@ describe('Accessible Navigation - Integration', () => {
     });
 
     it('accessible mode loads milestones from routes.accessible', () => {
-      const milestones = routeDataService.getMilestones('FFM-HBF', '', 'accessible');
+      const milestones = routeDataService.getMilestones('WIEN-HBF', '', 'accessible');
 
       appState.setState({
         navigationMode: 'accessible',
@@ -76,8 +76,8 @@ describe('Accessible Navigation - Integration', () => {
     });
 
     it('accessible mode loads different milestones than standard mode', () => {
-      const accessibleMilestones = routeDataService.getMilestones('FFM-HBF', '', 'accessible');
-      const standardMilestones = routeDataService.getMilestones('FFM-HBF', '', 'standard');
+      const accessibleMilestones = routeDataService.getMilestones('WIEN-HBF', '', 'accessible');
+      const standardMilestones = routeDataService.getMilestones('WIEN-HBF', '', 'standard');
 
       expect(accessibleMilestones).not.toEqual(standardMilestones);
     });
@@ -85,7 +85,7 @@ describe('Accessible Navigation - Integration', () => {
     it('currentMilestoneIndex is reset to 0 when accessible navigation starts', () => {
       appState.setState({ currentMilestoneIndex: 3 });
 
-      const milestones = routeDataService.getMilestones('FFM-HBF', '', 'accessible');
+      const milestones = routeDataService.getMilestones('WIEN-HBF', '', 'accessible');
       appState.setState({
         navigationMode: 'accessible',
         milestones,
@@ -97,7 +97,7 @@ describe('Accessible Navigation - Integration', () => {
     });
 
     it('navigation hash is set to #navigation when accessible navigation starts', () => {
-      const milestones = routeDataService.getMilestones('FFM-HBF', '', 'accessible');
+      const milestones = routeDataService.getMilestones('WIEN-HBF', '', 'accessible');
       appState.setState({
         navigationMode: 'accessible',
         milestones,
@@ -116,24 +116,24 @@ describe('Accessible Navigation - Integration', () => {
       service = new RouteDataServiceImpl();
       // Manually populate the cache with the station route data
       (service as unknown as { cache: Map<string, StationRoute> }).cache.set(
-        'FFM-HBF',
+        'WIEN-HBF',
         stationRoute
       );
     });
 
     it('returns accessible milestones when mode is "accessible"', () => {
-      const milestones = service.getMilestones('FFM-HBF', 'conn-1', 'accessible');
+      const milestones = service.getMilestones('WIEN-HBF', 'conn-1', 'accessible');
       expect(milestones).toEqual(stationRoute.routes.accessible);
     });
 
     it('returns standard milestones when mode is "standard"', () => {
-      const milestones = service.getMilestones('FFM-HBF', 'conn-1', 'standard');
+      const milestones = service.getMilestones('WIEN-HBF', 'conn-1', 'standard');
       expect(milestones).toEqual(stationRoute.routes.standard);
     });
 
     it('accessible milestones are different from standard milestones', () => {
-      const accessible = service.getMilestones('FFM-HBF', 'conn-1', 'accessible');
-      const standard = service.getMilestones('FFM-HBF', 'conn-1', 'standard');
+      const accessible = service.getMilestones('WIEN-HBF', 'conn-1', 'accessible');
+      const standard = service.getMilestones('WIEN-HBF', 'conn-1', 'standard');
       expect(accessible).not.toEqual(standard);
     });
   });
@@ -209,7 +209,7 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Aufzug nehmen zu Ebene 0',
         direction: 'down',
         distanceMeters: 15,
-        photoUrl: '/data/photos/FFM-HBF/acc-step-1.jpg',
+        photoUrl: '/data/photos/WIEN-HBF/acc-step-1.jpg',
         accessibilityFeature: 'elevator',
       };
 
@@ -224,7 +224,7 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Rampe zum Vorplatz nutzen',
         direction: 'south',
         distanceMeters: 100,
-        photoUrl: '/data/photos/FFM-HBF/acc-step-4.jpg',
+        photoUrl: '/data/photos/WIEN-HBF/acc-step-4.jpg',
         accessibilityFeature: 'ramp',
       };
 
@@ -239,7 +239,7 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Dem taktilen Leitsystem folgen',
         direction: 'west',
         distanceMeters: 65,
-        photoUrl: '/data/photos/FFM-HBF/acc-step-2.jpg',
+        photoUrl: '/data/photos/WIEN-HBF/acc-step-2.jpg',
         accessibilityFeature: 'tactile-paving',
       };
 
@@ -254,7 +254,7 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Ebenerdigen Übergang nutzen',
         direction: 'east',
         distanceMeters: 30,
-        photoUrl: '/data/photos/FFM-HBF/acc-step-3.jpg',
+        photoUrl: '/data/photos/WIEN-HBF/acc-step-3.jpg',
         accessibilityFeature: 'level-crossing',
       };
 
@@ -269,14 +269,14 @@ describe('Accessible Navigation - Integration', () => {
         instruction: 'Treppe runter',
         direction: 'down',
         distanceMeters: 25,
-        photoUrl: '/data/photos/FFM-HBF/step-1.jpg',
+        photoUrl: '/data/photos/WIEN-HBF/step-1.jpg',
       };
 
       const html = renderMilestoneCard(milestone);
       expect(html).not.toContain('<db-badge');
     });
 
-    it('renders all FFM-HBF accessible milestones with accessibility badges', () => {
+    it('renders all WIEN-HBF accessible milestones with accessibility badges', () => {
       for (const milestone of stationRoute.routes.accessible) {
         const html = renderMilestoneCard(milestone);
         expect(html).toContain('<db-badge');

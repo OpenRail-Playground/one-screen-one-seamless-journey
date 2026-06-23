@@ -12,7 +12,6 @@
  * All UI text is in German (Requirement 9.3).
  */
 
-import '@db-ux/wc-core-components';
 import type { Connection } from '../types/index.js';
 
 /**

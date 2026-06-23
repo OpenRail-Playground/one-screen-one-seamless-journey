@@ -12,7 +12,6 @@
  * All UI text is in German (Requirement 9.3).
  */
 
-import '@db-ux/wc-core-components';
 import type { Milestone } from '../types/index.js';
 import { appState } from '../state.js';
 import { routeDataService } from '../services/route-data-service.js';

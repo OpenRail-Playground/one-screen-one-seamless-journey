@@ -9,7 +9,7 @@
  *   <navigation-screen></navigation-screen>
  *   const el = document.querySelector('navigation-screen');
  *   el.milestones = [...];
- *   el.stationId = 'FFM-HBF';
+ *   el.stationId = 'WIEN-HBF';
  *   el.exitLocation = { lat: 50.107, lng: 8.663 };
  *   el.busStopLocation = { lat: 50.108, lng: 8.665 };
  *   el.routeGeoJSON = { type: 'LineString', coordinates: [...] };

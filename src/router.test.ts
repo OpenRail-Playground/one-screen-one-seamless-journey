@@ -8,8 +8,8 @@ import { parseUrlParams, parseHashScreen, HashRouter } from './router';
 
 describe('parseUrlParams', () => {
   it('returns station and platform for a valid search string', () => {
-    const result = parseUrlParams('?station=FFM-HBF&platform=7');
-    expect(result).toEqual({ station: 'FFM-HBF', platform: '7' });
+    const result = parseUrlParams('?station=WIEN-HBF&platform=7');
+    expect(result).toEqual({ station: 'WIEN-HBF', platform: '7' });
   });
 
   it('returns null when station is missing', () => {
@@ -18,7 +18,7 @@ describe('parseUrlParams', () => {
   });
 
   it('returns null when platform is missing', () => {
-    const result = parseUrlParams('?station=FFM-HBF');
+    const result = parseUrlParams('?station=WIEN-HBF');
     expect(result).toBeNull();
   });
 
@@ -33,7 +33,7 @@ describe('parseUrlParams', () => {
   });
 
   it('returns null when platform is empty string', () => {
-    const result = parseUrlParams('?station=FFM-HBF&platform=');
+    const result = parseUrlParams('?station=WIEN-HBF&platform=');
     expect(result).toBeNull();
   });
 
@@ -43,18 +43,18 @@ describe('parseUrlParams', () => {
   });
 
   it('trims whitespace from station and platform', () => {
-    const result = parseUrlParams('?station=%20FFM-HBF%20&platform=%207%20');
-    expect(result).toEqual({ station: 'FFM-HBF', platform: '7' });
+    const result = parseUrlParams('?station=%20WIEN-HBF%20&platform=%207%20');
+    expect(result).toEqual({ station: 'WIEN-HBF', platform: '7' });
   });
 
   it('handles URL-encoded characters in station', () => {
-    const result = parseUrlParams('?station=FFM%2DHBF&platform=7');
-    expect(result).toEqual({ station: 'FFM-HBF', platform: '7' });
+    const result = parseUrlParams('?station=WIEN%2DHBF&platform=7');
+    expect(result).toEqual({ station: 'WIEN-HBF', platform: '7' });
   });
 
   it('handles additional query parameters without breaking', () => {
-    const result = parseUrlParams('?station=FFM-HBF&platform=7&extra=value');
-    expect(result).toEqual({ station: 'FFM-HBF', platform: '7' });
+    const result = parseUrlParams('?station=WIEN-HBF&platform=7&extra=value');
+    expect(result).toEqual({ station: 'WIEN-HBF', platform: '7' });
   });
 });
 
@@ -105,7 +105,7 @@ describe('HashRouter', () => {
       value: {
         ...originalLocation,
         hash: '',
-        search: '?station=FFM-HBF&platform=7',
+        search: '?station=WIEN-HBF&platform=7',
       },
     });
   });
@@ -120,7 +120,7 @@ describe('HashRouter', () => {
   it('parses URL params on construction', () => {
     const router = new HashRouter();
     const params = router.getParams();
-    expect(params.station).toBe('FFM-HBF');
+    expect(params.station).toBe('WIEN-HBF');
     expect(params.platform).toBe('7');
     router.destroy();
   });
@@ -149,7 +149,7 @@ describe('HashRouter', () => {
     const router = new HashRouter();
     router.navigate('preview', { connectionId: 'conn-1' });
     const params = router.getParams();
-    expect(params.station).toBe('FFM-HBF');
+    expect(params.station).toBe('WIEN-HBF');
     expect(params.platform).toBe('7');
     expect(params.connectionId).toBe('conn-1');
     router.destroy();
@@ -160,7 +160,7 @@ describe('HashRouter', () => {
     const params1 = router.getParams();
     params1.station = 'modified';
     const params2 = router.getParams();
-    expect(params2.station).toBe('FFM-HBF');
+    expect(params2.station).toBe('WIEN-HBF');
     router.destroy();
   });
 

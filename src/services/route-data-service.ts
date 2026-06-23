@@ -15,7 +15,7 @@ export class RouteDataServiceImpl implements RouteDataService {
    * Fetch the station route data for a given station and platform.
    * Caches the result in memory after the first successful fetch.
    *
-   * @param stationId - Station identifier (e.g., "FFM-HBF")
+   * @param stationId - Station identifier (e.g., "WIEN-HBF")
    * @param platformId - Platform identifier for validation
    * @returns The station route data
    * @throws Error if the fetch fails or station data is not found

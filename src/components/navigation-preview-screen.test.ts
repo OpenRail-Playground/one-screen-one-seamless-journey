@@ -15,21 +15,21 @@ const sampleMilestones: Milestone[] = [
     instruction: 'Treppe am Ende des Bahnsteigs runter zur Unterführung',
     direction: 'down',
     distanceMeters: 25,
-    photoUrl: '/data/photos/FFM-HBF/step-1.jpg',
+    photoUrl: '/data/photos/WIEN-HBF/step-1.jpg',
   },
   {
     id: 2,
     instruction: 'In der Unterführung links abbiegen, Richtung Ausgang Süd',
     direction: 'west',
     distanceMeters: 60,
-    photoUrl: '/data/photos/FFM-HBF/step-2.jpg',
+    photoUrl: '/data/photos/WIEN-HBF/step-2.jpg',
   },
   {
     id: 3,
     instruction: 'Geradeaus durch die Eingangshalle zum Südausgang',
     direction: 'south',
     distanceMeters: 45,
-    photoUrl: '/data/photos/FFM-HBF/step-3.jpg',
+    photoUrl: '/data/photos/WIEN-HBF/step-3.jpg',
   },
 ];
 
@@ -102,15 +102,15 @@ describe('NavigationPreviewScreen element', () => {
   });
 
   it('includes bus-departure-info component', () => {
-    element.stationId = 'FFM-HBF';
+    element.stationId = 'WIEN-HBF';
     element.milestones = sampleMilestones;
     expect(element.innerHTML).toContain('<bus-departure-info');
-    expect(element.innerHTML).toContain('stationid="FFM-HBF"');
+    expect(element.innerHTML).toContain('stationid="WIEN-HBF"');
   });
 
   it('navigates to #navigation when "Navigation starten" is clicked', () => {
     element.milestones = sampleMilestones;
-    element.stationId = 'FFM-HBF';
+    element.stationId = 'WIEN-HBF';
     const button = element.querySelector('[data-action="start-standard"]') as HTMLElement;
     button.click();
     expect(window.location.hash).toBe('#navigation');
@@ -118,7 +118,7 @@ describe('NavigationPreviewScreen element', () => {
 
   it('navigates to #navigation when "Barrierefreie Navigation starten" is clicked', () => {
     element.milestones = sampleMilestones;
-    element.stationId = 'FFM-HBF';
+    element.stationId = 'WIEN-HBF';
     const button = element.querySelector('[data-action="start-accessible"]') as HTMLElement;
     button.click();
     expect(window.location.hash).toBe('#navigation');
@@ -127,7 +127,7 @@ describe('NavigationPreviewScreen element', () => {
   it('sets navigationMode to standard when "Navigation starten" is clicked', async () => {
     const { appState } = await import('../state.js');
     element.milestones = sampleMilestones;
-    element.stationId = 'FFM-HBF';
+    element.stationId = 'WIEN-HBF';
     const button = element.querySelector('[data-action="start-standard"]') as HTMLElement;
     button.click();
     expect(appState.getState().navigationMode).toBe('standard');
@@ -136,7 +136,7 @@ describe('NavigationPreviewScreen element', () => {
   it('sets navigationMode to accessible when "Barrierefreie Navigation starten" is clicked', async () => {
     const { appState } = await import('../state.js');
     element.milestones = sampleMilestones;
-    element.stationId = 'FFM-HBF';
+    element.stationId = 'WIEN-HBF';
     const button = element.querySelector('[data-action="start-accessible"]') as HTMLElement;
     button.click();
     expect(appState.getState().navigationMode).toBe('accessible');
