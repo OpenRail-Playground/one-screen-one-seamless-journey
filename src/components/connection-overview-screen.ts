@@ -151,16 +151,78 @@ export class ConnectionOverviewScreen extends HTMLElement {
     this.innerHTML = `
       <db-stack direction="column" gap="medium">
         <db-button variant="ghost" icon="arrow_left" type="button" data-action="back">Zurück</db-button>
-        <h2>Schienenersatzverkehr</h2>
-        <ri-board></ri-board>
+        <h2>Wähle deine geplante Verbindung</h2>
+        <ri-board id="connection-board"></ri-board>
       </db-stack>
     `;
 
-    // Set the board data programmatically (complex object)
-    const boardEl = this.querySelector('ri-board') as HTMLElement & { board: object };
+    // Set the board data with the fixed SEV bus timetable
+    const boardEl = this.querySelector('#connection-board') as HTMLElement & { board: object; showHeader?: boolean };
     if (boardEl) {
-      boardEl.board = connectionsToBoardData(this._connections);
-      boardEl.setAttribute('show-header', 'true');
+      const baseDate = '2025-06-15T';
+      const tz = '+02:00';
+      boardEl.board = {
+        departures: [
+          {
+            timeSchedule: `${baseDate}14:58:00${tz}`,
+            time: `${baseDate}14:58:00${tz}`,
+            timeType: 'SCHEDULE',
+            transport: {
+              journeyID: 'sev-1',
+              line: '1',
+              number: 'REX 1',
+              category: 'RE',
+              name: 'REX 1',
+              destination: { name: 'Wiener Neustadt Hbf' },
+              via: [],
+            },
+            platform: '3',
+            platformSchedule: '3',
+            cancelled: false,
+            messages: [],
+            travelsWith: [],
+          },
+          {
+            timeSchedule: `${baseDate}15:58:00${tz}`,
+            time: `${baseDate}15:58:00${tz}`,
+            timeType: 'SCHEDULE',
+            transport: {
+              journeyID: 'sev-2',
+              line: '1',
+              number: 'REX 1',
+              category: 'RE',
+              name: 'REX 1',
+              destination: { name: 'Wiener Neustadt Hbf' },
+              via: [],
+            },
+            platform: '3',
+            platformSchedule: '3',
+            cancelled: false,
+            messages: [],
+            travelsWith: [],
+          },
+          {
+            timeSchedule: `${baseDate}16:58:00${tz}`,
+            time: `${baseDate}16:58:00${tz}`,
+            timeType: 'SCHEDULE',
+            transport: {
+              journeyID: 'sev-3',
+              line: '1',
+              number: 'REX 1',
+              category: 'RE',
+              name: 'REX 1',
+              destination: { name: 'Wiener Neustadt Hbf' },
+              via: [],
+            },
+            platform: '3',
+            platformSchedule: '3',
+            cancelled: false,
+            messages: [],
+            travelsWith: [],
+          },
+        ],
+      };
+      boardEl.showHeader = true;
     }
 
     this.attachEventListeners();
