@@ -337,13 +337,33 @@ export class NavigationScreen extends HTMLElement {
           body.innerHTML = view === 'text' ? this._renderTextView() : this._renderMapView();
           if (view === 'text') {
             this._setMilestoneCardData();
-            // Re-attach swipe listener
+            // Re-attach swipe and button listeners for the new DOM
             const swipeContainer = this.querySelector('swipe-container');
             if (swipeContainer) {
               swipeContainer.addEventListener('swipe', ((e: CustomEvent<{ index: number }>) => {
                 this._currentMilestoneIndex = e.detail.index;
                 this._updateMilestoneView();
               }) as EventListener);
+            }
+            const prevBtn = this.querySelector('[data-action="prev-step"]');
+            if (prevBtn) {
+              prevBtn.addEventListener('click', () => {
+                if (this._currentMilestoneIndex > 0) {
+                  this._currentMilestoneIndex--;
+                  appState.setState({ currentMilestoneIndex: this._currentMilestoneIndex });
+                  this._updateMilestoneView();
+                }
+              });
+            }
+            const nextBtn = this.querySelector('[data-action="next-step"]');
+            if (nextBtn) {
+              nextBtn.addEventListener('click', () => {
+                if (this._currentMilestoneIndex < this._milestones.length - 1) {
+                  this._currentMilestoneIndex++;
+                  appState.setState({ currentMilestoneIndex: this._currentMilestoneIndex });
+                  this._updateMilestoneView();
+                }
+              });
             }
           } else {
             this._setMapViewProperties();
