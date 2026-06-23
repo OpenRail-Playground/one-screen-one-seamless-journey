@@ -50,37 +50,37 @@
     "standard": [
       {
         "id": 1,
-        "instruction": "Treppe am Ende des Bahnsteigs runter zur Unterführung",
-        "direction": "down",
+        "instruction": "Gehen Sie geradeaus Richtung Südtiroler Platz.",
+        "direction": "south",
         "distanceMeters": 25,
         "photoUrl": "/data/photos/1.jpg"
       },
       {
         "id": 2,
-        "instruction": "In der Unterführung links abbiegen, Richtung Ausgang Süd",
-        "direction": "west",
+        "instruction": "Verlassen Sie den Bahnhof durch den Ausgang Süd.",
+        "direction": "south",
         "distanceMeters": 60,
         "photoUrl": "/data/photos/2.jpg"
       },
       {
         "id": 3,
-        "instruction": "Dem Schild 'Ausgang Süd' folgen, Treppe hoch zum Erdgeschoss",
-        "direction": "up",
-        "distanceMeters": 20,
+        "instruction": "Biegen Sie nach dem Ausgang links ab und folgen Sie der Beschilderung zu Bussteig B2.",
+        "direction": "east",
+        "distanceMeters": 40,
         "photoUrl": "/data/photos/3.jpg"
       },
       {
         "id": 4,
-        "instruction": "Geradeaus durch die Eingangshalle zum Südausgang",
-        "direction": "south",
-        "distanceMeters": 45,
+        "instruction": "Gehen Sie weiter geradeaus bis zum Bussteig B2.",
+        "direction": "east",
+        "distanceMeters": 50,
         "photoUrl": "/data/photos/4.jpg"
       },
       {
         "id": 5,
-        "instruction": "Rechts abbiegen, den Gehweg entlang bis zum Bussteig A",
+        "instruction": "Steigen Sie in den Ersatzbus E1 Richtung Wiener Neustadt Hbf ein.",
         "direction": "east",
-        "distanceMeters": 90,
+        "distanceMeters": 10,
         "photoUrl": "/data/photos/5.jpg"
       }
     ],
