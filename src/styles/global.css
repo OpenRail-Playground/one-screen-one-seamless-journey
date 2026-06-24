@@ -9,6 +9,30 @@
 /* Custom ÖBB palette — imported last so its overrides win the cascade */
 @import "variables.css";
 
+/* Fonts */
+@font-face {
+    font-display: swap;
+    font-family: FrutigerNext;
+    font-style: normal;
+    font-weight: 300;
+    src: local("Frutiger Next Pro"), url(https://www.nightjet.com/.resources/pv-2017/themes/css/fonts/FrutigerNextLTW06-Light.woff2) format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: FrutigerNext;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Frutiger Next Pro"), url(https://www.nightjet.com/.resources/pv-2017/themes/css/fonts/FrutigerNextLTW06-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: FrutigerNext;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Frutiger Next Pro"), url(https://www.nightjet.com/.resources/pv-2017/themes/css/fonts/FrutigerNextLTW06-Bold.woff2) format("woff2");
+}
 
 /* === Base Reset & Typography === */
 
