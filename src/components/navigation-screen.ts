@@ -134,7 +134,8 @@ export class NavigationScreen extends HTMLElement {
               <db-tab-item ${!isTextView ? 'active' : ''} data-view="map">Karte</db-tab-item>
             </db-tab-list>
           </db-tabs>
-          <db-button variant="ghost" icon="close" no-text type="button" data-action="close">
+          <db-button variant="ghost" icon="cross" notext type="button" data-action="close" no-text>
+            Schließen
             <db-tooltip>Schließen</db-tooltip>
           </db-button>
         </div>
