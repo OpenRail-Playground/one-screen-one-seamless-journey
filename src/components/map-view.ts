@@ -147,6 +147,8 @@ export class MapViewComponent extends HTMLElement {
           width: 100%;
           height: 60vh;
           min-height: 300px;
+          border-radius: var(--db-border-radius-lg);
+          overflow: hidden;
         }
         .map-view__walking-info {
           padding: var(--db-spacing-fixed-sm);
