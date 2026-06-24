@@ -7,7 +7,7 @@
 @import '@db-ux-inner-source/ri-extension-components/dist/headless/index.css';
 
 /* Custom ÖBB palette — imported last so its overrides win the cascade */
-@import "src/styles/variables.css";
+@import "variables.css";
 
 
 /* === Base Reset & Typography === */
