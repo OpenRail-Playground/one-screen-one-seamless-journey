@@ -265,11 +265,13 @@ export class NavigationScreen extends HTMLElement {
               <p class="navigation-screen__instruction-text" id="milestone-text"></p>
             </div>
             <div class="navigation-screen__nav-controls">
-              <db-button variant="ghost" icon="arrow_left" no-text type="button" data-action="prev-step">
+              <db-button variant="filled" icon="arrow_left" notext type="button" data-action="prev-step">
+                Vorheriger Schritt
                 <db-tooltip>Vorheriger Schritt</db-tooltip>
               </db-button>
               <dot-indicator total="${this._milestones.length}" activeindex="${this._currentMilestoneIndex}"></dot-indicator>
-              <db-button variant="ghost" icon="arrow_right" no-text type="button" data-action="next-step">
+              <db-button variant="filled" icon="arrow_right" notext type="button" data-action="next-step">
+                Nächster Schritt
                 <db-tooltip>Nächster Schritt</db-tooltip>
               </db-button>
             </div>
