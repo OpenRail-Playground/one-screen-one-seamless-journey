@@ -79,7 +79,7 @@ h1,
 h2,
 h3 {
   color: var(--app-on-bg);
-  font-family: var(--db-font-family-head, 'DB Neo Screen Head', Helvetica, Arial, sans-serif);
+  font-family: var(--db-font-family-head, FrutigerNext,Arial,Helvetica,sans-serif;);
 }
 
 /* === Swipe Container === */
