@@ -418,7 +418,7 @@ export class NavigationScreen extends HTMLElement {
 
     const img = this.querySelector('#milestone-image') as HTMLImageElement | null;
     if (img) {
-      img.src = milestone.photoUrl;
+      img.src = `${import.meta.env.BASE_URL}${milestone.photoUrl.replace(/^\//, '')}`;
       img.alt = milestone.instruction;
     }
 

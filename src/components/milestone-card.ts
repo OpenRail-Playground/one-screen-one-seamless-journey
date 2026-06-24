@@ -73,7 +73,9 @@ function getDirectionArrowSvg(direction: Direction): string {
 export function renderMilestoneCard(milestone: Milestone): string {
   const arrowSvg = getDirectionArrowSvg(milestone.direction);
   const distanceText = `${milestone.distanceMeters} m`;
-  const photoUrl = milestone.photoUrl || PLACEHOLDER_IMAGE;
+  const photoUrl = milestone.photoUrl
+    ? `${import.meta.env.BASE_URL}${milestone.photoUrl.replace(/^\//, '')}`
+    : PLACEHOLDER_IMAGE;
 
   let accessibilityBadge = '';
   if (milestone.accessibilityFeature) {
