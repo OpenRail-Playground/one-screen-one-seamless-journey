@@ -128,7 +128,7 @@ export class NavigationScreen extends HTMLElement {
     this.innerHTML = `
       <div class="navigation-screen">
         <div class="navigation-screen__top-bar">
-          <db-tabs>
+          <db-tabs width="full" alignment="center">
             <db-tab-list>
               <db-tab-item ${isTextView ? 'active' : ''} data-view="text">Wegbeschreibung</db-tab-item>
               <db-tab-item ${!isTextView ? 'active' : ''} data-view="map">Karte</db-tab-item>
@@ -162,6 +162,14 @@ export class NavigationScreen extends HTMLElement {
           padding: var(--db-spacing-fixed-xs) var(--db-spacing-fixed-sm);
           flex-shrink: 0;
         }
+        .navigation-screen__top-bar db-tabs {
+          flex: 1;
+          min-width: 0;
+        }
+        .navigation-screen__top-bar db-button {
+          flex-shrink: 0;
+          width: auto;
+        }
         .navigation-screen__body {
           flex: 1;
           position: relative;
@@ -179,6 +187,8 @@ export class NavigationScreen extends HTMLElement {
           position: absolute;
           inset: 0;
           z-index: 0;
+          border-radius: var(--db-border-radius-lg);
+          overflow: hidden;
         }
         .navigation-screen__image-fill img {
           width: 100%;
