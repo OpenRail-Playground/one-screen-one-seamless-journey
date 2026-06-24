@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
 import path from 'path';
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/one-screen-one-seamless-journey/' : '/',
   root: '.',
-  base: '/one-screen-one-seamless-journey/',
   build: {
     outDir: 'dist',
     target: 'es2020',
@@ -16,4 +16,4 @@ export default defineConfig({
       "@db-ux-inner-source": path.resolve("./node_modules/@db-ux-inner-source"),
     },
   },
-});
+}));
