@@ -31,7 +31,8 @@ export type Screen =
   | 'confirmation'
   | 'connections'
   | 'preview'
-  | 'navigation';
+  | 'navigation'
+  | 'arrival';
 
 /** A single waypoint step in the navigation route */
 export interface Milestone {

@@ -336,8 +336,8 @@ export class MapViewComponent extends HTMLElement {
         : `${Math.round(totalMeters)} m`;
 
     infoEl.innerHTML = `
-      <span class="map-view__duration">ca. ${roundedMinutes} Min.</span>
-      <span class="map-view__distance"> · ${distanceDisplay}</span>
+      <span class="map-view__duration">ca. ${roundedMinutes} min</span>
+      <span class="map-view__distance"> / ${distanceDisplay}</span>
     `;
   }
 

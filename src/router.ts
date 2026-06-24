@@ -16,6 +16,7 @@ const VALID_SCREENS: ReadonlySet<Screen> = new Set([
   'connections',
   'preview',
   'navigation',
+  'arrival',
 ]);
 
 /** Default screen when no hash is present or hash is invalid */
