@@ -134,8 +134,7 @@ export class NavigationScreen extends HTMLElement {
               <db-tab-item ${!isTextView ? 'active' : ''} data-view="map">Karte</db-tab-item>
             </db-tab-list>
           </db-tabs>
-          <db-button variant="ghost" icon="cross" notext type="button" data-action="close" no-text>
-            Schließen
+          <db-button variant="ghost" icon="cross" no-text type="button" data-action="close">
             <db-tooltip>Schließen</db-tooltip>
           </db-button>
         </div>
@@ -265,11 +264,11 @@ export class NavigationScreen extends HTMLElement {
               <p class="navigation-screen__instruction-text" id="milestone-text"></p>
             </div>
             <div class="navigation-screen__nav-controls">
-              <db-button variant="ghost" icon="arrow_left" no-text type="button" data-action="prev-step">
+              <db-button variant="filled" icon="arrow_left" no-text type="button" data-action="prev-step">
                 <db-tooltip>Vorheriger Schritt</db-tooltip>
               </db-button>
               <dot-indicator total="${this._milestones.length}" activeindex="${this._currentMilestoneIndex}"></dot-indicator>
-              <db-button variant="ghost" icon="arrow_right" no-text type="button" data-action="next-step">
+              <db-button variant="filled" icon="arrow_right" no-text type="button" data-action="next-step">
                 <db-tooltip>Nächster Schritt</db-tooltip>
               </db-button>
             </div>
