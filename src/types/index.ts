@@ -87,5 +87,5 @@ export interface NavigationState {
   milestones: Milestone[];
   busDepartures: BusDeparture[];
   geolocationPermission: 'granted' | 'denied' | 'prompt';
-  activeView: 'text' | 'map';
+  activeView: 'text' | 'map' | 'ar';
 }

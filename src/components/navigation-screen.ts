@@ -30,6 +30,7 @@ import { appState } from '../state';
 import './swipe-container';
 import './dot-indicator';
 import './map-view';
+import './ar-view';
 
 export class NavigationScreen extends HTMLElement {
   private _milestones: Milestone[] = [];
@@ -122,16 +123,17 @@ export class NavigationScreen extends HTMLElement {
 
   private _render(): void {
     const activeView = appState.getState().activeView;
-    const isTextView = activeView === 'text';
     const isAccessible = appState.getState().navigationMode === 'accessible';
+    const tabIndex = activeView === 'text' ? 0 : activeView === 'map' ? 1 : 2;
 
     this.innerHTML = `
       <div class="navigation-screen">
         <div class="navigation-screen__top-bar">
-          <db-tabs width="full" alignment="center">
+          <db-tabs width="full" alignment="center" initial-selected-index="${tabIndex}">
             <db-tab-list>
-              <db-tab-item ${isTextView ? 'active' : ''} data-view="text">Wegbeschreibung</db-tab-item>
-              <db-tab-item ${!isTextView ? 'active' : ''} data-view="map">Karte</db-tab-item>
+              <db-tab-item>Wegbeschreibung</db-tab-item>
+              <db-tab-item>Karte</db-tab-item>
+              <db-tab-item>Visuell</db-tab-item>
             </db-tab-list>
           </db-tabs>
           <db-button variant="ghost" icon="cross" no-text type="button" data-action="close">
@@ -139,7 +141,7 @@ export class NavigationScreen extends HTMLElement {
           </db-button>
         </div>
         <div class="navigation-screen__body">
-          ${isTextView ? this._renderTextView() : this._renderMapView()}
+          ${activeView === 'text' ? this._renderTextView() : activeView === 'map' ? this._renderMapView() : this._renderArView()}
         </div>
         <div class="navigation-screen__footer">
           <db-switch data-action="toggle-accessible" ${isAccessible ? 'checked' : ''}>Barrierefreie Alternative</db-switch>
@@ -282,6 +284,10 @@ export class NavigationScreen extends HTMLElement {
     return `<map-view></map-view>`;
   }
 
+  private _renderArView(): string {
+    return `<ar-view></ar-view>`;
+  }
+
   private _attachEventListeners(): void {
     // Close button (top-right cross)
     const closeBtn = this.querySelector('[data-action="close"]');
@@ -337,24 +343,26 @@ export class NavigationScreen extends HTMLElement {
       }) as EventListener);
     }
 
-    // Listen for tab changes
-    const tabItems = this.querySelectorAll('db-tab-item');
-    tabItems.forEach((tabItem, index) => {
-      tabItem.addEventListener('click', () => {
-        const view = index === 0 ? 'text' : 'map';
+    // Listen for tab changes via the db-tabs indexChange event
+    const viewsByIndex: Array<'text' | 'map' | 'ar'> = ['text', 'map', 'ar'];
+    const dbTabs = this.querySelector('db-tabs');
+    if (dbTabs) {
+      dbTabs.addEventListener('indexChange', ((e: CustomEvent<number>) => {
+        const view = viewsByIndex[e.detail];
+        if (!view) return;
         const currentView = appState.getState().activeView;
         if (view === currentView) return;
-        appState.setState({ activeView: view as 'text' | 'map' });
+        appState.setState({ activeView: view });
         const body = this.querySelector('.navigation-screen__body');
         if (body) {
-          body.innerHTML = view === 'text' ? this._renderTextView() : this._renderMapView();
           if (view === 'text') {
+            body.innerHTML = this._renderTextView();
             this._setMilestoneCardData();
             // Re-attach swipe and button listeners for the new DOM
             const swipeContainer = this.querySelector('swipe-container');
             if (swipeContainer) {
-              swipeContainer.addEventListener('swipe', ((e: CustomEvent<{ index: number }>) => {
-                this._currentMilestoneIndex = e.detail.index;
+              swipeContainer.addEventListener('swipe', ((ev: CustomEvent<{ index: number }>) => {
+                this._currentMilestoneIndex = ev.detail.index;
                 this._updateMilestoneView();
               }) as EventListener);
             }
@@ -380,12 +388,16 @@ export class NavigationScreen extends HTMLElement {
                 }
               });
             }
-          } else {
+          } else if (view === 'map') {
+            body.innerHTML = this._renderMapView();
             this._setMapViewProperties();
+          } else {
+            body.innerHTML = this._renderArView();
+            this._setArViewProperties();
           }
         }
-      });
-    });
+      }) as EventListener);
+    }
   }
 
   /**
@@ -421,6 +433,19 @@ export class NavigationScreen extends HTMLElement {
       mapView.busStopLocation = this._busStopLocation;
       mapView.routeGeoJSON = this._routeGeoJSON;
       mapView.milestones = this._milestones;
+    }
+  }
+
+  /**
+   * Sets the ar-view component properties after render.
+   */
+  private _setArViewProperties(): void {
+    const arView = this.querySelector('ar-view') as HTMLElement & {
+      milestones: Milestone[];
+    } | null;
+
+    if (arView) {
+      arView.milestones = this._milestones;
     }
   }
 
