@@ -1,0 +1,121 @@
+.ri-stop-line-icon {
+	block-size: var(--db-base-body-icon-font-size-md);
+	aspect-ratio: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	> svg {
+		z-index: 1;
+	}
+
+	> i:is([data-icon='cross_circle']) {
+		--db-icon-font-weight: 20;
+		--db-icon-font-size: var(--db-base-body-icon-font-size-sm);
+
+		position: relative;
+		block-size: var(--db-icon-font-size);
+		aspect-ratio: 1;
+
+		&::before {
+			position: absolute;
+			inset: 0;
+			z-index: 1;
+		}
+
+		&::after {
+			content: '';
+			background-color: var(--db-adaptive-bg-basic-level-1-default);
+			block-size: calc(
+				var(--db-base-body-icon-font-size-sm) / 2 +
+					var(--db-border-width-3xs) * 2 + 2px
+			);
+			aspect-ratio: 1;
+			border-radius: var(--db-border-radius-full);
+			transform: translate(-50%, -50%);
+			inset-block: 50%;
+			inset-inline: 50%;
+			position: absolute;
+		}
+	}
+}
+
+.ri-vehicle-route-line-container {
+	inline-size: var(--db-icon-font-size);
+	inset-block-start: calc(
+		var(--ri-vehicle-route-line-offset) + var(--db-spacing-fixed-sm) +
+			var(--db-icon-font-size)
+	);
+
+	/* We use the top of first an last stop icon to calculate this */
+	block-size: calc(
+		var(--ri-vehicle-route-line-block-size, 0) - (var(--db-icon-font-size))
+	);
+	@media screen and (prefers-reduced-motion: no-preference) {
+		transition: block-size var(--db-transition-duration-extra-fast)
+			var(--db-transition-timing-emotional);
+	}
+
+	inset-inline-start: calc(
+		5ch + var(--db-spacing-fixed-sm) + var(--db-spacing-fixed-sm)
+	);
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.ri-vehicle-route-line {
+		--ri-vehicle-route-line-color: var(
+			--db-adaptive-on-bg-basic-emphasis-70-default
+		);
+		inline-size: var(--db-border-width-xs);
+
+		&[data-variant='dot'] {
+			--dot-size: 2px;
+			background-size: 100px calc(var(--dot-size) * 4);
+			background-position: 0
+				mod(var(--ri-vehicle-route-line-block-size), var(--dot-size));
+			background-image: radial-gradient(
+				circle at var(--dot-size) var(--dot-size),
+				var(--ri-vehicle-route-line-color) var(--dot-size),
+				transparent 0
+			);
+			background-repeat: round;
+		}
+
+		&:not([data-variant='dot']) {
+			background-color: var(--ri-vehicle-route-line-color);
+		}
+
+		&:not([data-active='true']) {
+			block-size: calc(100% - var(--ri-vehicle-progress, 0%));
+
+			&:not([data-variant='dot']) {
+				border-bottom-left-radius: var(--db-border-radius-sm);
+				border-bottom-right-radius: var(--db-border-radius-sm);
+
+				&[data-full-rounded='true'] {
+					border-top-left-radius: var(--db-border-radius-sm);
+					border-top-right-radius: var(--db-border-radius-sm);
+				}
+			}
+		}
+
+		&[data-active='true'] {
+			--ri-vehicle-route-line-color: var(
+				--db-adaptive-on-bg-basic-emphasis-100-default
+			);
+			block-size: var(--ri-vehicle-progress, 0%);
+
+			&:not([data-variant='dot']) {
+				border-top-left-radius: var(--db-border-radius-sm);
+				border-top-right-radius: var(--db-border-radius-sm);
+
+				&[data-full-rounded='true'] {
+					border-bottom-left-radius: var(--db-border-radius-sm);
+					border-bottom-right-radius: var(--db-border-radius-sm);
+				}
+			}
+		}
+	}
+}

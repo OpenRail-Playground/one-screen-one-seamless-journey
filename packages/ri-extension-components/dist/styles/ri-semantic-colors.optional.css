@@ -1,0 +1,4838 @@
+:is(:root, :host) {
+	--db-transportation-airplane-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-airplane-9),
+		var(--db-transportation-airplane-5)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-airplane-10),
+		var(--db-transportation-airplane-6)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-airplane-4),
+		var(--db-transportation-airplane-10)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-airplane-6),
+		var(--db-transportation-airplane-9)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-airplane-6),
+		var(--db-transportation-airplane-9)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-airplane-3),
+		var(--db-transportation-airplane-12)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-airplane-5),
+		var(--db-transportation-airplane-10)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-airplane-4),
+		var(--db-transportation-airplane-10)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-airplane-0),
+		var(--db-transportation-airplane-14)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-airplane-3),
+		var(--db-transportation-airplane-11)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-airplane-1),
+		var(--db-transportation-airplane-12)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-airplane-5),
+		var(--db-transportation-airplane-9)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-airplane-2),
+		var(--db-transportation-airplane-11)
+	);
+	--db-transportation-airplane-on-bg-inverted-default: light-dark(
+		var(--db-transportation-airplane-14),
+		var(--db-transportation-airplane-3)
+	);
+	--db-transportation-airplane-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-airplane-11),
+		var(--db-transportation-airplane-0)
+	);
+	--db-transportation-airplane-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-airplane-13),
+		var(--db-transportation-airplane-2)
+	);
+	--db-transportation-airplane-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-airplane-1),
+		var(--db-transportation-airplane-1)
+	);
+	--db-transportation-airplane-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-airplane-4),
+		var(--db-transportation-airplane-4)
+	);
+	--db-transportation-airplane-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-airplane-2),
+		var(--db-transportation-airplane-2)
+	);
+	--db-transportation-airplane-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-airplane-14),
+		var(--db-transportation-airplane-1)
+	);
+	--db-transportation-airplane-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-airplane-13),
+		var(--db-transportation-airplane-3)
+	);
+	--db-transportation-airplane-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-airplane-12),
+		var(--db-transportation-airplane-4)
+	);
+	--db-transportation-airplane-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-airplane-13),
+		var(--db-transportation-airplane-2)
+	);
+	--db-transportation-airplane-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-airplane-12),
+		var(--db-transportation-airplane-4)
+	);
+	--db-transportation-airplane-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-airplane-11),
+		var(--db-transportation-airplane-5)
+	);
+	--db-transportation-airplane-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-airplane-12),
+		var(--db-transportation-airplane-3)
+	);
+	--db-transportation-airplane-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-airplane-11),
+		var(--db-transportation-airplane-1)
+	);
+	--db-transportation-airplane-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-airplane-10),
+		var(--db-transportation-airplane-0)
+	);
+	--db-transportation-airplane-bg-basic-transparent-full-default: light-dark(
+		color-mix(
+			in srgb,
+			transparent 100%,
+			var(--db-transportation-airplane-6)
+		),
+		color-mix(
+			in srgb,
+			transparent 100%,
+			var(--db-transportation-airplane-9)
+		)
+	);
+	--db-transportation-airplane-bg-basic-transparent-semi-default: light-dark(
+		color-mix(
+			in srgb,
+			transparent 92%,
+			var(--db-transportation-airplane-6)
+		),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-airplane-9))
+	);
+	--db-transportation-airplane-bg-basic-transparent-hovered: light-dark(
+		color-mix(
+			in srgb,
+			transparent 76%,
+			var(--db-transportation-airplane-6)
+		),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-airplane-9))
+	);
+	--db-transportation-airplane-bg-basic-transparent-pressed: light-dark(
+		color-mix(
+			in srgb,
+			transparent 68%,
+			var(--db-transportation-airplane-6)
+		),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-airplane-9))
+	);
+	--db-transportation-airplane-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-airplane-1),
+		var(--db-transportation-airplane-12)
+	);
+	--db-transportation-airplane-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-airplane-5),
+		var(--db-transportation-airplane-9)
+	);
+	--db-transportation-airplane-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-airplane-2),
+		var(--db-transportation-airplane-11)
+	);
+	--db-transportation-airplane-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-airplane-6),
+		var(--db-transportation-airplane-9)
+	);
+	--db-transportation-airplane-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-airplane-2),
+		var(--db-transportation-airplane-12)
+	);
+	--db-transportation-airplane-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-airplane-5),
+		var(--db-transportation-airplane-10)
+	);
+	--db-transportation-airplane-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-airplane-7),
+		var(--db-transportation-airplane-8)
+	);
+	--db-transportation-airplane-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-airplane-3),
+		var(--db-transportation-airplane-12)
+	);
+	--db-transportation-airplane-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-airplane-6),
+		var(--db-transportation-airplane-9)
+	);
+	--db-transportation-airplane-bg-vibrant-default: light-dark(
+		var(--db-transportation-airplane-9),
+		var(--db-transportation-airplane-9)
+	);
+	--db-transportation-airplane-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-airplane-12),
+		var(--db-transportation-airplane-12)
+	);
+	--db-transportation-airplane-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-airplane-10),
+		var(--db-transportation-airplane-10)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-bikesharing-9),
+		var(--db-transportation-bikesharing-5)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-bikesharing-10),
+		var(--db-transportation-bikesharing-6)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-bikesharing-4),
+		var(--db-transportation-bikesharing-10)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-bikesharing-6),
+		var(--db-transportation-bikesharing-9)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-bikesharing-6),
+		var(--db-transportation-bikesharing-9)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-bikesharing-3),
+		var(--db-transportation-bikesharing-12)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-bikesharing-5),
+		var(--db-transportation-bikesharing-10)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-bikesharing-4),
+		var(--db-transportation-bikesharing-10)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-bikesharing-0),
+		var(--db-transportation-bikesharing-14)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-bikesharing-3),
+		var(--db-transportation-bikesharing-11)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-bikesharing-1),
+		var(--db-transportation-bikesharing-12)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-bikesharing-5),
+		var(--db-transportation-bikesharing-9)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-bikesharing-2),
+		var(--db-transportation-bikesharing-11)
+	);
+	--db-transportation-bikesharing-on-bg-inverted-default: light-dark(
+		var(--db-transportation-bikesharing-14),
+		var(--db-transportation-bikesharing-3)
+	);
+	--db-transportation-bikesharing-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-bikesharing-11),
+		var(--db-transportation-bikesharing-0)
+	);
+	--db-transportation-bikesharing-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-bikesharing-13),
+		var(--db-transportation-bikesharing-2)
+	);
+	--db-transportation-bikesharing-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-bikesharing-1),
+		var(--db-transportation-bikesharing-1)
+	);
+	--db-transportation-bikesharing-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-bikesharing-4),
+		var(--db-transportation-bikesharing-4)
+	);
+	--db-transportation-bikesharing-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-bikesharing-2),
+		var(--db-transportation-bikesharing-2)
+	);
+	--db-transportation-bikesharing-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-bikesharing-14),
+		var(--db-transportation-bikesharing-1)
+	);
+	--db-transportation-bikesharing-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-bikesharing-13),
+		var(--db-transportation-bikesharing-3)
+	);
+	--db-transportation-bikesharing-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-bikesharing-12),
+		var(--db-transportation-bikesharing-4)
+	);
+	--db-transportation-bikesharing-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-bikesharing-13),
+		var(--db-transportation-bikesharing-2)
+	);
+	--db-transportation-bikesharing-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-bikesharing-12),
+		var(--db-transportation-bikesharing-4)
+	);
+	--db-transportation-bikesharing-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-bikesharing-11),
+		var(--db-transportation-bikesharing-5)
+	);
+	--db-transportation-bikesharing-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-bikesharing-12),
+		var(--db-transportation-bikesharing-3)
+	);
+	--db-transportation-bikesharing-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-bikesharing-11),
+		var(--db-transportation-bikesharing-1)
+	);
+	--db-transportation-bikesharing-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-bikesharing-10),
+		var(--db-transportation-bikesharing-0)
+	);
+	--db-transportation-bikesharing-bg-basic-transparent-full-default: light-dark(
+		color-mix(
+			in srgb,
+			transparent 100%,
+			var(--db-transportation-bikesharing-6)
+		),
+		color-mix(
+			in srgb,
+			transparent 100%,
+			var(--db-transportation-bikesharing-9)
+		)
+	);
+	--db-transportation-bikesharing-bg-basic-transparent-semi-default: light-dark(
+		color-mix(
+			in srgb,
+			transparent 92%,
+			var(--db-transportation-bikesharing-6)
+		),
+		color-mix(
+			in srgb,
+			transparent 84%,
+			var(--db-transportation-bikesharing-9)
+		)
+	);
+	--db-transportation-bikesharing-bg-basic-transparent-hovered: light-dark(
+		color-mix(
+			in srgb,
+			transparent 76%,
+			var(--db-transportation-bikesharing-6)
+		),
+		color-mix(
+			in srgb,
+			transparent 76%,
+			var(--db-transportation-bikesharing-9)
+		)
+	);
+	--db-transportation-bikesharing-bg-basic-transparent-pressed: light-dark(
+		color-mix(
+			in srgb,
+			transparent 68%,
+			var(--db-transportation-bikesharing-6)
+		),
+		color-mix(
+			in srgb,
+			transparent 68%,
+			var(--db-transportation-bikesharing-9)
+		)
+	);
+	--db-transportation-bikesharing-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-bikesharing-1),
+		var(--db-transportation-bikesharing-12)
+	);
+	--db-transportation-bikesharing-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-bikesharing-5),
+		var(--db-transportation-bikesharing-9)
+	);
+	--db-transportation-bikesharing-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-bikesharing-2),
+		var(--db-transportation-bikesharing-11)
+	);
+	--db-transportation-bikesharing-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-bikesharing-6),
+		var(--db-transportation-bikesharing-9)
+	);
+	--db-transportation-bikesharing-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-bikesharing-2),
+		var(--db-transportation-bikesharing-12)
+	);
+	--db-transportation-bikesharing-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-bikesharing-5),
+		var(--db-transportation-bikesharing-10)
+	);
+	--db-transportation-bikesharing-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-bikesharing-7),
+		var(--db-transportation-bikesharing-8)
+	);
+	--db-transportation-bikesharing-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-bikesharing-3),
+		var(--db-transportation-bikesharing-12)
+	);
+	--db-transportation-bikesharing-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-bikesharing-6),
+		var(--db-transportation-bikesharing-9)
+	);
+	--db-transportation-bikesharing-bg-vibrant-default: light-dark(
+		var(--db-transportation-bikesharing-9),
+		var(--db-transportation-bikesharing-9)
+	);
+	--db-transportation-bikesharing-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-bikesharing-12),
+		var(--db-transportation-bikesharing-12)
+	);
+	--db-transportation-bikesharing-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-bikesharing-10),
+		var(--db-transportation-bikesharing-10)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-bus-9),
+		var(--db-transportation-bus-5)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-bus-10),
+		var(--db-transportation-bus-6)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-bus-4),
+		var(--db-transportation-bus-10)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-bus-6),
+		var(--db-transportation-bus-9)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-bus-6),
+		var(--db-transportation-bus-9)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-bus-3),
+		var(--db-transportation-bus-12)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-bus-5),
+		var(--db-transportation-bus-10)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-bus-4),
+		var(--db-transportation-bus-10)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-bus-0),
+		var(--db-transportation-bus-14)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-bus-3),
+		var(--db-transportation-bus-11)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-bus-1),
+		var(--db-transportation-bus-12)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-bus-5),
+		var(--db-transportation-bus-9)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-bus-2),
+		var(--db-transportation-bus-11)
+	);
+	--db-transportation-bus-on-bg-inverted-default: light-dark(
+		var(--db-transportation-bus-14),
+		var(--db-transportation-bus-3)
+	);
+	--db-transportation-bus-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-bus-11),
+		var(--db-transportation-bus-0)
+	);
+	--db-transportation-bus-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-bus-13),
+		var(--db-transportation-bus-2)
+	);
+	--db-transportation-bus-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-bus-1),
+		var(--db-transportation-bus-1)
+	);
+	--db-transportation-bus-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-bus-4),
+		var(--db-transportation-bus-4)
+	);
+	--db-transportation-bus-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-bus-2),
+		var(--db-transportation-bus-2)
+	);
+	--db-transportation-bus-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-bus-14),
+		var(--db-transportation-bus-1)
+	);
+	--db-transportation-bus-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-bus-13),
+		var(--db-transportation-bus-3)
+	);
+	--db-transportation-bus-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-bus-12),
+		var(--db-transportation-bus-4)
+	);
+	--db-transportation-bus-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-bus-13),
+		var(--db-transportation-bus-2)
+	);
+	--db-transportation-bus-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-bus-12),
+		var(--db-transportation-bus-4)
+	);
+	--db-transportation-bus-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-bus-11),
+		var(--db-transportation-bus-5)
+	);
+	--db-transportation-bus-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-bus-12),
+		var(--db-transportation-bus-3)
+	);
+	--db-transportation-bus-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-bus-11),
+		var(--db-transportation-bus-1)
+	);
+	--db-transportation-bus-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-bus-10),
+		var(--db-transportation-bus-0)
+	);
+	--db-transportation-bus-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-bus-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-bus-9))
+	);
+	--db-transportation-bus-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-bus-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-bus-9))
+	);
+	--db-transportation-bus-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-bus-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-bus-9))
+	);
+	--db-transportation-bus-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-bus-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-bus-9))
+	);
+	--db-transportation-bus-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-bus-1),
+		var(--db-transportation-bus-12)
+	);
+	--db-transportation-bus-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-bus-5),
+		var(--db-transportation-bus-9)
+	);
+	--db-transportation-bus-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-bus-2),
+		var(--db-transportation-bus-11)
+	);
+	--db-transportation-bus-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-bus-6),
+		var(--db-transportation-bus-9)
+	);
+	--db-transportation-bus-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-bus-2),
+		var(--db-transportation-bus-12)
+	);
+	--db-transportation-bus-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-bus-5),
+		var(--db-transportation-bus-10)
+	);
+	--db-transportation-bus-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-bus-7),
+		var(--db-transportation-bus-8)
+	);
+	--db-transportation-bus-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-bus-3),
+		var(--db-transportation-bus-12)
+	);
+	--db-transportation-bus-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-bus-6),
+		var(--db-transportation-bus-9)
+	);
+	--db-transportation-bus-bg-vibrant-default: light-dark(
+		var(--db-transportation-bus-9),
+		var(--db-transportation-bus-9)
+	);
+	--db-transportation-bus-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-bus-12),
+		var(--db-transportation-bus-12)
+	);
+	--db-transportation-bus-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-bus-10),
+		var(--db-transportation-bus-10)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-carsharing-9),
+		var(--db-transportation-carsharing-5)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-carsharing-10),
+		var(--db-transportation-carsharing-6)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-carsharing-4),
+		var(--db-transportation-carsharing-10)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-carsharing-6),
+		var(--db-transportation-carsharing-9)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-carsharing-6),
+		var(--db-transportation-carsharing-9)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-carsharing-3),
+		var(--db-transportation-carsharing-12)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-carsharing-5),
+		var(--db-transportation-carsharing-10)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-carsharing-4),
+		var(--db-transportation-carsharing-10)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-carsharing-0),
+		var(--db-transportation-carsharing-14)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-carsharing-3),
+		var(--db-transportation-carsharing-11)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-carsharing-1),
+		var(--db-transportation-carsharing-12)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-carsharing-5),
+		var(--db-transportation-carsharing-9)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-carsharing-2),
+		var(--db-transportation-carsharing-11)
+	);
+	--db-transportation-carsharing-on-bg-inverted-default: light-dark(
+		var(--db-transportation-carsharing-14),
+		var(--db-transportation-carsharing-3)
+	);
+	--db-transportation-carsharing-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-carsharing-11),
+		var(--db-transportation-carsharing-0)
+	);
+	--db-transportation-carsharing-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-carsharing-13),
+		var(--db-transportation-carsharing-2)
+	);
+	--db-transportation-carsharing-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-carsharing-1),
+		var(--db-transportation-carsharing-1)
+	);
+	--db-transportation-carsharing-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-carsharing-4),
+		var(--db-transportation-carsharing-4)
+	);
+	--db-transportation-carsharing-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-carsharing-2),
+		var(--db-transportation-carsharing-2)
+	);
+	--db-transportation-carsharing-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-carsharing-14),
+		var(--db-transportation-carsharing-1)
+	);
+	--db-transportation-carsharing-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-carsharing-13),
+		var(--db-transportation-carsharing-3)
+	);
+	--db-transportation-carsharing-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-carsharing-12),
+		var(--db-transportation-carsharing-4)
+	);
+	--db-transportation-carsharing-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-carsharing-13),
+		var(--db-transportation-carsharing-2)
+	);
+	--db-transportation-carsharing-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-carsharing-12),
+		var(--db-transportation-carsharing-4)
+	);
+	--db-transportation-carsharing-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-carsharing-11),
+		var(--db-transportation-carsharing-5)
+	);
+	--db-transportation-carsharing-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-carsharing-12),
+		var(--db-transportation-carsharing-3)
+	);
+	--db-transportation-carsharing-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-carsharing-11),
+		var(--db-transportation-carsharing-1)
+	);
+	--db-transportation-carsharing-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-carsharing-10),
+		var(--db-transportation-carsharing-0)
+	);
+	--db-transportation-carsharing-bg-basic-transparent-full-default: light-dark(
+		color-mix(
+			in srgb,
+			transparent 100%,
+			var(--db-transportation-carsharing-6)
+		),
+		color-mix(
+			in srgb,
+			transparent 100%,
+			var(--db-transportation-carsharing-9)
+		)
+	);
+	--db-transportation-carsharing-bg-basic-transparent-semi-default: light-dark(
+		color-mix(
+			in srgb,
+			transparent 92%,
+			var(--db-transportation-carsharing-6)
+		),
+		color-mix(
+			in srgb,
+			transparent 84%,
+			var(--db-transportation-carsharing-9)
+		)
+	);
+	--db-transportation-carsharing-bg-basic-transparent-hovered: light-dark(
+		color-mix(
+			in srgb,
+			transparent 76%,
+			var(--db-transportation-carsharing-6)
+		),
+		color-mix(
+			in srgb,
+			transparent 76%,
+			var(--db-transportation-carsharing-9)
+		)
+	);
+	--db-transportation-carsharing-bg-basic-transparent-pressed: light-dark(
+		color-mix(
+			in srgb,
+			transparent 68%,
+			var(--db-transportation-carsharing-6)
+		),
+		color-mix(
+			in srgb,
+			transparent 68%,
+			var(--db-transportation-carsharing-9)
+		)
+	);
+	--db-transportation-carsharing-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-carsharing-1),
+		var(--db-transportation-carsharing-12)
+	);
+	--db-transportation-carsharing-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-carsharing-5),
+		var(--db-transportation-carsharing-9)
+	);
+	--db-transportation-carsharing-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-carsharing-2),
+		var(--db-transportation-carsharing-11)
+	);
+	--db-transportation-carsharing-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-carsharing-6),
+		var(--db-transportation-carsharing-9)
+	);
+	--db-transportation-carsharing-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-carsharing-2),
+		var(--db-transportation-carsharing-12)
+	);
+	--db-transportation-carsharing-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-carsharing-5),
+		var(--db-transportation-carsharing-10)
+	);
+	--db-transportation-carsharing-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-carsharing-7),
+		var(--db-transportation-carsharing-8)
+	);
+	--db-transportation-carsharing-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-carsharing-3),
+		var(--db-transportation-carsharing-12)
+	);
+	--db-transportation-carsharing-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-carsharing-6),
+		var(--db-transportation-carsharing-9)
+	);
+	--db-transportation-carsharing-bg-vibrant-default: light-dark(
+		var(--db-transportation-carsharing-9),
+		var(--db-transportation-carsharing-9)
+	);
+	--db-transportation-carsharing-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-carsharing-12),
+		var(--db-transportation-carsharing-12)
+	);
+	--db-transportation-carsharing-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-carsharing-10),
+		var(--db-transportation-carsharing-10)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-ev-9),
+		var(--db-transportation-ev-5)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-ev-10),
+		var(--db-transportation-ev-6)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-ev-4),
+		var(--db-transportation-ev-10)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-ev-6),
+		var(--db-transportation-ev-9)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-ev-6),
+		var(--db-transportation-ev-9)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-ev-3),
+		var(--db-transportation-ev-12)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-ev-5),
+		var(--db-transportation-ev-10)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-ev-4),
+		var(--db-transportation-ev-10)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-ev-0),
+		var(--db-transportation-ev-14)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-ev-3),
+		var(--db-transportation-ev-11)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-ev-1),
+		var(--db-transportation-ev-12)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-ev-5),
+		var(--db-transportation-ev-9)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-ev-2),
+		var(--db-transportation-ev-11)
+	);
+	--db-transportation-ev-on-bg-inverted-default: light-dark(
+		var(--db-transportation-ev-14),
+		var(--db-transportation-ev-3)
+	);
+	--db-transportation-ev-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-ev-11),
+		var(--db-transportation-ev-0)
+	);
+	--db-transportation-ev-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-ev-13),
+		var(--db-transportation-ev-2)
+	);
+	--db-transportation-ev-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-ev-1),
+		var(--db-transportation-ev-1)
+	);
+	--db-transportation-ev-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ev-4),
+		var(--db-transportation-ev-4)
+	);
+	--db-transportation-ev-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ev-2),
+		var(--db-transportation-ev-2)
+	);
+	--db-transportation-ev-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-ev-14),
+		var(--db-transportation-ev-1)
+	);
+	--db-transportation-ev-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-ev-13),
+		var(--db-transportation-ev-3)
+	);
+	--db-transportation-ev-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-ev-12),
+		var(--db-transportation-ev-4)
+	);
+	--db-transportation-ev-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-ev-13),
+		var(--db-transportation-ev-2)
+	);
+	--db-transportation-ev-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-ev-12),
+		var(--db-transportation-ev-4)
+	);
+	--db-transportation-ev-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-ev-11),
+		var(--db-transportation-ev-5)
+	);
+	--db-transportation-ev-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-ev-12),
+		var(--db-transportation-ev-3)
+	);
+	--db-transportation-ev-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-ev-11),
+		var(--db-transportation-ev-1)
+	);
+	--db-transportation-ev-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-ev-10),
+		var(--db-transportation-ev-0)
+	);
+	--db-transportation-ev-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ev-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ev-9))
+	);
+	--db-transportation-ev-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-ev-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-ev-9))
+	);
+	--db-transportation-ev-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ev-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ev-9))
+	);
+	--db-transportation-ev-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ev-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ev-9))
+	);
+	--db-transportation-ev-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-ev-1),
+		var(--db-transportation-ev-12)
+	);
+	--db-transportation-ev-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-ev-5),
+		var(--db-transportation-ev-9)
+	);
+	--db-transportation-ev-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-ev-2),
+		var(--db-transportation-ev-11)
+	);
+	--db-transportation-ev-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-ev-6),
+		var(--db-transportation-ev-9)
+	);
+	--db-transportation-ev-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-ev-2),
+		var(--db-transportation-ev-12)
+	);
+	--db-transportation-ev-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-ev-5),
+		var(--db-transportation-ev-10)
+	);
+	--db-transportation-ev-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-ev-7),
+		var(--db-transportation-ev-8)
+	);
+	--db-transportation-ev-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-ev-3),
+		var(--db-transportation-ev-12)
+	);
+	--db-transportation-ev-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-ev-6),
+		var(--db-transportation-ev-9)
+	);
+	--db-transportation-ev-bg-vibrant-default: light-dark(
+		var(--db-transportation-ev-9),
+		var(--db-transportation-ev-9)
+	);
+	--db-transportation-ev-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ev-12),
+		var(--db-transportation-ev-12)
+	);
+	--db-transportation-ev-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ev-10),
+		var(--db-transportation-ev-10)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-ferry-9),
+		var(--db-transportation-ferry-5)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-ferry-10),
+		var(--db-transportation-ferry-6)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-ferry-4),
+		var(--db-transportation-ferry-10)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-ferry-6),
+		var(--db-transportation-ferry-9)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-ferry-6),
+		var(--db-transportation-ferry-9)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-ferry-3),
+		var(--db-transportation-ferry-12)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-ferry-5),
+		var(--db-transportation-ferry-10)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-ferry-4),
+		var(--db-transportation-ferry-10)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-ferry-0),
+		var(--db-transportation-ferry-14)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-ferry-3),
+		var(--db-transportation-ferry-11)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-ferry-1),
+		var(--db-transportation-ferry-12)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-ferry-5),
+		var(--db-transportation-ferry-9)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-ferry-2),
+		var(--db-transportation-ferry-11)
+	);
+	--db-transportation-ferry-on-bg-inverted-default: light-dark(
+		var(--db-transportation-ferry-14),
+		var(--db-transportation-ferry-3)
+	);
+	--db-transportation-ferry-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-ferry-11),
+		var(--db-transportation-ferry-0)
+	);
+	--db-transportation-ferry-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-ferry-13),
+		var(--db-transportation-ferry-2)
+	);
+	--db-transportation-ferry-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-ferry-1),
+		var(--db-transportation-ferry-1)
+	);
+	--db-transportation-ferry-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ferry-4),
+		var(--db-transportation-ferry-4)
+	);
+	--db-transportation-ferry-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ferry-2),
+		var(--db-transportation-ferry-2)
+	);
+	--db-transportation-ferry-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-ferry-14),
+		var(--db-transportation-ferry-1)
+	);
+	--db-transportation-ferry-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-ferry-13),
+		var(--db-transportation-ferry-3)
+	);
+	--db-transportation-ferry-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-ferry-12),
+		var(--db-transportation-ferry-4)
+	);
+	--db-transportation-ferry-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-ferry-13),
+		var(--db-transportation-ferry-2)
+	);
+	--db-transportation-ferry-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-ferry-12),
+		var(--db-transportation-ferry-4)
+	);
+	--db-transportation-ferry-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-ferry-11),
+		var(--db-transportation-ferry-5)
+	);
+	--db-transportation-ferry-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-ferry-12),
+		var(--db-transportation-ferry-3)
+	);
+	--db-transportation-ferry-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-ferry-11),
+		var(--db-transportation-ferry-1)
+	);
+	--db-transportation-ferry-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-ferry-10),
+		var(--db-transportation-ferry-0)
+	);
+	--db-transportation-ferry-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ferry-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ferry-9))
+	);
+	--db-transportation-ferry-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-ferry-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-ferry-9))
+	);
+	--db-transportation-ferry-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ferry-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ferry-9))
+	);
+	--db-transportation-ferry-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ferry-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ferry-9))
+	);
+	--db-transportation-ferry-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-ferry-1),
+		var(--db-transportation-ferry-12)
+	);
+	--db-transportation-ferry-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-ferry-5),
+		var(--db-transportation-ferry-9)
+	);
+	--db-transportation-ferry-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-ferry-2),
+		var(--db-transportation-ferry-11)
+	);
+	--db-transportation-ferry-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-ferry-6),
+		var(--db-transportation-ferry-9)
+	);
+	--db-transportation-ferry-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-ferry-2),
+		var(--db-transportation-ferry-12)
+	);
+	--db-transportation-ferry-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-ferry-5),
+		var(--db-transportation-ferry-10)
+	);
+	--db-transportation-ferry-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-ferry-7),
+		var(--db-transportation-ferry-8)
+	);
+	--db-transportation-ferry-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-ferry-3),
+		var(--db-transportation-ferry-12)
+	);
+	--db-transportation-ferry-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-ferry-6),
+		var(--db-transportation-ferry-9)
+	);
+	--db-transportation-ferry-bg-vibrant-default: light-dark(
+		var(--db-transportation-ferry-9),
+		var(--db-transportation-ferry-9)
+	);
+	--db-transportation-ferry-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ferry-12),
+		var(--db-transportation-ferry-12)
+	);
+	--db-transportation-ferry-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ferry-10),
+		var(--db-transportation-ferry-10)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-ice-9),
+		var(--db-transportation-ice-5)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-ice-10),
+		var(--db-transportation-ice-6)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-ice-4),
+		var(--db-transportation-ice-10)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-ice-6),
+		var(--db-transportation-ice-9)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-ice-6),
+		var(--db-transportation-ice-9)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-ice-3),
+		var(--db-transportation-ice-12)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-ice-5),
+		var(--db-transportation-ice-10)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-ice-4),
+		var(--db-transportation-ice-10)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-ice-0),
+		var(--db-transportation-ice-14)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-ice-3),
+		var(--db-transportation-ice-11)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-ice-1),
+		var(--db-transportation-ice-12)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-ice-5),
+		var(--db-transportation-ice-9)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-ice-2),
+		var(--db-transportation-ice-11)
+	);
+	--db-transportation-ice-on-bg-inverted-default: light-dark(
+		var(--db-transportation-ice-14),
+		var(--db-transportation-ice-3)
+	);
+	--db-transportation-ice-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-ice-11),
+		var(--db-transportation-ice-0)
+	);
+	--db-transportation-ice-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-ice-13),
+		var(--db-transportation-ice-2)
+	);
+	--db-transportation-ice-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-ice-1),
+		var(--db-transportation-ice-1)
+	);
+	--db-transportation-ice-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ice-4),
+		var(--db-transportation-ice-4)
+	);
+	--db-transportation-ice-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ice-2),
+		var(--db-transportation-ice-2)
+	);
+	--db-transportation-ice-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-ice-14),
+		var(--db-transportation-ice-1)
+	);
+	--db-transportation-ice-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-ice-13),
+		var(--db-transportation-ice-3)
+	);
+	--db-transportation-ice-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-ice-12),
+		var(--db-transportation-ice-4)
+	);
+	--db-transportation-ice-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-ice-13),
+		var(--db-transportation-ice-2)
+	);
+	--db-transportation-ice-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-ice-12),
+		var(--db-transportation-ice-4)
+	);
+	--db-transportation-ice-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-ice-11),
+		var(--db-transportation-ice-5)
+	);
+	--db-transportation-ice-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-ice-12),
+		var(--db-transportation-ice-3)
+	);
+	--db-transportation-ice-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-ice-11),
+		var(--db-transportation-ice-1)
+	);
+	--db-transportation-ice-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-ice-10),
+		var(--db-transportation-ice-0)
+	);
+	--db-transportation-ice-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ice-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ice-9))
+	);
+	--db-transportation-ice-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-ice-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-ice-9))
+	);
+	--db-transportation-ice-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ice-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ice-9))
+	);
+	--db-transportation-ice-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ice-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ice-9))
+	);
+	--db-transportation-ice-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-ice-1),
+		var(--db-transportation-ice-12)
+	);
+	--db-transportation-ice-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-ice-5),
+		var(--db-transportation-ice-9)
+	);
+	--db-transportation-ice-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-ice-2),
+		var(--db-transportation-ice-11)
+	);
+	--db-transportation-ice-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-ice-6),
+		var(--db-transportation-ice-9)
+	);
+	--db-transportation-ice-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-ice-2),
+		var(--db-transportation-ice-12)
+	);
+	--db-transportation-ice-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-ice-5),
+		var(--db-transportation-ice-10)
+	);
+	--db-transportation-ice-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-ice-7),
+		var(--db-transportation-ice-8)
+	);
+	--db-transportation-ice-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-ice-3),
+		var(--db-transportation-ice-12)
+	);
+	--db-transportation-ice-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-ice-6),
+		var(--db-transportation-ice-9)
+	);
+	--db-transportation-ice-bg-vibrant-default: light-dark(
+		var(--db-transportation-ice-9),
+		var(--db-transportation-ice-9)
+	);
+	--db-transportation-ice-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ice-12),
+		var(--db-transportation-ice-12)
+	);
+	--db-transportation-ice-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ice-10),
+		var(--db-transportation-ice-10)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-ic-ec-9),
+		var(--db-transportation-ic-ec-5)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-ic-ec-10),
+		var(--db-transportation-ic-ec-6)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-ic-ec-4),
+		var(--db-transportation-ic-ec-10)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-ic-ec-6),
+		var(--db-transportation-ic-ec-9)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-ic-ec-6),
+		var(--db-transportation-ic-ec-9)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-ic-ec-3),
+		var(--db-transportation-ic-ec-12)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-ic-ec-5),
+		var(--db-transportation-ic-ec-10)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-ic-ec-4),
+		var(--db-transportation-ic-ec-10)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-ic-ec-0),
+		var(--db-transportation-ic-ec-14)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-ic-ec-3),
+		var(--db-transportation-ic-ec-11)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-ic-ec-1),
+		var(--db-transportation-ic-ec-12)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-ic-ec-5),
+		var(--db-transportation-ic-ec-9)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-ic-ec-2),
+		var(--db-transportation-ic-ec-11)
+	);
+	--db-transportation-ic-ec-on-bg-inverted-default: light-dark(
+		var(--db-transportation-ic-ec-14),
+		var(--db-transportation-ic-ec-3)
+	);
+	--db-transportation-ic-ec-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-ic-ec-11),
+		var(--db-transportation-ic-ec-0)
+	);
+	--db-transportation-ic-ec-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-ic-ec-13),
+		var(--db-transportation-ic-ec-2)
+	);
+	--db-transportation-ic-ec-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-ic-ec-1),
+		var(--db-transportation-ic-ec-1)
+	);
+	--db-transportation-ic-ec-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ic-ec-4),
+		var(--db-transportation-ic-ec-4)
+	);
+	--db-transportation-ic-ec-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ic-ec-2),
+		var(--db-transportation-ic-ec-2)
+	);
+	--db-transportation-ic-ec-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-ic-ec-14),
+		var(--db-transportation-ic-ec-1)
+	);
+	--db-transportation-ic-ec-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-ic-ec-13),
+		var(--db-transportation-ic-ec-3)
+	);
+	--db-transportation-ic-ec-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-ic-ec-12),
+		var(--db-transportation-ic-ec-4)
+	);
+	--db-transportation-ic-ec-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-ic-ec-13),
+		var(--db-transportation-ic-ec-2)
+	);
+	--db-transportation-ic-ec-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-ic-ec-12),
+		var(--db-transportation-ic-ec-4)
+	);
+	--db-transportation-ic-ec-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-ic-ec-11),
+		var(--db-transportation-ic-ec-5)
+	);
+	--db-transportation-ic-ec-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-ic-ec-12),
+		var(--db-transportation-ic-ec-3)
+	);
+	--db-transportation-ic-ec-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-ic-ec-11),
+		var(--db-transportation-ic-ec-1)
+	);
+	--db-transportation-ic-ec-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-ic-ec-10),
+		var(--db-transportation-ic-ec-0)
+	);
+	--db-transportation-ic-ec-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ic-ec-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ic-ec-9))
+	);
+	--db-transportation-ic-ec-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-ic-ec-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-ic-ec-9))
+	);
+	--db-transportation-ic-ec-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ic-ec-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ic-ec-9))
+	);
+	--db-transportation-ic-ec-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ic-ec-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ic-ec-9))
+	);
+	--db-transportation-ic-ec-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-ic-ec-1),
+		var(--db-transportation-ic-ec-12)
+	);
+	--db-transportation-ic-ec-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-ic-ec-5),
+		var(--db-transportation-ic-ec-9)
+	);
+	--db-transportation-ic-ec-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-ic-ec-2),
+		var(--db-transportation-ic-ec-11)
+	);
+	--db-transportation-ic-ec-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-ic-ec-6),
+		var(--db-transportation-ic-ec-9)
+	);
+	--db-transportation-ic-ec-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-ic-ec-2),
+		var(--db-transportation-ic-ec-12)
+	);
+	--db-transportation-ic-ec-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-ic-ec-5),
+		var(--db-transportation-ic-ec-10)
+	);
+	--db-transportation-ic-ec-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-ic-ec-7),
+		var(--db-transportation-ic-ec-8)
+	);
+	--db-transportation-ic-ec-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-ic-ec-3),
+		var(--db-transportation-ic-ec-12)
+	);
+	--db-transportation-ic-ec-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-ic-ec-6),
+		var(--db-transportation-ic-ec-9)
+	);
+	--db-transportation-ic-ec-bg-vibrant-default: light-dark(
+		var(--db-transportation-ic-ec-9),
+		var(--db-transportation-ic-ec-9)
+	);
+	--db-transportation-ic-ec-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ic-ec-12),
+		var(--db-transportation-ic-ec-12)
+	);
+	--db-transportation-ic-ec-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ic-ec-10),
+		var(--db-transportation-ic-ec-10)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-ld-bus-9),
+		var(--db-transportation-ld-bus-5)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-ld-bus-10),
+		var(--db-transportation-ld-bus-6)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-ld-bus-4),
+		var(--db-transportation-ld-bus-10)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-ld-bus-6),
+		var(--db-transportation-ld-bus-9)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-ld-bus-6),
+		var(--db-transportation-ld-bus-9)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-ld-bus-3),
+		var(--db-transportation-ld-bus-12)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-ld-bus-5),
+		var(--db-transportation-ld-bus-10)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-ld-bus-4),
+		var(--db-transportation-ld-bus-10)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-ld-bus-0),
+		var(--db-transportation-ld-bus-14)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-ld-bus-3),
+		var(--db-transportation-ld-bus-11)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-ld-bus-1),
+		var(--db-transportation-ld-bus-12)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-ld-bus-5),
+		var(--db-transportation-ld-bus-9)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-ld-bus-2),
+		var(--db-transportation-ld-bus-11)
+	);
+	--db-transportation-ld-bus-on-bg-inverted-default: light-dark(
+		var(--db-transportation-ld-bus-14),
+		var(--db-transportation-ld-bus-3)
+	);
+	--db-transportation-ld-bus-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-ld-bus-11),
+		var(--db-transportation-ld-bus-0)
+	);
+	--db-transportation-ld-bus-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-ld-bus-13),
+		var(--db-transportation-ld-bus-2)
+	);
+	--db-transportation-ld-bus-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-ld-bus-1),
+		var(--db-transportation-ld-bus-1)
+	);
+	--db-transportation-ld-bus-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ld-bus-4),
+		var(--db-transportation-ld-bus-4)
+	);
+	--db-transportation-ld-bus-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ld-bus-2),
+		var(--db-transportation-ld-bus-2)
+	);
+	--db-transportation-ld-bus-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-ld-bus-14),
+		var(--db-transportation-ld-bus-1)
+	);
+	--db-transportation-ld-bus-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-ld-bus-13),
+		var(--db-transportation-ld-bus-3)
+	);
+	--db-transportation-ld-bus-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-ld-bus-12),
+		var(--db-transportation-ld-bus-4)
+	);
+	--db-transportation-ld-bus-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-ld-bus-13),
+		var(--db-transportation-ld-bus-2)
+	);
+	--db-transportation-ld-bus-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-ld-bus-12),
+		var(--db-transportation-ld-bus-4)
+	);
+	--db-transportation-ld-bus-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-ld-bus-11),
+		var(--db-transportation-ld-bus-5)
+	);
+	--db-transportation-ld-bus-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-ld-bus-12),
+		var(--db-transportation-ld-bus-3)
+	);
+	--db-transportation-ld-bus-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-ld-bus-11),
+		var(--db-transportation-ld-bus-1)
+	);
+	--db-transportation-ld-bus-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-ld-bus-10),
+		var(--db-transportation-ld-bus-0)
+	);
+	--db-transportation-ld-bus-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ld-bus-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-ld-bus-9))
+	);
+	--db-transportation-ld-bus-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-ld-bus-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-ld-bus-9))
+	);
+	--db-transportation-ld-bus-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ld-bus-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-ld-bus-9))
+	);
+	--db-transportation-ld-bus-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ld-bus-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-ld-bus-9))
+	);
+	--db-transportation-ld-bus-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-ld-bus-1),
+		var(--db-transportation-ld-bus-12)
+	);
+	--db-transportation-ld-bus-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-ld-bus-5),
+		var(--db-transportation-ld-bus-9)
+	);
+	--db-transportation-ld-bus-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-ld-bus-2),
+		var(--db-transportation-ld-bus-11)
+	);
+	--db-transportation-ld-bus-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-ld-bus-6),
+		var(--db-transportation-ld-bus-9)
+	);
+	--db-transportation-ld-bus-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-ld-bus-2),
+		var(--db-transportation-ld-bus-12)
+	);
+	--db-transportation-ld-bus-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-ld-bus-5),
+		var(--db-transportation-ld-bus-10)
+	);
+	--db-transportation-ld-bus-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-ld-bus-7),
+		var(--db-transportation-ld-bus-8)
+	);
+	--db-transportation-ld-bus-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-ld-bus-3),
+		var(--db-transportation-ld-bus-12)
+	);
+	--db-transportation-ld-bus-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-ld-bus-6),
+		var(--db-transportation-ld-bus-9)
+	);
+	--db-transportation-ld-bus-bg-vibrant-default: light-dark(
+		var(--db-transportation-ld-bus-9),
+		var(--db-transportation-ld-bus-9)
+	);
+	--db-transportation-ld-bus-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-ld-bus-12),
+		var(--db-transportation-ld-bus-12)
+	);
+	--db-transportation-ld-bus-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-ld-bus-10),
+		var(--db-transportation-ld-bus-10)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-re-rb-9),
+		var(--db-transportation-re-rb-5)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-re-rb-10),
+		var(--db-transportation-re-rb-6)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-re-rb-4),
+		var(--db-transportation-re-rb-10)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-re-rb-6),
+		var(--db-transportation-re-rb-9)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-re-rb-6),
+		var(--db-transportation-re-rb-9)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-re-rb-3),
+		var(--db-transportation-re-rb-12)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-re-rb-5),
+		var(--db-transportation-re-rb-10)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-re-rb-4),
+		var(--db-transportation-re-rb-10)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-re-rb-0),
+		var(--db-transportation-re-rb-14)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-re-rb-3),
+		var(--db-transportation-re-rb-11)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-re-rb-1),
+		var(--db-transportation-re-rb-12)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-re-rb-5),
+		var(--db-transportation-re-rb-9)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-re-rb-2),
+		var(--db-transportation-re-rb-11)
+	);
+	--db-transportation-re-rb-on-bg-inverted-default: light-dark(
+		var(--db-transportation-re-rb-14),
+		var(--db-transportation-re-rb-3)
+	);
+	--db-transportation-re-rb-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-re-rb-11),
+		var(--db-transportation-re-rb-0)
+	);
+	--db-transportation-re-rb-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-re-rb-13),
+		var(--db-transportation-re-rb-2)
+	);
+	--db-transportation-re-rb-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-re-rb-1),
+		var(--db-transportation-re-rb-1)
+	);
+	--db-transportation-re-rb-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-re-rb-4),
+		var(--db-transportation-re-rb-4)
+	);
+	--db-transportation-re-rb-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-re-rb-2),
+		var(--db-transportation-re-rb-2)
+	);
+	--db-transportation-re-rb-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-re-rb-14),
+		var(--db-transportation-re-rb-1)
+	);
+	--db-transportation-re-rb-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-re-rb-13),
+		var(--db-transportation-re-rb-3)
+	);
+	--db-transportation-re-rb-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-re-rb-12),
+		var(--db-transportation-re-rb-4)
+	);
+	--db-transportation-re-rb-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-re-rb-13),
+		var(--db-transportation-re-rb-2)
+	);
+	--db-transportation-re-rb-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-re-rb-12),
+		var(--db-transportation-re-rb-4)
+	);
+	--db-transportation-re-rb-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-re-rb-11),
+		var(--db-transportation-re-rb-5)
+	);
+	--db-transportation-re-rb-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-re-rb-12),
+		var(--db-transportation-re-rb-3)
+	);
+	--db-transportation-re-rb-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-re-rb-11),
+		var(--db-transportation-re-rb-1)
+	);
+	--db-transportation-re-rb-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-re-rb-10),
+		var(--db-transportation-re-rb-0)
+	);
+	--db-transportation-re-rb-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-re-rb-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-re-rb-9))
+	);
+	--db-transportation-re-rb-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-re-rb-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-re-rb-9))
+	);
+	--db-transportation-re-rb-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-re-rb-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-re-rb-9))
+	);
+	--db-transportation-re-rb-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-re-rb-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-re-rb-9))
+	);
+	--db-transportation-re-rb-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-re-rb-1),
+		var(--db-transportation-re-rb-12)
+	);
+	--db-transportation-re-rb-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-re-rb-5),
+		var(--db-transportation-re-rb-9)
+	);
+	--db-transportation-re-rb-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-re-rb-2),
+		var(--db-transportation-re-rb-11)
+	);
+	--db-transportation-re-rb-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-re-rb-6),
+		var(--db-transportation-re-rb-9)
+	);
+	--db-transportation-re-rb-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-re-rb-2),
+		var(--db-transportation-re-rb-12)
+	);
+	--db-transportation-re-rb-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-re-rb-5),
+		var(--db-transportation-re-rb-10)
+	);
+	--db-transportation-re-rb-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-re-rb-7),
+		var(--db-transportation-re-rb-8)
+	);
+	--db-transportation-re-rb-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-re-rb-3),
+		var(--db-transportation-re-rb-12)
+	);
+	--db-transportation-re-rb-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-re-rb-6),
+		var(--db-transportation-re-rb-9)
+	);
+	--db-transportation-re-rb-bg-vibrant-default: light-dark(
+		var(--db-transportation-re-rb-9),
+		var(--db-transportation-re-rb-9)
+	);
+	--db-transportation-re-rb-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-re-rb-12),
+		var(--db-transportation-re-rb-12)
+	);
+	--db-transportation-re-rb-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-re-rb-10),
+		var(--db-transportation-re-rb-10)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-s-bahn-9),
+		var(--db-transportation-s-bahn-5)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-s-bahn-10),
+		var(--db-transportation-s-bahn-6)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-s-bahn-4),
+		var(--db-transportation-s-bahn-10)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-s-bahn-6),
+		var(--db-transportation-s-bahn-9)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-s-bahn-6),
+		var(--db-transportation-s-bahn-9)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-s-bahn-3),
+		var(--db-transportation-s-bahn-12)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-s-bahn-5),
+		var(--db-transportation-s-bahn-10)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-s-bahn-4),
+		var(--db-transportation-s-bahn-10)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-s-bahn-0),
+		var(--db-transportation-s-bahn-14)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-s-bahn-3),
+		var(--db-transportation-s-bahn-11)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-s-bahn-1),
+		var(--db-transportation-s-bahn-12)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-s-bahn-5),
+		var(--db-transportation-s-bahn-9)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-s-bahn-2),
+		var(--db-transportation-s-bahn-11)
+	);
+	--db-transportation-s-bahn-on-bg-inverted-default: light-dark(
+		var(--db-transportation-s-bahn-14),
+		var(--db-transportation-s-bahn-3)
+	);
+	--db-transportation-s-bahn-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-s-bahn-11),
+		var(--db-transportation-s-bahn-0)
+	);
+	--db-transportation-s-bahn-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-s-bahn-13),
+		var(--db-transportation-s-bahn-2)
+	);
+	--db-transportation-s-bahn-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-s-bahn-1),
+		var(--db-transportation-s-bahn-1)
+	);
+	--db-transportation-s-bahn-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-s-bahn-4),
+		var(--db-transportation-s-bahn-4)
+	);
+	--db-transportation-s-bahn-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-s-bahn-2),
+		var(--db-transportation-s-bahn-2)
+	);
+	--db-transportation-s-bahn-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-s-bahn-14),
+		var(--db-transportation-s-bahn-1)
+	);
+	--db-transportation-s-bahn-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-s-bahn-13),
+		var(--db-transportation-s-bahn-3)
+	);
+	--db-transportation-s-bahn-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-s-bahn-12),
+		var(--db-transportation-s-bahn-4)
+	);
+	--db-transportation-s-bahn-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-s-bahn-13),
+		var(--db-transportation-s-bahn-2)
+	);
+	--db-transportation-s-bahn-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-s-bahn-12),
+		var(--db-transportation-s-bahn-4)
+	);
+	--db-transportation-s-bahn-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-s-bahn-11),
+		var(--db-transportation-s-bahn-5)
+	);
+	--db-transportation-s-bahn-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-s-bahn-12),
+		var(--db-transportation-s-bahn-3)
+	);
+	--db-transportation-s-bahn-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-s-bahn-11),
+		var(--db-transportation-s-bahn-1)
+	);
+	--db-transportation-s-bahn-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-s-bahn-10),
+		var(--db-transportation-s-bahn-0)
+	);
+	--db-transportation-s-bahn-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-s-bahn-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-s-bahn-9))
+	);
+	--db-transportation-s-bahn-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-s-bahn-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-s-bahn-9))
+	);
+	--db-transportation-s-bahn-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-s-bahn-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-s-bahn-9))
+	);
+	--db-transportation-s-bahn-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-s-bahn-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-s-bahn-9))
+	);
+	--db-transportation-s-bahn-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-s-bahn-1),
+		var(--db-transportation-s-bahn-12)
+	);
+	--db-transportation-s-bahn-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-s-bahn-5),
+		var(--db-transportation-s-bahn-9)
+	);
+	--db-transportation-s-bahn-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-s-bahn-2),
+		var(--db-transportation-s-bahn-11)
+	);
+	--db-transportation-s-bahn-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-s-bahn-6),
+		var(--db-transportation-s-bahn-9)
+	);
+	--db-transportation-s-bahn-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-s-bahn-2),
+		var(--db-transportation-s-bahn-12)
+	);
+	--db-transportation-s-bahn-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-s-bahn-5),
+		var(--db-transportation-s-bahn-10)
+	);
+	--db-transportation-s-bahn-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-s-bahn-7),
+		var(--db-transportation-s-bahn-8)
+	);
+	--db-transportation-s-bahn-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-s-bahn-3),
+		var(--db-transportation-s-bahn-12)
+	);
+	--db-transportation-s-bahn-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-s-bahn-6),
+		var(--db-transportation-s-bahn-9)
+	);
+	--db-transportation-s-bahn-bg-vibrant-default: light-dark(
+		var(--db-transportation-s-bahn-9),
+		var(--db-transportation-s-bahn-9)
+	);
+	--db-transportation-s-bahn-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-s-bahn-12),
+		var(--db-transportation-s-bahn-12)
+	);
+	--db-transportation-s-bahn-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-s-bahn-10),
+		var(--db-transportation-s-bahn-10)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-subway-9),
+		var(--db-transportation-subway-5)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-subway-10),
+		var(--db-transportation-subway-6)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-subway-4),
+		var(--db-transportation-subway-10)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-subway-6),
+		var(--db-transportation-subway-9)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-subway-6),
+		var(--db-transportation-subway-9)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-subway-3),
+		var(--db-transportation-subway-12)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-subway-5),
+		var(--db-transportation-subway-10)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-subway-4),
+		var(--db-transportation-subway-10)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-subway-0),
+		var(--db-transportation-subway-14)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-subway-3),
+		var(--db-transportation-subway-11)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-subway-1),
+		var(--db-transportation-subway-12)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-subway-5),
+		var(--db-transportation-subway-9)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-subway-2),
+		var(--db-transportation-subway-11)
+	);
+	--db-transportation-subway-on-bg-inverted-default: light-dark(
+		var(--db-transportation-subway-14),
+		var(--db-transportation-subway-3)
+	);
+	--db-transportation-subway-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-subway-11),
+		var(--db-transportation-subway-0)
+	);
+	--db-transportation-subway-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-subway-13),
+		var(--db-transportation-subway-2)
+	);
+	--db-transportation-subway-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-subway-1),
+		var(--db-transportation-subway-1)
+	);
+	--db-transportation-subway-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-subway-4),
+		var(--db-transportation-subway-4)
+	);
+	--db-transportation-subway-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-subway-2),
+		var(--db-transportation-subway-2)
+	);
+	--db-transportation-subway-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-subway-14),
+		var(--db-transportation-subway-1)
+	);
+	--db-transportation-subway-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-subway-13),
+		var(--db-transportation-subway-3)
+	);
+	--db-transportation-subway-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-subway-12),
+		var(--db-transportation-subway-4)
+	);
+	--db-transportation-subway-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-subway-13),
+		var(--db-transportation-subway-2)
+	);
+	--db-transportation-subway-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-subway-12),
+		var(--db-transportation-subway-4)
+	);
+	--db-transportation-subway-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-subway-11),
+		var(--db-transportation-subway-5)
+	);
+	--db-transportation-subway-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-subway-12),
+		var(--db-transportation-subway-3)
+	);
+	--db-transportation-subway-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-subway-11),
+		var(--db-transportation-subway-1)
+	);
+	--db-transportation-subway-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-subway-10),
+		var(--db-transportation-subway-0)
+	);
+	--db-transportation-subway-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-subway-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-subway-9))
+	);
+	--db-transportation-subway-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-subway-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-subway-9))
+	);
+	--db-transportation-subway-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-subway-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-subway-9))
+	);
+	--db-transportation-subway-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-subway-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-subway-9))
+	);
+	--db-transportation-subway-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-subway-1),
+		var(--db-transportation-subway-12)
+	);
+	--db-transportation-subway-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-subway-5),
+		var(--db-transportation-subway-9)
+	);
+	--db-transportation-subway-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-subway-2),
+		var(--db-transportation-subway-11)
+	);
+	--db-transportation-subway-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-subway-6),
+		var(--db-transportation-subway-9)
+	);
+	--db-transportation-subway-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-subway-2),
+		var(--db-transportation-subway-12)
+	);
+	--db-transportation-subway-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-subway-5),
+		var(--db-transportation-subway-10)
+	);
+	--db-transportation-subway-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-subway-7),
+		var(--db-transportation-subway-8)
+	);
+	--db-transportation-subway-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-subway-3),
+		var(--db-transportation-subway-12)
+	);
+	--db-transportation-subway-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-subway-6),
+		var(--db-transportation-subway-9)
+	);
+	--db-transportation-subway-bg-vibrant-default: light-dark(
+		var(--db-transportation-subway-9),
+		var(--db-transportation-subway-9)
+	);
+	--db-transportation-subway-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-subway-12),
+		var(--db-transportation-subway-12)
+	);
+	--db-transportation-subway-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-subway-10),
+		var(--db-transportation-subway-10)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-taxi-9),
+		var(--db-transportation-taxi-5)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-taxi-10),
+		var(--db-transportation-taxi-6)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-taxi-4),
+		var(--db-transportation-taxi-10)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-taxi-6),
+		var(--db-transportation-taxi-9)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-taxi-6),
+		var(--db-transportation-taxi-9)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-taxi-3),
+		var(--db-transportation-taxi-12)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-taxi-5),
+		var(--db-transportation-taxi-10)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-taxi-4),
+		var(--db-transportation-taxi-10)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-taxi-0),
+		var(--db-transportation-taxi-14)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-taxi-3),
+		var(--db-transportation-taxi-11)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-taxi-1),
+		var(--db-transportation-taxi-12)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-taxi-5),
+		var(--db-transportation-taxi-9)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-taxi-2),
+		var(--db-transportation-taxi-11)
+	);
+	--db-transportation-taxi-on-bg-inverted-default: light-dark(
+		var(--db-transportation-taxi-14),
+		var(--db-transportation-taxi-3)
+	);
+	--db-transportation-taxi-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-taxi-11),
+		var(--db-transportation-taxi-0)
+	);
+	--db-transportation-taxi-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-taxi-13),
+		var(--db-transportation-taxi-2)
+	);
+	--db-transportation-taxi-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-taxi-1),
+		var(--db-transportation-taxi-1)
+	);
+	--db-transportation-taxi-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-taxi-4),
+		var(--db-transportation-taxi-4)
+	);
+	--db-transportation-taxi-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-taxi-2),
+		var(--db-transportation-taxi-2)
+	);
+	--db-transportation-taxi-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-taxi-14),
+		var(--db-transportation-taxi-1)
+	);
+	--db-transportation-taxi-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-taxi-13),
+		var(--db-transportation-taxi-3)
+	);
+	--db-transportation-taxi-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-taxi-12),
+		var(--db-transportation-taxi-4)
+	);
+	--db-transportation-taxi-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-taxi-13),
+		var(--db-transportation-taxi-2)
+	);
+	--db-transportation-taxi-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-taxi-12),
+		var(--db-transportation-taxi-4)
+	);
+	--db-transportation-taxi-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-taxi-11),
+		var(--db-transportation-taxi-5)
+	);
+	--db-transportation-taxi-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-taxi-12),
+		var(--db-transportation-taxi-3)
+	);
+	--db-transportation-taxi-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-taxi-11),
+		var(--db-transportation-taxi-1)
+	);
+	--db-transportation-taxi-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-taxi-10),
+		var(--db-transportation-taxi-0)
+	);
+	--db-transportation-taxi-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-taxi-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-taxi-9))
+	);
+	--db-transportation-taxi-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-taxi-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-taxi-9))
+	);
+	--db-transportation-taxi-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-taxi-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-taxi-9))
+	);
+	--db-transportation-taxi-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-taxi-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-taxi-9))
+	);
+	--db-transportation-taxi-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-taxi-1),
+		var(--db-transportation-taxi-12)
+	);
+	--db-transportation-taxi-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-taxi-5),
+		var(--db-transportation-taxi-9)
+	);
+	--db-transportation-taxi-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-taxi-2),
+		var(--db-transportation-taxi-11)
+	);
+	--db-transportation-taxi-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-taxi-6),
+		var(--db-transportation-taxi-9)
+	);
+	--db-transportation-taxi-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-taxi-2),
+		var(--db-transportation-taxi-12)
+	);
+	--db-transportation-taxi-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-taxi-5),
+		var(--db-transportation-taxi-10)
+	);
+	--db-transportation-taxi-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-taxi-7),
+		var(--db-transportation-taxi-8)
+	);
+	--db-transportation-taxi-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-taxi-3),
+		var(--db-transportation-taxi-12)
+	);
+	--db-transportation-taxi-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-taxi-6),
+		var(--db-transportation-taxi-9)
+	);
+	--db-transportation-taxi-bg-vibrant-default: light-dark(
+		var(--db-transportation-taxi-9),
+		var(--db-transportation-taxi-9)
+	);
+	--db-transportation-taxi-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-taxi-12),
+		var(--db-transportation-taxi-12)
+	);
+	--db-transportation-taxi-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-taxi-10),
+		var(--db-transportation-taxi-10)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-tram-9),
+		var(--db-transportation-tram-5)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-tram-10),
+		var(--db-transportation-tram-6)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-tram-4),
+		var(--db-transportation-tram-10)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-tram-6),
+		var(--db-transportation-tram-9)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-tram-6),
+		var(--db-transportation-tram-9)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-tram-3),
+		var(--db-transportation-tram-12)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-tram-5),
+		var(--db-transportation-tram-10)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-tram-4),
+		var(--db-transportation-tram-10)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-tram-0),
+		var(--db-transportation-tram-14)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-tram-3),
+		var(--db-transportation-tram-11)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-tram-1),
+		var(--db-transportation-tram-12)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-tram-5),
+		var(--db-transportation-tram-9)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-tram-2),
+		var(--db-transportation-tram-11)
+	);
+	--db-transportation-tram-on-bg-inverted-default: light-dark(
+		var(--db-transportation-tram-14),
+		var(--db-transportation-tram-3)
+	);
+	--db-transportation-tram-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-tram-11),
+		var(--db-transportation-tram-0)
+	);
+	--db-transportation-tram-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-tram-13),
+		var(--db-transportation-tram-2)
+	);
+	--db-transportation-tram-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-tram-1),
+		var(--db-transportation-tram-1)
+	);
+	--db-transportation-tram-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-tram-4),
+		var(--db-transportation-tram-4)
+	);
+	--db-transportation-tram-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-tram-2),
+		var(--db-transportation-tram-2)
+	);
+	--db-transportation-tram-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-tram-14),
+		var(--db-transportation-tram-1)
+	);
+	--db-transportation-tram-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-tram-13),
+		var(--db-transportation-tram-3)
+	);
+	--db-transportation-tram-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-tram-12),
+		var(--db-transportation-tram-4)
+	);
+	--db-transportation-tram-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-tram-13),
+		var(--db-transportation-tram-2)
+	);
+	--db-transportation-tram-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-tram-12),
+		var(--db-transportation-tram-4)
+	);
+	--db-transportation-tram-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-tram-11),
+		var(--db-transportation-tram-5)
+	);
+	--db-transportation-tram-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-tram-12),
+		var(--db-transportation-tram-3)
+	);
+	--db-transportation-tram-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-tram-11),
+		var(--db-transportation-tram-1)
+	);
+	--db-transportation-tram-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-tram-10),
+		var(--db-transportation-tram-0)
+	);
+	--db-transportation-tram-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-tram-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-tram-9))
+	);
+	--db-transportation-tram-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-tram-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-tram-9))
+	);
+	--db-transportation-tram-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-tram-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-tram-9))
+	);
+	--db-transportation-tram-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-tram-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-tram-9))
+	);
+	--db-transportation-tram-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-tram-1),
+		var(--db-transportation-tram-12)
+	);
+	--db-transportation-tram-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-tram-5),
+		var(--db-transportation-tram-9)
+	);
+	--db-transportation-tram-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-tram-2),
+		var(--db-transportation-tram-11)
+	);
+	--db-transportation-tram-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-tram-6),
+		var(--db-transportation-tram-9)
+	);
+	--db-transportation-tram-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-tram-2),
+		var(--db-transportation-tram-12)
+	);
+	--db-transportation-tram-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-tram-5),
+		var(--db-transportation-tram-10)
+	);
+	--db-transportation-tram-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-tram-7),
+		var(--db-transportation-tram-8)
+	);
+	--db-transportation-tram-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-tram-3),
+		var(--db-transportation-tram-12)
+	);
+	--db-transportation-tram-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-tram-6),
+		var(--db-transportation-tram-9)
+	);
+	--db-transportation-tram-bg-vibrant-default: light-dark(
+		var(--db-transportation-tram-9),
+		var(--db-transportation-tram-9)
+	);
+	--db-transportation-tram-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-tram-12),
+		var(--db-transportation-tram-12)
+	);
+	--db-transportation-tram-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-tram-10),
+		var(--db-transportation-tram-10)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-walk-9),
+		var(--db-transportation-walk-5)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-walk-10),
+		var(--db-transportation-walk-6)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-walk-4),
+		var(--db-transportation-walk-10)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-walk-6),
+		var(--db-transportation-walk-9)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-walk-6),
+		var(--db-transportation-walk-9)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-walk-3),
+		var(--db-transportation-walk-12)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-walk-5),
+		var(--db-transportation-walk-10)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-walk-4),
+		var(--db-transportation-walk-10)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-walk-0),
+		var(--db-transportation-walk-14)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-walk-3),
+		var(--db-transportation-walk-11)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-walk-1),
+		var(--db-transportation-walk-12)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-walk-5),
+		var(--db-transportation-walk-9)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-walk-2),
+		var(--db-transportation-walk-11)
+	);
+	--db-transportation-walk-on-bg-inverted-default: light-dark(
+		var(--db-transportation-walk-14),
+		var(--db-transportation-walk-3)
+	);
+	--db-transportation-walk-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-walk-11),
+		var(--db-transportation-walk-0)
+	);
+	--db-transportation-walk-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-walk-13),
+		var(--db-transportation-walk-2)
+	);
+	--db-transportation-walk-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-walk-1),
+		var(--db-transportation-walk-1)
+	);
+	--db-transportation-walk-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-walk-4),
+		var(--db-transportation-walk-4)
+	);
+	--db-transportation-walk-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-walk-2),
+		var(--db-transportation-walk-2)
+	);
+	--db-transportation-walk-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-walk-14),
+		var(--db-transportation-walk-1)
+	);
+	--db-transportation-walk-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-walk-13),
+		var(--db-transportation-walk-3)
+	);
+	--db-transportation-walk-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-walk-12),
+		var(--db-transportation-walk-4)
+	);
+	--db-transportation-walk-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-walk-13),
+		var(--db-transportation-walk-2)
+	);
+	--db-transportation-walk-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-walk-12),
+		var(--db-transportation-walk-4)
+	);
+	--db-transportation-walk-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-walk-11),
+		var(--db-transportation-walk-5)
+	);
+	--db-transportation-walk-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-walk-12),
+		var(--db-transportation-walk-3)
+	);
+	--db-transportation-walk-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-walk-11),
+		var(--db-transportation-walk-1)
+	);
+	--db-transportation-walk-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-walk-10),
+		var(--db-transportation-walk-0)
+	);
+	--db-transportation-walk-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-transportation-walk-6)),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-walk-9))
+	);
+	--db-transportation-walk-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-walk-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-walk-9))
+	);
+	--db-transportation-walk-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-walk-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-walk-9))
+	);
+	--db-transportation-walk-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-walk-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-walk-9))
+	);
+	--db-transportation-walk-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-walk-1),
+		var(--db-transportation-walk-12)
+	);
+	--db-transportation-walk-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-walk-5),
+		var(--db-transportation-walk-9)
+	);
+	--db-transportation-walk-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-walk-2),
+		var(--db-transportation-walk-11)
+	);
+	--db-transportation-walk-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-walk-6),
+		var(--db-transportation-walk-9)
+	);
+	--db-transportation-walk-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-walk-2),
+		var(--db-transportation-walk-12)
+	);
+	--db-transportation-walk-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-walk-5),
+		var(--db-transportation-walk-10)
+	);
+	--db-transportation-walk-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-walk-7),
+		var(--db-transportation-walk-8)
+	);
+	--db-transportation-walk-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-walk-3),
+		var(--db-transportation-walk-12)
+	);
+	--db-transportation-walk-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-walk-6),
+		var(--db-transportation-walk-9)
+	);
+	--db-transportation-walk-bg-vibrant-default: light-dark(
+		var(--db-transportation-walk-9),
+		var(--db-transportation-walk-9)
+	);
+	--db-transportation-walk-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-walk-12),
+		var(--db-transportation-walk-12)
+	);
+	--db-transportation-walk-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-walk-10),
+		var(--db-transportation-walk-10)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-transportation-unknown-9),
+		var(--db-transportation-unknown-5)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-transportation-unknown-10),
+		var(--db-transportation-unknown-6)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-transportation-unknown-4),
+		var(--db-transportation-unknown-10)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-transportation-unknown-6),
+		var(--db-transportation-unknown-9)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-transportation-unknown-6),
+		var(--db-transportation-unknown-9)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-transportation-unknown-3),
+		var(--db-transportation-unknown-12)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-transportation-unknown-5),
+		var(--db-transportation-unknown-10)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-transportation-unknown-4),
+		var(--db-transportation-unknown-10)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-transportation-unknown-0),
+		var(--db-transportation-unknown-14)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-transportation-unknown-3),
+		var(--db-transportation-unknown-11)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-transportation-unknown-1),
+		var(--db-transportation-unknown-12)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-transportation-unknown-5),
+		var(--db-transportation-unknown-9)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-transportation-unknown-2),
+		var(--db-transportation-unknown-11)
+	);
+	--db-transportation-unknown-on-bg-inverted-default: light-dark(
+		var(--db-transportation-unknown-14),
+		var(--db-transportation-unknown-3)
+	);
+	--db-transportation-unknown-on-bg-inverted-hovered: light-dark(
+		var(--db-transportation-unknown-11),
+		var(--db-transportation-unknown-0)
+	);
+	--db-transportation-unknown-on-bg-inverted-pressed: light-dark(
+		var(--db-transportation-unknown-13),
+		var(--db-transportation-unknown-2)
+	);
+	--db-transportation-unknown-on-bg-vibrant-default: light-dark(
+		var(--db-transportation-unknown-1),
+		var(--db-transportation-unknown-1)
+	);
+	--db-transportation-unknown-on-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-unknown-4),
+		var(--db-transportation-unknown-4)
+	);
+	--db-transportation-unknown-on-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-unknown-2),
+		var(--db-transportation-unknown-2)
+	);
+	--db-transportation-unknown-bg-basic-level-1-default: light-dark(
+		var(--db-transportation-unknown-14),
+		var(--db-transportation-unknown-1)
+	);
+	--db-transportation-unknown-bg-basic-level-1-hovered: light-dark(
+		var(--db-transportation-unknown-13),
+		var(--db-transportation-unknown-3)
+	);
+	--db-transportation-unknown-bg-basic-level-1-pressed: light-dark(
+		var(--db-transportation-unknown-12),
+		var(--db-transportation-unknown-4)
+	);
+	--db-transportation-unknown-bg-basic-level-2-default: light-dark(
+		var(--db-transportation-unknown-13),
+		var(--db-transportation-unknown-2)
+	);
+	--db-transportation-unknown-bg-basic-level-2-hovered: light-dark(
+		var(--db-transportation-unknown-12),
+		var(--db-transportation-unknown-4)
+	);
+	--db-transportation-unknown-bg-basic-level-2-pressed: light-dark(
+		var(--db-transportation-unknown-11),
+		var(--db-transportation-unknown-5)
+	);
+	--db-transportation-unknown-bg-basic-level-3-default: light-dark(
+		var(--db-transportation-unknown-12),
+		var(--db-transportation-unknown-3)
+	);
+	--db-transportation-unknown-bg-basic-level-3-hovered: light-dark(
+		var(--db-transportation-unknown-11),
+		var(--db-transportation-unknown-1)
+	);
+	--db-transportation-unknown-bg-basic-level-3-pressed: light-dark(
+		var(--db-transportation-unknown-10),
+		var(--db-transportation-unknown-0)
+	);
+	--db-transportation-unknown-bg-basic-transparent-full-default: light-dark(
+		color-mix(
+			in srgb,
+			transparent 100%,
+			var(--db-transportation-unknown-6)
+		),
+		color-mix(in srgb, transparent 100%, var(--db-transportation-unknown-9))
+	);
+	--db-transportation-unknown-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-transportation-unknown-6)),
+		color-mix(in srgb, transparent 84%, var(--db-transportation-unknown-9))
+	);
+	--db-transportation-unknown-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-transportation-unknown-6)),
+		color-mix(in srgb, transparent 76%, var(--db-transportation-unknown-9))
+	);
+	--db-transportation-unknown-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-transportation-unknown-6)),
+		color-mix(in srgb, transparent 68%, var(--db-transportation-unknown-9))
+	);
+	--db-transportation-unknown-bg-inverted-contrast-max-default: light-dark(
+		var(--db-transportation-unknown-1),
+		var(--db-transportation-unknown-12)
+	);
+	--db-transportation-unknown-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-transportation-unknown-5),
+		var(--db-transportation-unknown-9)
+	);
+	--db-transportation-unknown-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-transportation-unknown-2),
+		var(--db-transportation-unknown-11)
+	);
+	--db-transportation-unknown-bg-inverted-contrast-high-default: light-dark(
+		var(--db-transportation-unknown-6),
+		var(--db-transportation-unknown-9)
+	);
+	--db-transportation-unknown-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-transportation-unknown-2),
+		var(--db-transportation-unknown-12)
+	);
+	--db-transportation-unknown-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-transportation-unknown-5),
+		var(--db-transportation-unknown-10)
+	);
+	--db-transportation-unknown-bg-inverted-contrast-low-default: light-dark(
+		var(--db-transportation-unknown-7),
+		var(--db-transportation-unknown-8)
+	);
+	--db-transportation-unknown-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-transportation-unknown-3),
+		var(--db-transportation-unknown-12)
+	);
+	--db-transportation-unknown-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-transportation-unknown-6),
+		var(--db-transportation-unknown-9)
+	);
+	--db-transportation-unknown-bg-vibrant-default: light-dark(
+		var(--db-transportation-unknown-9),
+		var(--db-transportation-unknown-9)
+	);
+	--db-transportation-unknown-bg-vibrant-hovered: light-dark(
+		var(--db-transportation-unknown-12),
+		var(--db-transportation-unknown-12)
+	);
+	--db-transportation-unknown-bg-vibrant-pressed: light-dark(
+		var(--db-transportation-unknown-10),
+		var(--db-transportation-unknown-10)
+	);
+	--db-poi-food-origin-default: light-dark(
+		var(--db-poi-food-origin-light-default),
+		var(--db-poi-food-origin-dark-default)
+	);
+	--db-poi-food-origin-hovered: light-dark(
+		var(--db-poi-food-origin-light-hovered),
+		var(--db-poi-food-origin-dark-hovered)
+	);
+	--db-poi-food-origin-pressed: light-dark(
+		var(--db-poi-food-origin-light-pressed),
+		var(--db-poi-food-origin-dark-pressed)
+	);
+	--db-poi-food-on-origin-default: light-dark(
+		var(--db-poi-food-on-origin-light-default),
+		var(--db-poi-food-on-origin-dark-default)
+	);
+	--db-poi-food-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-food-9),
+		var(--db-poi-food-5)
+	);
+	--db-poi-food-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-food-10),
+		var(--db-poi-food-6)
+	);
+	--db-poi-food-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-food-7),
+		var(--db-poi-food-8)
+	);
+	--db-poi-food-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-food-4),
+		var(--db-poi-food-10)
+	);
+	--db-poi-food-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-food-6),
+		var(--db-poi-food-9)
+	);
+	--db-poi-food-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-food-6),
+		var(--db-poi-food-9)
+	);
+	--db-poi-food-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-food-3),
+		var(--db-poi-food-12)
+	);
+	--db-poi-food-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-food-5),
+		var(--db-poi-food-10)
+	);
+	--db-poi-food-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-food-4),
+		var(--db-poi-food-10)
+	);
+	--db-poi-food-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-food-0),
+		var(--db-poi-food-14)
+	);
+	--db-poi-food-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-food-3),
+		var(--db-poi-food-11)
+	);
+	--db-poi-food-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-food-1),
+		var(--db-poi-food-12)
+	);
+	--db-poi-food-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-food-5),
+		var(--db-poi-food-9)
+	);
+	--db-poi-food-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-food-2),
+		var(--db-poi-food-11)
+	);
+	--db-poi-food-on-bg-inverted-default: light-dark(
+		var(--db-poi-food-14),
+		var(--db-poi-food-3)
+	);
+	--db-poi-food-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-food-11),
+		var(--db-poi-food-0)
+	);
+	--db-poi-food-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-food-13),
+		var(--db-poi-food-2)
+	);
+	--db-poi-food-on-bg-vibrant-default: light-dark(
+		var(--db-poi-food-1),
+		var(--db-poi-food-1)
+	);
+	--db-poi-food-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-food-4),
+		var(--db-poi-food-4)
+	);
+	--db-poi-food-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-food-2),
+		var(--db-poi-food-2)
+	);
+	--db-poi-food-bg-basic-level-1-default: light-dark(
+		var(--db-poi-food-14),
+		var(--db-poi-food-1)
+	);
+	--db-poi-food-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-food-13),
+		var(--db-poi-food-3)
+	);
+	--db-poi-food-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-food-12),
+		var(--db-poi-food-4)
+	);
+	--db-poi-food-bg-basic-level-2-default: light-dark(
+		var(--db-poi-food-13),
+		var(--db-poi-food-2)
+	);
+	--db-poi-food-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-food-12),
+		var(--db-poi-food-4)
+	);
+	--db-poi-food-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-food-11),
+		var(--db-poi-food-5)
+	);
+	--db-poi-food-bg-basic-level-3-default: light-dark(
+		var(--db-poi-food-12),
+		var(--db-poi-food-3)
+	);
+	--db-poi-food-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-food-11),
+		var(--db-poi-food-1)
+	);
+	--db-poi-food-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-food-10),
+		var(--db-poi-food-0)
+	);
+	--db-poi-food-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-food-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-food-9))
+	);
+	--db-poi-food-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-food-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-food-9))
+	);
+	--db-poi-food-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-food-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-food-9))
+	);
+	--db-poi-food-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-food-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-food-9))
+	);
+	--db-poi-food-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-food-1),
+		var(--db-poi-food-12)
+	);
+	--db-poi-food-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-food-5),
+		var(--db-poi-food-9)
+	);
+	--db-poi-food-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-food-2),
+		var(--db-poi-food-11)
+	);
+	--db-poi-food-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-food-6),
+		var(--db-poi-food-9)
+	);
+	--db-poi-food-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-food-2),
+		var(--db-poi-food-12)
+	);
+	--db-poi-food-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-food-5),
+		var(--db-poi-food-10)
+	);
+	--db-poi-food-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-food-7),
+		var(--db-poi-food-8)
+	);
+	--db-poi-food-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-food-3),
+		var(--db-poi-food-12)
+	);
+	--db-poi-food-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-food-6),
+		var(--db-poi-food-9)
+	);
+	--db-poi-food-bg-vibrant-default: light-dark(
+		var(--db-poi-food-9),
+		var(--db-poi-food-9)
+	);
+	--db-poi-food-bg-vibrant-hovered: light-dark(
+		var(--db-poi-food-12),
+		var(--db-poi-food-12)
+	);
+	--db-poi-food-bg-vibrant-pressed: light-dark(
+		var(--db-poi-food-10),
+		var(--db-poi-food-10)
+	);
+	--db-poi-shopping-origin-default: light-dark(
+		var(--db-poi-shopping-origin-light-default),
+		var(--db-poi-shopping-origin-dark-default)
+	);
+	--db-poi-shopping-origin-hovered: light-dark(
+		var(--db-poi-shopping-origin-light-hovered),
+		var(--db-poi-shopping-origin-dark-hovered)
+	);
+	--db-poi-shopping-origin-pressed: light-dark(
+		var(--db-poi-shopping-origin-light-pressed),
+		var(--db-poi-shopping-origin-dark-pressed)
+	);
+	--db-poi-shopping-on-origin-default: light-dark(
+		var(--db-poi-shopping-on-origin-light-default),
+		var(--db-poi-shopping-on-origin-dark-default)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-shopping-9),
+		var(--db-poi-shopping-5)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-shopping-10),
+		var(--db-poi-shopping-6)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-shopping-7),
+		var(--db-poi-shopping-8)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-shopping-4),
+		var(--db-poi-shopping-10)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-shopping-6),
+		var(--db-poi-shopping-9)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-shopping-6),
+		var(--db-poi-shopping-9)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-shopping-3),
+		var(--db-poi-shopping-12)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-shopping-5),
+		var(--db-poi-shopping-10)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-shopping-4),
+		var(--db-poi-shopping-10)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-shopping-0),
+		var(--db-poi-shopping-14)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-shopping-3),
+		var(--db-poi-shopping-11)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-shopping-1),
+		var(--db-poi-shopping-12)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-shopping-5),
+		var(--db-poi-shopping-9)
+	);
+	--db-poi-shopping-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-shopping-2),
+		var(--db-poi-shopping-11)
+	);
+	--db-poi-shopping-on-bg-inverted-default: light-dark(
+		var(--db-poi-shopping-14),
+		var(--db-poi-shopping-3)
+	);
+	--db-poi-shopping-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-shopping-11),
+		var(--db-poi-shopping-0)
+	);
+	--db-poi-shopping-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-shopping-13),
+		var(--db-poi-shopping-2)
+	);
+	--db-poi-shopping-on-bg-vibrant-default: light-dark(
+		var(--db-poi-shopping-1),
+		var(--db-poi-shopping-1)
+	);
+	--db-poi-shopping-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-shopping-4),
+		var(--db-poi-shopping-4)
+	);
+	--db-poi-shopping-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-shopping-2),
+		var(--db-poi-shopping-2)
+	);
+	--db-poi-shopping-bg-basic-level-1-default: light-dark(
+		var(--db-poi-shopping-14),
+		var(--db-poi-shopping-1)
+	);
+	--db-poi-shopping-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-shopping-13),
+		var(--db-poi-shopping-3)
+	);
+	--db-poi-shopping-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-shopping-12),
+		var(--db-poi-shopping-4)
+	);
+	--db-poi-shopping-bg-basic-level-2-default: light-dark(
+		var(--db-poi-shopping-13),
+		var(--db-poi-shopping-2)
+	);
+	--db-poi-shopping-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-shopping-12),
+		var(--db-poi-shopping-4)
+	);
+	--db-poi-shopping-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-shopping-11),
+		var(--db-poi-shopping-5)
+	);
+	--db-poi-shopping-bg-basic-level-3-default: light-dark(
+		var(--db-poi-shopping-12),
+		var(--db-poi-shopping-3)
+	);
+	--db-poi-shopping-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-shopping-11),
+		var(--db-poi-shopping-1)
+	);
+	--db-poi-shopping-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-shopping-10),
+		var(--db-poi-shopping-0)
+	);
+	--db-poi-shopping-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-shopping-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-shopping-9))
+	);
+	--db-poi-shopping-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-shopping-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-shopping-9))
+	);
+	--db-poi-shopping-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-shopping-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-shopping-9))
+	);
+	--db-poi-shopping-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-shopping-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-shopping-9))
+	);
+	--db-poi-shopping-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-shopping-1),
+		var(--db-poi-shopping-12)
+	);
+	--db-poi-shopping-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-shopping-5),
+		var(--db-poi-shopping-9)
+	);
+	--db-poi-shopping-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-shopping-2),
+		var(--db-poi-shopping-11)
+	);
+	--db-poi-shopping-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-shopping-6),
+		var(--db-poi-shopping-9)
+	);
+	--db-poi-shopping-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-shopping-2),
+		var(--db-poi-shopping-12)
+	);
+	--db-poi-shopping-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-shopping-5),
+		var(--db-poi-shopping-10)
+	);
+	--db-poi-shopping-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-shopping-7),
+		var(--db-poi-shopping-8)
+	);
+	--db-poi-shopping-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-shopping-3),
+		var(--db-poi-shopping-12)
+	);
+	--db-poi-shopping-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-shopping-6),
+		var(--db-poi-shopping-9)
+	);
+	--db-poi-shopping-bg-vibrant-default: light-dark(
+		var(--db-poi-shopping-9),
+		var(--db-poi-shopping-9)
+	);
+	--db-poi-shopping-bg-vibrant-hovered: light-dark(
+		var(--db-poi-shopping-12),
+		var(--db-poi-shopping-12)
+	);
+	--db-poi-shopping-bg-vibrant-pressed: light-dark(
+		var(--db-poi-shopping-10),
+		var(--db-poi-shopping-10)
+	);
+	--db-poi-health-origin-default: light-dark(
+		var(--db-poi-health-origin-light-default),
+		var(--db-poi-health-origin-dark-default)
+	);
+	--db-poi-health-origin-hovered: light-dark(
+		var(--db-poi-health-origin-light-hovered),
+		var(--db-poi-health-origin-dark-hovered)
+	);
+	--db-poi-health-origin-pressed: light-dark(
+		var(--db-poi-health-origin-light-pressed),
+		var(--db-poi-health-origin-dark-pressed)
+	);
+	--db-poi-health-on-origin-default: light-dark(
+		var(--db-poi-health-on-origin-light-default),
+		var(--db-poi-health-on-origin-dark-default)
+	);
+	--db-poi-health-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-health-9),
+		var(--db-poi-health-5)
+	);
+	--db-poi-health-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-health-10),
+		var(--db-poi-health-6)
+	);
+	--db-poi-health-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-health-7),
+		var(--db-poi-health-8)
+	);
+	--db-poi-health-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-health-4),
+		var(--db-poi-health-10)
+	);
+	--db-poi-health-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-health-6),
+		var(--db-poi-health-9)
+	);
+	--db-poi-health-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-health-6),
+		var(--db-poi-health-9)
+	);
+	--db-poi-health-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-health-3),
+		var(--db-poi-health-12)
+	);
+	--db-poi-health-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-health-5),
+		var(--db-poi-health-10)
+	);
+	--db-poi-health-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-health-4),
+		var(--db-poi-health-10)
+	);
+	--db-poi-health-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-health-0),
+		var(--db-poi-health-14)
+	);
+	--db-poi-health-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-health-3),
+		var(--db-poi-health-11)
+	);
+	--db-poi-health-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-health-1),
+		var(--db-poi-health-12)
+	);
+	--db-poi-health-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-health-5),
+		var(--db-poi-health-9)
+	);
+	--db-poi-health-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-health-2),
+		var(--db-poi-health-11)
+	);
+	--db-poi-health-on-bg-inverted-default: light-dark(
+		var(--db-poi-health-14),
+		var(--db-poi-health-3)
+	);
+	--db-poi-health-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-health-11),
+		var(--db-poi-health-0)
+	);
+	--db-poi-health-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-health-13),
+		var(--db-poi-health-2)
+	);
+	--db-poi-health-on-bg-vibrant-default: light-dark(
+		var(--db-poi-health-1),
+		var(--db-poi-health-1)
+	);
+	--db-poi-health-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-health-4),
+		var(--db-poi-health-4)
+	);
+	--db-poi-health-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-health-2),
+		var(--db-poi-health-2)
+	);
+	--db-poi-health-bg-basic-level-1-default: light-dark(
+		var(--db-poi-health-14),
+		var(--db-poi-health-1)
+	);
+	--db-poi-health-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-health-13),
+		var(--db-poi-health-3)
+	);
+	--db-poi-health-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-health-12),
+		var(--db-poi-health-4)
+	);
+	--db-poi-health-bg-basic-level-2-default: light-dark(
+		var(--db-poi-health-13),
+		var(--db-poi-health-2)
+	);
+	--db-poi-health-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-health-12),
+		var(--db-poi-health-4)
+	);
+	--db-poi-health-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-health-11),
+		var(--db-poi-health-5)
+	);
+	--db-poi-health-bg-basic-level-3-default: light-dark(
+		var(--db-poi-health-12),
+		var(--db-poi-health-3)
+	);
+	--db-poi-health-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-health-11),
+		var(--db-poi-health-1)
+	);
+	--db-poi-health-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-health-10),
+		var(--db-poi-health-0)
+	);
+	--db-poi-health-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-health-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-health-9))
+	);
+	--db-poi-health-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-health-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-health-9))
+	);
+	--db-poi-health-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-health-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-health-9))
+	);
+	--db-poi-health-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-health-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-health-9))
+	);
+	--db-poi-health-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-health-1),
+		var(--db-poi-health-12)
+	);
+	--db-poi-health-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-health-5),
+		var(--db-poi-health-9)
+	);
+	--db-poi-health-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-health-2),
+		var(--db-poi-health-11)
+	);
+	--db-poi-health-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-health-6),
+		var(--db-poi-health-9)
+	);
+	--db-poi-health-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-health-2),
+		var(--db-poi-health-12)
+	);
+	--db-poi-health-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-health-5),
+		var(--db-poi-health-10)
+	);
+	--db-poi-health-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-health-7),
+		var(--db-poi-health-8)
+	);
+	--db-poi-health-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-health-3),
+		var(--db-poi-health-12)
+	);
+	--db-poi-health-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-health-6),
+		var(--db-poi-health-9)
+	);
+	--db-poi-health-bg-vibrant-default: light-dark(
+		var(--db-poi-health-9),
+		var(--db-poi-health-9)
+	);
+	--db-poi-health-bg-vibrant-hovered: light-dark(
+		var(--db-poi-health-12),
+		var(--db-poi-health-12)
+	);
+	--db-poi-health-bg-vibrant-pressed: light-dark(
+		var(--db-poi-health-10),
+		var(--db-poi-health-10)
+	);
+	--db-poi-art-culture-origin-default: light-dark(
+		var(--db-poi-art-culture-origin-light-default),
+		var(--db-poi-art-culture-origin-dark-default)
+	);
+	--db-poi-art-culture-origin-hovered: light-dark(
+		var(--db-poi-art-culture-origin-light-hovered),
+		var(--db-poi-art-culture-origin-dark-hovered)
+	);
+	--db-poi-art-culture-origin-pressed: light-dark(
+		var(--db-poi-art-culture-origin-light-pressed),
+		var(--db-poi-art-culture-origin-dark-pressed)
+	);
+	--db-poi-art-culture-on-origin-default: light-dark(
+		var(--db-poi-art-culture-on-origin-light-default),
+		var(--db-poi-art-culture-on-origin-dark-default)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-art-culture-9),
+		var(--db-poi-art-culture-5)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-art-culture-10),
+		var(--db-poi-art-culture-6)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-art-culture-7),
+		var(--db-poi-art-culture-8)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-art-culture-4),
+		var(--db-poi-art-culture-10)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-art-culture-6),
+		var(--db-poi-art-culture-9)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-art-culture-6),
+		var(--db-poi-art-culture-9)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-art-culture-3),
+		var(--db-poi-art-culture-12)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-art-culture-5),
+		var(--db-poi-art-culture-10)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-art-culture-4),
+		var(--db-poi-art-culture-10)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-art-culture-0),
+		var(--db-poi-art-culture-14)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-art-culture-3),
+		var(--db-poi-art-culture-11)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-art-culture-1),
+		var(--db-poi-art-culture-12)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-art-culture-5),
+		var(--db-poi-art-culture-9)
+	);
+	--db-poi-art-culture-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-art-culture-2),
+		var(--db-poi-art-culture-11)
+	);
+	--db-poi-art-culture-on-bg-inverted-default: light-dark(
+		var(--db-poi-art-culture-14),
+		var(--db-poi-art-culture-3)
+	);
+	--db-poi-art-culture-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-art-culture-11),
+		var(--db-poi-art-culture-0)
+	);
+	--db-poi-art-culture-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-art-culture-13),
+		var(--db-poi-art-culture-2)
+	);
+	--db-poi-art-culture-on-bg-vibrant-default: light-dark(
+		var(--db-poi-art-culture-1),
+		var(--db-poi-art-culture-1)
+	);
+	--db-poi-art-culture-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-art-culture-4),
+		var(--db-poi-art-culture-4)
+	);
+	--db-poi-art-culture-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-art-culture-2),
+		var(--db-poi-art-culture-2)
+	);
+	--db-poi-art-culture-bg-basic-level-1-default: light-dark(
+		var(--db-poi-art-culture-14),
+		var(--db-poi-art-culture-1)
+	);
+	--db-poi-art-culture-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-art-culture-13),
+		var(--db-poi-art-culture-3)
+	);
+	--db-poi-art-culture-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-art-culture-12),
+		var(--db-poi-art-culture-4)
+	);
+	--db-poi-art-culture-bg-basic-level-2-default: light-dark(
+		var(--db-poi-art-culture-13),
+		var(--db-poi-art-culture-2)
+	);
+	--db-poi-art-culture-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-art-culture-12),
+		var(--db-poi-art-culture-4)
+	);
+	--db-poi-art-culture-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-art-culture-11),
+		var(--db-poi-art-culture-5)
+	);
+	--db-poi-art-culture-bg-basic-level-3-default: light-dark(
+		var(--db-poi-art-culture-12),
+		var(--db-poi-art-culture-3)
+	);
+	--db-poi-art-culture-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-art-culture-11),
+		var(--db-poi-art-culture-1)
+	);
+	--db-poi-art-culture-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-art-culture-10),
+		var(--db-poi-art-culture-0)
+	);
+	--db-poi-art-culture-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-art-culture-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-art-culture-9))
+	);
+	--db-poi-art-culture-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-art-culture-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-art-culture-9))
+	);
+	--db-poi-art-culture-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-art-culture-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-art-culture-9))
+	);
+	--db-poi-art-culture-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-art-culture-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-art-culture-9))
+	);
+	--db-poi-art-culture-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-art-culture-1),
+		var(--db-poi-art-culture-12)
+	);
+	--db-poi-art-culture-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-art-culture-5),
+		var(--db-poi-art-culture-9)
+	);
+	--db-poi-art-culture-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-art-culture-2),
+		var(--db-poi-art-culture-11)
+	);
+	--db-poi-art-culture-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-art-culture-6),
+		var(--db-poi-art-culture-9)
+	);
+	--db-poi-art-culture-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-art-culture-2),
+		var(--db-poi-art-culture-12)
+	);
+	--db-poi-art-culture-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-art-culture-5),
+		var(--db-poi-art-culture-10)
+	);
+	--db-poi-art-culture-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-art-culture-7),
+		var(--db-poi-art-culture-8)
+	);
+	--db-poi-art-culture-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-art-culture-3),
+		var(--db-poi-art-culture-12)
+	);
+	--db-poi-art-culture-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-art-culture-6),
+		var(--db-poi-art-culture-9)
+	);
+	--db-poi-art-culture-bg-vibrant-default: light-dark(
+		var(--db-poi-art-culture-9),
+		var(--db-poi-art-culture-9)
+	);
+	--db-poi-art-culture-bg-vibrant-hovered: light-dark(
+		var(--db-poi-art-culture-12),
+		var(--db-poi-art-culture-12)
+	);
+	--db-poi-art-culture-bg-vibrant-pressed: light-dark(
+		var(--db-poi-art-culture-10),
+		var(--db-poi-art-culture-10)
+	);
+	--db-poi-wissenswertes-origin-default: light-dark(
+		var(--db-poi-wissenswertes-origin-light-default),
+		var(--db-poi-wissenswertes-origin-dark-default)
+	);
+	--db-poi-wissenswertes-origin-hovered: light-dark(
+		var(--db-poi-wissenswertes-origin-light-hovered),
+		var(--db-poi-wissenswertes-origin-dark-hovered)
+	);
+	--db-poi-wissenswertes-origin-pressed: light-dark(
+		var(--db-poi-wissenswertes-origin-light-pressed),
+		var(--db-poi-wissenswertes-origin-dark-pressed)
+	);
+	--db-poi-wissenswertes-on-origin-default: light-dark(
+		var(--db-poi-wissenswertes-on-origin-light-default),
+		var(--db-poi-wissenswertes-on-origin-dark-default)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-wissenswertes-9),
+		var(--db-poi-wissenswertes-5)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-wissenswertes-10),
+		var(--db-poi-wissenswertes-6)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-wissenswertes-7),
+		var(--db-poi-wissenswertes-8)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-wissenswertes-4),
+		var(--db-poi-wissenswertes-10)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-wissenswertes-6),
+		var(--db-poi-wissenswertes-9)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-wissenswertes-6),
+		var(--db-poi-wissenswertes-9)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-wissenswertes-3),
+		var(--db-poi-wissenswertes-12)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-wissenswertes-5),
+		var(--db-poi-wissenswertes-10)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-wissenswertes-4),
+		var(--db-poi-wissenswertes-10)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-wissenswertes-0),
+		var(--db-poi-wissenswertes-14)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-wissenswertes-3),
+		var(--db-poi-wissenswertes-11)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-wissenswertes-1),
+		var(--db-poi-wissenswertes-12)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-wissenswertes-5),
+		var(--db-poi-wissenswertes-9)
+	);
+	--db-poi-wissenswertes-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-wissenswertes-2),
+		var(--db-poi-wissenswertes-11)
+	);
+	--db-poi-wissenswertes-on-bg-inverted-default: light-dark(
+		var(--db-poi-wissenswertes-14),
+		var(--db-poi-wissenswertes-3)
+	);
+	--db-poi-wissenswertes-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-wissenswertes-11),
+		var(--db-poi-wissenswertes-0)
+	);
+	--db-poi-wissenswertes-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-wissenswertes-13),
+		var(--db-poi-wissenswertes-2)
+	);
+	--db-poi-wissenswertes-on-bg-vibrant-default: light-dark(
+		var(--db-poi-wissenswertes-1),
+		var(--db-poi-wissenswertes-1)
+	);
+	--db-poi-wissenswertes-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-wissenswertes-4),
+		var(--db-poi-wissenswertes-4)
+	);
+	--db-poi-wissenswertes-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-wissenswertes-2),
+		var(--db-poi-wissenswertes-2)
+	);
+	--db-poi-wissenswertes-bg-basic-level-1-default: light-dark(
+		var(--db-poi-wissenswertes-14),
+		var(--db-poi-wissenswertes-1)
+	);
+	--db-poi-wissenswertes-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-wissenswertes-13),
+		var(--db-poi-wissenswertes-3)
+	);
+	--db-poi-wissenswertes-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-wissenswertes-12),
+		var(--db-poi-wissenswertes-4)
+	);
+	--db-poi-wissenswertes-bg-basic-level-2-default: light-dark(
+		var(--db-poi-wissenswertes-13),
+		var(--db-poi-wissenswertes-2)
+	);
+	--db-poi-wissenswertes-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-wissenswertes-12),
+		var(--db-poi-wissenswertes-4)
+	);
+	--db-poi-wissenswertes-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-wissenswertes-11),
+		var(--db-poi-wissenswertes-5)
+	);
+	--db-poi-wissenswertes-bg-basic-level-3-default: light-dark(
+		var(--db-poi-wissenswertes-12),
+		var(--db-poi-wissenswertes-3)
+	);
+	--db-poi-wissenswertes-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-wissenswertes-11),
+		var(--db-poi-wissenswertes-1)
+	);
+	--db-poi-wissenswertes-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-wissenswertes-10),
+		var(--db-poi-wissenswertes-0)
+	);
+	--db-poi-wissenswertes-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-wissenswertes-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-wissenswertes-9))
+	);
+	--db-poi-wissenswertes-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-wissenswertes-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-wissenswertes-9))
+	);
+	--db-poi-wissenswertes-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-wissenswertes-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-wissenswertes-9))
+	);
+	--db-poi-wissenswertes-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-wissenswertes-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-wissenswertes-9))
+	);
+	--db-poi-wissenswertes-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-wissenswertes-1),
+		var(--db-poi-wissenswertes-12)
+	);
+	--db-poi-wissenswertes-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-wissenswertes-5),
+		var(--db-poi-wissenswertes-9)
+	);
+	--db-poi-wissenswertes-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-wissenswertes-2),
+		var(--db-poi-wissenswertes-11)
+	);
+	--db-poi-wissenswertes-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-wissenswertes-6),
+		var(--db-poi-wissenswertes-9)
+	);
+	--db-poi-wissenswertes-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-wissenswertes-2),
+		var(--db-poi-wissenswertes-12)
+	);
+	--db-poi-wissenswertes-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-wissenswertes-5),
+		var(--db-poi-wissenswertes-10)
+	);
+	--db-poi-wissenswertes-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-wissenswertes-7),
+		var(--db-poi-wissenswertes-8)
+	);
+	--db-poi-wissenswertes-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-wissenswertes-3),
+		var(--db-poi-wissenswertes-12)
+	);
+	--db-poi-wissenswertes-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-wissenswertes-6),
+		var(--db-poi-wissenswertes-9)
+	);
+	--db-poi-wissenswertes-bg-vibrant-default: light-dark(
+		var(--db-poi-wissenswertes-9),
+		var(--db-poi-wissenswertes-9)
+	);
+	--db-poi-wissenswertes-bg-vibrant-hovered: light-dark(
+		var(--db-poi-wissenswertes-12),
+		var(--db-poi-wissenswertes-12)
+	);
+	--db-poi-wissenswertes-bg-vibrant-pressed: light-dark(
+		var(--db-poi-wissenswertes-10),
+		var(--db-poi-wissenswertes-10)
+	);
+	--db-poi-leisure-time-origin-default: light-dark(
+		var(--db-poi-leisure-time-origin-light-default),
+		var(--db-poi-leisure-time-origin-dark-default)
+	);
+	--db-poi-leisure-time-origin-hovered: light-dark(
+		var(--db-poi-leisure-time-origin-light-hovered),
+		var(--db-poi-leisure-time-origin-dark-hovered)
+	);
+	--db-poi-leisure-time-origin-pressed: light-dark(
+		var(--db-poi-leisure-time-origin-light-pressed),
+		var(--db-poi-leisure-time-origin-dark-pressed)
+	);
+	--db-poi-leisure-time-on-origin-default: light-dark(
+		var(--db-poi-leisure-time-on-origin-light-default),
+		var(--db-poi-leisure-time-on-origin-dark-default)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-leisure-time-9),
+		var(--db-poi-leisure-time-5)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-leisure-time-10),
+		var(--db-poi-leisure-time-6)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-leisure-time-7),
+		var(--db-poi-leisure-time-8)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-leisure-time-4),
+		var(--db-poi-leisure-time-10)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-leisure-time-6),
+		var(--db-poi-leisure-time-9)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-leisure-time-6),
+		var(--db-poi-leisure-time-9)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-leisure-time-3),
+		var(--db-poi-leisure-time-12)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-leisure-time-5),
+		var(--db-poi-leisure-time-10)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-leisure-time-4),
+		var(--db-poi-leisure-time-10)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-leisure-time-0),
+		var(--db-poi-leisure-time-14)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-leisure-time-3),
+		var(--db-poi-leisure-time-11)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-leisure-time-1),
+		var(--db-poi-leisure-time-12)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-leisure-time-5),
+		var(--db-poi-leisure-time-9)
+	);
+	--db-poi-leisure-time-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-leisure-time-2),
+		var(--db-poi-leisure-time-11)
+	);
+	--db-poi-leisure-time-on-bg-inverted-default: light-dark(
+		var(--db-poi-leisure-time-14),
+		var(--db-poi-leisure-time-3)
+	);
+	--db-poi-leisure-time-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-leisure-time-11),
+		var(--db-poi-leisure-time-0)
+	);
+	--db-poi-leisure-time-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-leisure-time-13),
+		var(--db-poi-leisure-time-2)
+	);
+	--db-poi-leisure-time-on-bg-vibrant-default: light-dark(
+		var(--db-poi-leisure-time-1),
+		var(--db-poi-leisure-time-1)
+	);
+	--db-poi-leisure-time-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-leisure-time-4),
+		var(--db-poi-leisure-time-4)
+	);
+	--db-poi-leisure-time-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-leisure-time-2),
+		var(--db-poi-leisure-time-2)
+	);
+	--db-poi-leisure-time-bg-basic-level-1-default: light-dark(
+		var(--db-poi-leisure-time-14),
+		var(--db-poi-leisure-time-1)
+	);
+	--db-poi-leisure-time-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-leisure-time-13),
+		var(--db-poi-leisure-time-3)
+	);
+	--db-poi-leisure-time-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-leisure-time-12),
+		var(--db-poi-leisure-time-4)
+	);
+	--db-poi-leisure-time-bg-basic-level-2-default: light-dark(
+		var(--db-poi-leisure-time-13),
+		var(--db-poi-leisure-time-2)
+	);
+	--db-poi-leisure-time-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-leisure-time-12),
+		var(--db-poi-leisure-time-4)
+	);
+	--db-poi-leisure-time-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-leisure-time-11),
+		var(--db-poi-leisure-time-5)
+	);
+	--db-poi-leisure-time-bg-basic-level-3-default: light-dark(
+		var(--db-poi-leisure-time-12),
+		var(--db-poi-leisure-time-3)
+	);
+	--db-poi-leisure-time-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-leisure-time-11),
+		var(--db-poi-leisure-time-1)
+	);
+	--db-poi-leisure-time-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-leisure-time-10),
+		var(--db-poi-leisure-time-0)
+	);
+	--db-poi-leisure-time-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-leisure-time-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-leisure-time-9))
+	);
+	--db-poi-leisure-time-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-leisure-time-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-leisure-time-9))
+	);
+	--db-poi-leisure-time-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-leisure-time-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-leisure-time-9))
+	);
+	--db-poi-leisure-time-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-leisure-time-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-leisure-time-9))
+	);
+	--db-poi-leisure-time-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-leisure-time-1),
+		var(--db-poi-leisure-time-12)
+	);
+	--db-poi-leisure-time-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-leisure-time-5),
+		var(--db-poi-leisure-time-9)
+	);
+	--db-poi-leisure-time-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-leisure-time-2),
+		var(--db-poi-leisure-time-11)
+	);
+	--db-poi-leisure-time-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-leisure-time-6),
+		var(--db-poi-leisure-time-9)
+	);
+	--db-poi-leisure-time-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-leisure-time-2),
+		var(--db-poi-leisure-time-12)
+	);
+	--db-poi-leisure-time-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-leisure-time-5),
+		var(--db-poi-leisure-time-10)
+	);
+	--db-poi-leisure-time-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-leisure-time-7),
+		var(--db-poi-leisure-time-8)
+	);
+	--db-poi-leisure-time-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-leisure-time-3),
+		var(--db-poi-leisure-time-12)
+	);
+	--db-poi-leisure-time-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-leisure-time-6),
+		var(--db-poi-leisure-time-9)
+	);
+	--db-poi-leisure-time-bg-vibrant-default: light-dark(
+		var(--db-poi-leisure-time-9),
+		var(--db-poi-leisure-time-9)
+	);
+	--db-poi-leisure-time-bg-vibrant-hovered: light-dark(
+		var(--db-poi-leisure-time-12),
+		var(--db-poi-leisure-time-12)
+	);
+	--db-poi-leisure-time-bg-vibrant-pressed: light-dark(
+		var(--db-poi-leisure-time-10),
+		var(--db-poi-leisure-time-10)
+	);
+	--db-poi-facilities-origin-default: light-dark(
+		var(--db-poi-facilities-origin-light-default),
+		var(--db-poi-facilities-origin-dark-default)
+	);
+	--db-poi-facilities-origin-hovered: light-dark(
+		var(--db-poi-facilities-origin-light-hovered),
+		var(--db-poi-facilities-origin-dark-hovered)
+	);
+	--db-poi-facilities-origin-pressed: light-dark(
+		var(--db-poi-facilities-origin-light-pressed),
+		var(--db-poi-facilities-origin-dark-pressed)
+	);
+	--db-poi-facilities-on-origin-default: light-dark(
+		var(--db-poi-facilities-on-origin-light-default),
+		var(--db-poi-facilities-on-origin-dark-default)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-facilities-9),
+		var(--db-poi-facilities-5)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-facilities-10),
+		var(--db-poi-facilities-6)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-facilities-7),
+		var(--db-poi-facilities-8)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-facilities-4),
+		var(--db-poi-facilities-10)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-facilities-6),
+		var(--db-poi-facilities-9)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-facilities-6),
+		var(--db-poi-facilities-9)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-facilities-3),
+		var(--db-poi-facilities-12)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-facilities-5),
+		var(--db-poi-facilities-10)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-facilities-4),
+		var(--db-poi-facilities-10)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-facilities-0),
+		var(--db-poi-facilities-14)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-facilities-3),
+		var(--db-poi-facilities-11)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-facilities-1),
+		var(--db-poi-facilities-12)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-facilities-5),
+		var(--db-poi-facilities-9)
+	);
+	--db-poi-facilities-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-facilities-2),
+		var(--db-poi-facilities-11)
+	);
+	--db-poi-facilities-on-bg-inverted-default: light-dark(
+		var(--db-poi-facilities-14),
+		var(--db-poi-facilities-3)
+	);
+	--db-poi-facilities-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-facilities-11),
+		var(--db-poi-facilities-0)
+	);
+	--db-poi-facilities-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-facilities-13),
+		var(--db-poi-facilities-2)
+	);
+	--db-poi-facilities-on-bg-vibrant-default: light-dark(
+		var(--db-poi-facilities-1),
+		var(--db-poi-facilities-1)
+	);
+	--db-poi-facilities-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-facilities-4),
+		var(--db-poi-facilities-4)
+	);
+	--db-poi-facilities-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-facilities-2),
+		var(--db-poi-facilities-2)
+	);
+	--db-poi-facilities-bg-basic-level-1-default: light-dark(
+		var(--db-poi-facilities-14),
+		var(--db-poi-facilities-1)
+	);
+	--db-poi-facilities-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-facilities-13),
+		var(--db-poi-facilities-3)
+	);
+	--db-poi-facilities-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-facilities-12),
+		var(--db-poi-facilities-4)
+	);
+	--db-poi-facilities-bg-basic-level-2-default: light-dark(
+		var(--db-poi-facilities-13),
+		var(--db-poi-facilities-2)
+	);
+	--db-poi-facilities-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-facilities-12),
+		var(--db-poi-facilities-4)
+	);
+	--db-poi-facilities-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-facilities-11),
+		var(--db-poi-facilities-5)
+	);
+	--db-poi-facilities-bg-basic-level-3-default: light-dark(
+		var(--db-poi-facilities-12),
+		var(--db-poi-facilities-3)
+	);
+	--db-poi-facilities-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-facilities-11),
+		var(--db-poi-facilities-1)
+	);
+	--db-poi-facilities-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-facilities-10),
+		var(--db-poi-facilities-0)
+	);
+	--db-poi-facilities-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-facilities-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-facilities-9))
+	);
+	--db-poi-facilities-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-facilities-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-facilities-9))
+	);
+	--db-poi-facilities-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-facilities-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-facilities-9))
+	);
+	--db-poi-facilities-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-facilities-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-facilities-9))
+	);
+	--db-poi-facilities-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-facilities-1),
+		var(--db-poi-facilities-12)
+	);
+	--db-poi-facilities-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-facilities-5),
+		var(--db-poi-facilities-9)
+	);
+	--db-poi-facilities-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-facilities-2),
+		var(--db-poi-facilities-11)
+	);
+	--db-poi-facilities-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-facilities-6),
+		var(--db-poi-facilities-9)
+	);
+	--db-poi-facilities-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-facilities-2),
+		var(--db-poi-facilities-12)
+	);
+	--db-poi-facilities-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-facilities-5),
+		var(--db-poi-facilities-10)
+	);
+	--db-poi-facilities-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-facilities-7),
+		var(--db-poi-facilities-8)
+	);
+	--db-poi-facilities-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-facilities-3),
+		var(--db-poi-facilities-12)
+	);
+	--db-poi-facilities-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-facilities-6),
+		var(--db-poi-facilities-9)
+	);
+	--db-poi-facilities-bg-vibrant-default: light-dark(
+		var(--db-poi-facilities-9),
+		var(--db-poi-facilities-9)
+	);
+	--db-poi-facilities-bg-vibrant-hovered: light-dark(
+		var(--db-poi-facilities-12),
+		var(--db-poi-facilities-12)
+	);
+	--db-poi-facilities-bg-vibrant-pressed: light-dark(
+		var(--db-poi-facilities-10),
+		var(--db-poi-facilities-10)
+	);
+	--db-poi-services-origin-default: light-dark(
+		var(--db-poi-services-origin-light-default),
+		var(--db-poi-services-origin-dark-default)
+	);
+	--db-poi-services-origin-hovered: light-dark(
+		var(--db-poi-services-origin-light-hovered),
+		var(--db-poi-services-origin-dark-hovered)
+	);
+	--db-poi-services-origin-pressed: light-dark(
+		var(--db-poi-services-origin-light-pressed),
+		var(--db-poi-services-origin-dark-pressed)
+	);
+	--db-poi-services-on-origin-default: light-dark(
+		var(--db-poi-services-on-origin-light-default),
+		var(--db-poi-services-on-origin-dark-default)
+	);
+	--db-poi-services-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-services-9),
+		var(--db-poi-services-5)
+	);
+	--db-poi-services-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-services-10),
+		var(--db-poi-services-6)
+	);
+	--db-poi-services-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-services-7),
+		var(--db-poi-services-8)
+	);
+	--db-poi-services-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-services-4),
+		var(--db-poi-services-10)
+	);
+	--db-poi-services-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-services-6),
+		var(--db-poi-services-9)
+	);
+	--db-poi-services-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-services-6),
+		var(--db-poi-services-9)
+	);
+	--db-poi-services-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-services-3),
+		var(--db-poi-services-12)
+	);
+	--db-poi-services-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-services-5),
+		var(--db-poi-services-10)
+	);
+	--db-poi-services-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-services-4),
+		var(--db-poi-services-10)
+	);
+	--db-poi-services-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-services-0),
+		var(--db-poi-services-14)
+	);
+	--db-poi-services-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-services-3),
+		var(--db-poi-services-11)
+	);
+	--db-poi-services-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-services-1),
+		var(--db-poi-services-12)
+	);
+	--db-poi-services-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-services-5),
+		var(--db-poi-services-9)
+	);
+	--db-poi-services-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-services-2),
+		var(--db-poi-services-11)
+	);
+	--db-poi-services-on-bg-inverted-default: light-dark(
+		var(--db-poi-services-14),
+		var(--db-poi-services-3)
+	);
+	--db-poi-services-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-services-11),
+		var(--db-poi-services-0)
+	);
+	--db-poi-services-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-services-13),
+		var(--db-poi-services-2)
+	);
+	--db-poi-services-on-bg-vibrant-default: light-dark(
+		var(--db-poi-services-1),
+		var(--db-poi-services-1)
+	);
+	--db-poi-services-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-services-4),
+		var(--db-poi-services-4)
+	);
+	--db-poi-services-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-services-2),
+		var(--db-poi-services-2)
+	);
+	--db-poi-services-bg-basic-level-1-default: light-dark(
+		var(--db-poi-services-14),
+		var(--db-poi-services-1)
+	);
+	--db-poi-services-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-services-13),
+		var(--db-poi-services-3)
+	);
+	--db-poi-services-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-services-12),
+		var(--db-poi-services-4)
+	);
+	--db-poi-services-bg-basic-level-2-default: light-dark(
+		var(--db-poi-services-13),
+		var(--db-poi-services-2)
+	);
+	--db-poi-services-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-services-12),
+		var(--db-poi-services-4)
+	);
+	--db-poi-services-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-services-11),
+		var(--db-poi-services-5)
+	);
+	--db-poi-services-bg-basic-level-3-default: light-dark(
+		var(--db-poi-services-12),
+		var(--db-poi-services-3)
+	);
+	--db-poi-services-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-services-11),
+		var(--db-poi-services-1)
+	);
+	--db-poi-services-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-services-10),
+		var(--db-poi-services-0)
+	);
+	--db-poi-services-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-services-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-services-9))
+	);
+	--db-poi-services-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-services-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-services-9))
+	);
+	--db-poi-services-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-services-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-services-9))
+	);
+	--db-poi-services-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-services-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-services-9))
+	);
+	--db-poi-services-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-services-1),
+		var(--db-poi-services-12)
+	);
+	--db-poi-services-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-services-5),
+		var(--db-poi-services-9)
+	);
+	--db-poi-services-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-services-2),
+		var(--db-poi-services-11)
+	);
+	--db-poi-services-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-services-6),
+		var(--db-poi-services-9)
+	);
+	--db-poi-services-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-services-2),
+		var(--db-poi-services-12)
+	);
+	--db-poi-services-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-services-5),
+		var(--db-poi-services-10)
+	);
+	--db-poi-services-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-services-7),
+		var(--db-poi-services-8)
+	);
+	--db-poi-services-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-services-3),
+		var(--db-poi-services-12)
+	);
+	--db-poi-services-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-services-6),
+		var(--db-poi-services-9)
+	);
+	--db-poi-services-bg-vibrant-default: light-dark(
+		var(--db-poi-services-9),
+		var(--db-poi-services-9)
+	);
+	--db-poi-services-bg-vibrant-hovered: light-dark(
+		var(--db-poi-services-12),
+		var(--db-poi-services-12)
+	);
+	--db-poi-services-bg-vibrant-pressed: light-dark(
+		var(--db-poi-services-10),
+		var(--db-poi-services-10)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-db-services-9),
+		var(--db-poi-db-services-5)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-db-services-10),
+		var(--db-poi-db-services-6)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-db-services-7),
+		var(--db-poi-db-services-8)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-db-services-4),
+		var(--db-poi-db-services-10)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-db-services-6),
+		var(--db-poi-db-services-9)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-db-services-6),
+		var(--db-poi-db-services-9)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-db-services-3),
+		var(--db-poi-db-services-12)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-db-services-5),
+		var(--db-poi-db-services-10)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-db-services-0),
+		var(--db-poi-db-services-14)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-db-services-3),
+		var(--db-poi-db-services-11)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-db-services-5),
+		var(--db-poi-db-services-9)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-db-services-2),
+		var(--db-poi-db-services-11)
+	);
+	--db-poi-db-services-on-bg-inverted-default: light-dark(
+		var(--db-poi-db-services-14),
+		var(--db-poi-db-services-3)
+	);
+	--db-poi-db-services-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-db-services-11),
+		var(--db-poi-db-services-0)
+	);
+	--db-poi-db-services-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-db-services-13),
+		var(--db-poi-db-services-2)
+	);
+	--db-poi-db-services-on-bg-vibrant-default: light-dark(
+		var(--db-poi-db-services-1),
+		var(--db-poi-db-services-1)
+	);
+	--db-poi-db-services-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-db-services-4),
+		var(--db-poi-db-services-4)
+	);
+	--db-poi-db-services-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-db-services-2),
+		var(--db-poi-db-services-2)
+	);
+	--db-poi-db-services-bg-basic-level-1-default: light-dark(
+		var(--db-poi-db-services-14),
+		var(--db-poi-db-services-1)
+	);
+	--db-poi-db-services-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-db-services-13),
+		var(--db-poi-db-services-3)
+	);
+	--db-poi-db-services-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-db-services-12),
+		var(--db-poi-db-services-4)
+	);
+	--db-poi-db-services-bg-basic-level-2-default: light-dark(
+		var(--db-poi-db-services-13),
+		var(--db-poi-db-services-2)
+	);
+	--db-poi-db-services-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-db-services-12),
+		var(--db-poi-db-services-4)
+	);
+	--db-poi-db-services-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-db-services-11),
+		var(--db-poi-db-services-5)
+	);
+	--db-poi-db-services-bg-basic-level-3-default: light-dark(
+		var(--db-poi-db-services-12),
+		var(--db-poi-db-services-3)
+	);
+	--db-poi-db-services-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-db-services-11),
+		var(--db-poi-db-services-1)
+	);
+	--db-poi-db-services-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-db-services-10),
+		var(--db-poi-db-services-0)
+	);
+	--db-poi-db-services-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-db-services-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-db-services-9))
+	);
+	--db-poi-db-services-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-db-services-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-db-services-9))
+	);
+	--db-poi-db-services-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-db-services-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-db-services-9))
+	);
+	--db-poi-db-services-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-db-services-1),
+		var(--db-poi-db-services-12)
+	);
+	--db-poi-db-services-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-db-services-5),
+		var(--db-poi-db-services-9)
+	);
+	--db-poi-db-services-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-db-services-2),
+		var(--db-poi-db-services-11)
+	);
+	--db-poi-db-services-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-db-services-6),
+		var(--db-poi-db-services-9)
+	);
+	--db-poi-db-services-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-db-services-2),
+		var(--db-poi-db-services-12)
+	);
+	--db-poi-db-services-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-db-services-5),
+		var(--db-poi-db-services-10)
+	);
+	--db-poi-db-services-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-db-services-7),
+		var(--db-poi-db-services-8)
+	);
+	--db-poi-db-services-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-db-services-3),
+		var(--db-poi-db-services-12)
+	);
+	--db-poi-db-services-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-db-services-6),
+		var(--db-poi-db-services-9)
+	);
+	--db-poi-db-services-bg-vibrant-default: light-dark(
+		var(--db-poi-db-services-9),
+		var(--db-poi-db-services-9)
+	);
+	--db-poi-db-services-bg-vibrant-hovered: light-dark(
+		var(--db-poi-db-services-12),
+		var(--db-poi-db-services-12)
+	);
+	--db-poi-db-services-bg-vibrant-pressed: light-dark(
+		var(--db-poi-db-services-10),
+		var(--db-poi-db-services-10)
+	);
+	--db-poi-routing-origin-default: light-dark(
+		var(--db-poi-routing-origin-light-default),
+		var(--db-poi-routing-origin-dark-default)
+	);
+	--db-poi-routing-origin-hovered: light-dark(
+		var(--db-poi-routing-origin-light-hovered),
+		var(--db-poi-routing-origin-dark-hovered)
+	);
+	--db-poi-routing-origin-pressed: light-dark(
+		var(--db-poi-routing-origin-light-pressed),
+		var(--db-poi-routing-origin-dark-pressed)
+	);
+	--db-poi-routing-on-origin-default: light-dark(
+		var(--db-poi-routing-on-origin-light-default),
+		var(--db-poi-routing-on-origin-dark-default)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-50-default: light-dark(
+		var(--db-poi-routing-9),
+		var(--db-poi-routing-5)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-60-default: light-dark(
+		var(--db-poi-routing-10),
+		var(--db-poi-routing-6)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-poi-routing-7),
+		var(--db-poi-routing-8)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-70-hovered: light-dark(
+		var(--db-poi-routing-4),
+		var(--db-poi-routing-10)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-70-pressed: light-dark(
+		var(--db-poi-routing-6),
+		var(--db-poi-routing-9)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-80-default: light-dark(
+		var(--db-poi-routing-6),
+		var(--db-poi-routing-9)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-80-hovered: light-dark(
+		var(--db-poi-routing-3),
+		var(--db-poi-routing-12)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-80-pressed: light-dark(
+		var(--db-poi-routing-5),
+		var(--db-poi-routing-10)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-routing-4),
+		var(--db-poi-routing-10)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-90-hovered: light-dark(
+		var(--db-poi-routing-0),
+		var(--db-poi-routing-14)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-90-pressed: light-dark(
+		var(--db-poi-routing-3),
+		var(--db-poi-routing-11)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-routing-1),
+		var(--db-poi-routing-12)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-100-hovered: light-dark(
+		var(--db-poi-routing-5),
+		var(--db-poi-routing-9)
+	);
+	--db-poi-routing-on-bg-basic-emphasis-100-pressed: light-dark(
+		var(--db-poi-routing-2),
+		var(--db-poi-routing-11)
+	);
+	--db-poi-routing-on-bg-inverted-default: light-dark(
+		var(--db-poi-routing-14),
+		var(--db-poi-routing-3)
+	);
+	--db-poi-routing-on-bg-inverted-hovered: light-dark(
+		var(--db-poi-routing-11),
+		var(--db-poi-routing-0)
+	);
+	--db-poi-routing-on-bg-inverted-pressed: light-dark(
+		var(--db-poi-routing-13),
+		var(--db-poi-routing-2)
+	);
+	--db-poi-routing-on-bg-vibrant-default: light-dark(
+		var(--db-poi-routing-1),
+		var(--db-poi-routing-1)
+	);
+	--db-poi-routing-on-bg-vibrant-hovered: light-dark(
+		var(--db-poi-routing-4),
+		var(--db-poi-routing-4)
+	);
+	--db-poi-routing-on-bg-vibrant-pressed: light-dark(
+		var(--db-poi-routing-2),
+		var(--db-poi-routing-2)
+	);
+	--db-poi-routing-bg-basic-level-1-default: light-dark(
+		var(--db-poi-routing-14),
+		var(--db-poi-routing-1)
+	);
+	--db-poi-routing-bg-basic-level-1-hovered: light-dark(
+		var(--db-poi-routing-13),
+		var(--db-poi-routing-3)
+	);
+	--db-poi-routing-bg-basic-level-1-pressed: light-dark(
+		var(--db-poi-routing-12),
+		var(--db-poi-routing-4)
+	);
+	--db-poi-routing-bg-basic-level-2-default: light-dark(
+		var(--db-poi-routing-13),
+		var(--db-poi-routing-2)
+	);
+	--db-poi-routing-bg-basic-level-2-hovered: light-dark(
+		var(--db-poi-routing-12),
+		var(--db-poi-routing-4)
+	);
+	--db-poi-routing-bg-basic-level-2-pressed: light-dark(
+		var(--db-poi-routing-11),
+		var(--db-poi-routing-5)
+	);
+	--db-poi-routing-bg-basic-level-3-default: light-dark(
+		var(--db-poi-routing-12),
+		var(--db-poi-routing-3)
+	);
+	--db-poi-routing-bg-basic-level-3-hovered: light-dark(
+		var(--db-poi-routing-11),
+		var(--db-poi-routing-1)
+	);
+	--db-poi-routing-bg-basic-level-3-pressed: light-dark(
+		var(--db-poi-routing-10),
+		var(--db-poi-routing-0)
+	);
+	--db-poi-routing-bg-basic-transparent-full-default: light-dark(
+		color-mix(in srgb, transparent 100%, var(--db-poi-routing-6)),
+		color-mix(in srgb, transparent 100%, var(--db-poi-routing-9))
+	);
+	--db-poi-routing-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-routing-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-routing-9))
+	);
+	--db-poi-routing-bg-basic-transparent-hovered: light-dark(
+		color-mix(in srgb, transparent 76%, var(--db-poi-routing-6)),
+		color-mix(in srgb, transparent 76%, var(--db-poi-routing-9))
+	);
+	--db-poi-routing-bg-basic-transparent-pressed: light-dark(
+		color-mix(in srgb, transparent 68%, var(--db-poi-routing-6)),
+		color-mix(in srgb, transparent 68%, var(--db-poi-routing-9))
+	);
+	--db-poi-routing-bg-inverted-contrast-max-default: light-dark(
+		var(--db-poi-routing-1),
+		var(--db-poi-routing-12)
+	);
+	--db-poi-routing-bg-inverted-contrast-max-hovered: light-dark(
+		var(--db-poi-routing-5),
+		var(--db-poi-routing-9)
+	);
+	--db-poi-routing-bg-inverted-contrast-max-pressed: light-dark(
+		var(--db-poi-routing-2),
+		var(--db-poi-routing-11)
+	);
+	--db-poi-routing-bg-inverted-contrast-high-default: light-dark(
+		var(--db-poi-routing-6),
+		var(--db-poi-routing-9)
+	);
+	--db-poi-routing-bg-inverted-contrast-high-hovered: light-dark(
+		var(--db-poi-routing-2),
+		var(--db-poi-routing-12)
+	);
+	--db-poi-routing-bg-inverted-contrast-high-pressed: light-dark(
+		var(--db-poi-routing-5),
+		var(--db-poi-routing-10)
+	);
+	--db-poi-routing-bg-inverted-contrast-low-default: light-dark(
+		var(--db-poi-routing-7),
+		var(--db-poi-routing-8)
+	);
+	--db-poi-routing-bg-inverted-contrast-low-hovered: light-dark(
+		var(--db-poi-routing-3),
+		var(--db-poi-routing-12)
+	);
+	--db-poi-routing-bg-inverted-contrast-low-pressed: light-dark(
+		var(--db-poi-routing-6),
+		var(--db-poi-routing-9)
+	);
+	--db-poi-routing-bg-vibrant-default: light-dark(
+		var(--db-poi-routing-9),
+		var(--db-poi-routing-9)
+	);
+	--db-poi-routing-bg-vibrant-hovered: light-dark(
+		var(--db-poi-routing-12),
+		var(--db-poi-routing-12)
+	);
+	--db-poi-routing-bg-vibrant-pressed: light-dark(
+		var(--db-poi-routing-10),
+		var(--db-poi-routing-10)
+	);
+}

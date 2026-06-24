@@ -1,0 +1,77 @@
+/* Hide ri-extension elements that are not yet defined */
+:not(:defined):is(ri-*) {
+	visibility: hidden;
+}
+
+/* Set block-size to reduce layout shift */
+:is(:root, :host) {
+	--ri-car-block-size: calc(
+		2 * var(--db-sizing-sm) + 2 * var(--db-spacing-fixed-3xs)
+	);
+	--ri-car-item-block-size: calc(
+		var(--db-icon-font-size) + var(--ri-car-block-size)
+	);
+	--ri-car-amenities-block-size: calc(
+		var(--db-sizing-sm) * 2 + var(--db-spacing-fixed-xs) * 2 +
+			var(--db-spacing-fixed-3xs)
+	);
+	--ri-stop-size: calc(
+		var(--db-icon-font-size) + 2 * var(--db-spacing-fixed-sm)
+	);
+}
+
+:is(
+	ri-platform-tag,
+	ri-transport-tag,
+	ri-journey-time-stamp,
+	ri-arrival-departure-time
+) {
+	&:not([data-hydrated='true']) {
+		block-size: var(--db-icon-font-size);
+	}
+}
+
+:is(ri-transport-container) {
+	&:not([data-hydrated='true']) {
+		block-size: calc(var(--db-icon-font-size) * 2);
+	}
+}
+
+:is(ri-car) {
+	&:not([data-hydrated='true']) {
+		block-size: var(--ri-car-block-size);
+	}
+}
+
+:is(ri-car-item) {
+	&:not([data-hydrated='true']) {
+		block-size: var(--ri-car-item-block-size);
+	}
+}
+
+:is(ri-car-amenities) {
+	&:not([data-hydrated='true']) {
+		block-size: var(--ri-car-amenities-block-size);
+	}
+}
+
+:is(ri-car-sequence, ri-car-sequence-overview) {
+	&:not([data-hydrated='true']) {
+		block-size: calc(
+			var(--ri-car-item-block-size) + var(--db-border-width-xs) +
+				var(--ri-car-amenities-block-size)
+		);
+	}
+}
+
+:is(ri-stop) {
+	&:not([data-hydrated='true']) {
+		block-size: var(--ri-stop-size);
+	}
+}
+
+:is(ri-itinerary) {
+	&:not([data-hydrated='true']) {
+		block-size: calc(3 * var(--ri-stop-size));
+	}
+}

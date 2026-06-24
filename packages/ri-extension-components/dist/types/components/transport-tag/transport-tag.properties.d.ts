@@ -1,0 +1,26 @@
+import { InteractiveItemProperties, InteractiveProperties } from '../_interactive/_interactive.properties.ts';
+export declare const TransportTypeList: string[];
+export type TransportTypeType = (typeof TransportTypeList)[number];
+export declare const TransportStateList: string[];
+export type TransportStateType = (typeof TransportStateList)[number];
+export declare const TransportTagWidthList: readonly ["auto", "full"];
+export type TransportTagWidthType = (typeof TransportTagWidthList)[number];
+export declare const TransportIconMap: Record<string, string>;
+export declare const TransportCategoryList: string[];
+export type TransportCategoryType = (typeof TransportCategoryList)[number];
+export type TransportTagProperties = {
+    category?: string | TransportCategoryType;
+    state?: TransportStateType;
+    width?: TransportTagWidthType;
+    line?: string;
+    journeyDescription?: string;
+    number?: number;
+    noText?: boolean;
+    showIcon?: boolean;
+    label?: string;
+    type?: string | TransportTypeType;
+    replacementTransportText?: string;
+    staticMode?: boolean;
+    overflow?: boolean;
+    additionalEventDetail?: any;
+} & InteractiveProperties & InteractiveItemProperties;

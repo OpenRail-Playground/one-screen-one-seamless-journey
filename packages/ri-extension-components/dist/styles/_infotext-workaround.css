@@ -1,0 +1,146 @@
+.db-infotext {
+	font: var(--db-type-body-sm);
+}
+@layer variables {
+	.db-infotext {
+		--db-icon-font-weight: var(--db-base-body-icon-weight-sm);
+		--db-icon-font-size: var(--db-base-body-icon-font-size-sm);
+	}
+}
+
+.db-infotext[data-size='small'] {
+	font: var(--db-type-body-xs);
+}
+@layer variables {
+	.db-infotext[data-size='small'] {
+		--db-icon-font-weight: var(--db-base-body-icon-weight-xs);
+		--db-icon-font-size: var(--db-base-body-icon-font-size-xs);
+	}
+}
+
+.db-infotext:not([data-icon]):not([data-show-icon-leading='false'])::before {
+	color: var(--db-icon-color, inherit);
+	display: inline-block;
+	/*** icon - placeholder ***/
+	font-family: var(
+		--db-icon-font-family,
+		var(
+			--db-icon-default-font-family,
+			'db-ux-default',
+			'icon-font-fallback'
+		)
+	) !important;
+	font-size: var(--db-icon-font-size, 1.5rem);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: var(--db-icon-font-weight, normal);
+	line-height: 1;
+	/* stylelint-disable-next-line declaration-property-value-no-unknown */
+	speak: none;
+	/* stylelint-disable-next-line declaration-property-value-no-unknown */
+	speak: never;
+	text-transform: none;
+	overflow: clip;
+	vertical-align: var(--db-icon-vertical-align, middle);
+	block-size: var(--db-icon-font-size, 1.5rem);
+	aspect-ratio: 1;
+	flex-shrink: 0;
+	content: var(--db-icon, attr(data-icon));
+}
+@supports (content: ''/'') {
+	.db-infotext:not([data-icon]):not(
+			[data-show-icon-leading='false']
+		)::before {
+		content: var(--db-icon, attr(data-icon)) / '';
+	}
+}
+@media aural {
+	.db-infotext:not([data-icon]):not(
+			[data-show-icon-leading='false']
+		)::before {
+		content: none;
+	}
+}
+@media speech {
+	.db-infotext:not([data-icon]):not(
+			[data-show-icon-leading='false']
+		)::before {
+		content: none;
+	}
+}
+
+.db-infotext {
+	--db-icon-margin-end: var(--db-spacing-fixed-2xs);
+}
+.db-infotext:not([data-icon]) {
+	--db-icon-font-family: var(
+		--db-icon-filled-font-family,
+		'db-ux-filled',
+		'icon-font-fallback'
+	);
+}
+.db-infotext:not([data-icon]):not([data-show-icon-leading='false'])::before {
+	--db-icon: 'information_circle';
+	margin-inline-end: var(--db-icon-margin-end, var(--db-spacing-fixed-xs));
+}
+.db-infotext[data-semantic='adaptive'],
+.db-infotext:not([data-semantic]) {
+	color: var(--db-adaptive-on-bg-basic-emphasis-80-default);
+}
+.db-infotext[data-semantic='adaptive']::before,
+.db-infotext:not([data-semantic])::before {
+	--db-icon-color: var(--db-adaptive-on-bg-basic-emphasis-70-default);
+}
+.db-infotext[data-semantic='neutral'] {
+	color: var(--db-neutral-on-bg-basic-emphasis-80-default);
+}
+.db-infotext[data-semantic='neutral']:not([data-icon])::before {
+	--db-icon: 'information_circle';
+}
+.db-infotext[data-semantic='neutral']::before {
+	--db-icon-color: var(--db-neutral-on-bg-basic-emphasis-70-default);
+}
+.db-infotext[data-semantic='critical'] {
+	color: var(--db-critical-on-bg-basic-emphasis-80-default);
+}
+.db-infotext[data-semantic='critical']:not([data-icon])::before {
+	--db-icon: 'exclamation_mark_circle';
+}
+.db-infotext[data-semantic='critical']::before {
+	--db-icon-color: var(--db-critical-on-bg-basic-emphasis-70-default);
+}
+.db-infotext[data-semantic='successful'] {
+	color: var(--db-successful-on-bg-basic-emphasis-80-default);
+}
+.db-infotext[data-semantic='successful']:not([data-icon])::before {
+	--db-icon: 'check_circle';
+}
+.db-infotext[data-semantic='successful']::before {
+	--db-icon-color: var(--db-successful-on-bg-basic-emphasis-70-default);
+}
+.db-infotext[data-semantic='warning'] {
+	color: var(--db-warning-on-bg-basic-emphasis-80-default);
+}
+.db-infotext[data-semantic='warning']:not([data-icon])::before {
+	--db-icon: 'exclamation_mark_triangle';
+}
+.db-infotext[data-semantic='warning']::before {
+	--db-icon-color: var(--db-warning-on-bg-basic-emphasis-70-default);
+}
+.db-infotext[data-semantic='informational'] {
+	color: var(--db-informational-on-bg-basic-emphasis-80-default);
+}
+.db-infotext[data-semantic='informational']:not([data-icon])::before {
+	--db-icon: 'information_circle';
+}
+.db-infotext[data-semantic='informational']::before {
+	--db-icon-color: var(--db-informational-on-bg-basic-emphasis-70-default);
+}
+.db-infotext:has(> .db-infotext) {
+	margin: 0;
+}
+.db-infotext:has(> .db-infotext)::before {
+	content: none;
+}

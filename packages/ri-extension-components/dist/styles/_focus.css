@@ -1,0 +1,12 @@
+[data-interactive-focus='true'] {
+	&:focus-visible {
+		outline: var(--db-border-width-2xs) solid
+			var(
+				--db-focus-outline-color,
+				var(--db-informational-on-bg-basic-emphasis-70-default)
+			);
+		outline-offset: var(--db-border-width-xs);
+		box-shadow: 0 0 0 var(--db-border-width-xs)
+			var(--db-focus-box-shadow-bg-color, transparent);
+	}
+}

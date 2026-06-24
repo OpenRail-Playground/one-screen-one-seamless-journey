@@ -1,0 +1,3 @@
+@import './ri-variables.css' layer(variables);
+@import './ri-semantic-colors.required.css' layer(semantic);
+@import './ri-layout-shift.css' layer(layout-shift);

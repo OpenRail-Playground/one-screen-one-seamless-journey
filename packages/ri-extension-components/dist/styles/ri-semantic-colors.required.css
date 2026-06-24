@@ -1,0 +1,350 @@
+﻿:is(:root, :host) {
+	--db-transportation-airplane-origin-default: light-dark(
+		var(--db-transportation-airplane-origin-light-default),
+		var(--db-transportation-airplane-origin-dark-default)
+	);
+	--db-transportation-airplane-origin-hovered: light-dark(
+		var(--db-transportation-airplane-origin-light-hovered),
+		var(--db-transportation-airplane-origin-dark-hovered)
+	);
+	--db-transportation-airplane-origin-pressed: light-dark(
+		var(--db-transportation-airplane-origin-light-pressed),
+		var(--db-transportation-airplane-origin-dark-pressed)
+	);
+	--db-transportation-airplane-on-origin-default: light-dark(
+		var(--db-transportation-airplane-on-origin-light-default),
+		var(--db-transportation-airplane-on-origin-dark-default)
+	);
+	--db-transportation-airplane-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-airplane-7),
+		var(--db-transportation-airplane-8)
+	);
+	--db-transportation-bikesharing-origin-default: light-dark(
+		var(--db-transportation-bikesharing-origin-light-default),
+		var(--db-transportation-bikesharing-origin-dark-default)
+	);
+	--db-transportation-bikesharing-origin-hovered: light-dark(
+		var(--db-transportation-bikesharing-origin-light-hovered),
+		var(--db-transportation-bikesharing-origin-dark-hovered)
+	);
+	--db-transportation-bikesharing-origin-pressed: light-dark(
+		var(--db-transportation-bikesharing-origin-light-pressed),
+		var(--db-transportation-bikesharing-origin-dark-pressed)
+	);
+	--db-transportation-bikesharing-on-origin-default: light-dark(
+		var(--db-transportation-bikesharing-on-origin-light-default),
+		var(--db-transportation-bikesharing-on-origin-dark-default)
+	);
+	--db-transportation-bikesharing-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-bikesharing-7),
+		var(--db-transportation-bikesharing-8)
+	);
+	--db-transportation-bus-origin-default: light-dark(
+		var(--db-transportation-bus-origin-light-default),
+		var(--db-transportation-bus-origin-dark-default)
+	);
+	--db-transportation-bus-origin-hovered: light-dark(
+		var(--db-transportation-bus-origin-light-hovered),
+		var(--db-transportation-bus-origin-dark-hovered)
+	);
+	--db-transportation-bus-origin-pressed: light-dark(
+		var(--db-transportation-bus-origin-light-pressed),
+		var(--db-transportation-bus-origin-dark-pressed)
+	);
+	--db-transportation-bus-on-origin-default: light-dark(
+		var(--db-transportation-bus-on-origin-light-default),
+		var(--db-transportation-bus-on-origin-dark-default)
+	);
+	--db-transportation-bus-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-bus-7),
+		var(--db-transportation-bus-8)
+	);
+	--db-transportation-carsharing-origin-default: light-dark(
+		var(--db-transportation-carsharing-origin-light-default),
+		var(--db-transportation-carsharing-origin-dark-default)
+	);
+	--db-transportation-carsharing-origin-hovered: light-dark(
+		var(--db-transportation-carsharing-origin-light-hovered),
+		var(--db-transportation-carsharing-origin-dark-hovered)
+	);
+	--db-transportation-carsharing-origin-pressed: light-dark(
+		var(--db-transportation-carsharing-origin-light-pressed),
+		var(--db-transportation-carsharing-origin-dark-pressed)
+	);
+	--db-transportation-carsharing-on-origin-default: light-dark(
+		var(--db-transportation-carsharing-on-origin-light-default),
+		var(--db-transportation-carsharing-on-origin-dark-default)
+	);
+	--db-transportation-carsharing-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-carsharing-7),
+		var(--db-transportation-carsharing-8)
+	);
+	--db-transportation-ev-origin-default: light-dark(
+		var(--db-transportation-ev-origin-light-default),
+		var(--db-transportation-ev-origin-dark-default)
+	);
+	--db-transportation-ev-origin-hovered: light-dark(
+		var(--db-transportation-ev-origin-light-hovered),
+		var(--db-transportation-ev-origin-dark-hovered)
+	);
+	--db-transportation-ev-origin-pressed: light-dark(
+		var(--db-transportation-ev-origin-light-pressed),
+		var(--db-transportation-ev-origin-dark-pressed)
+	);
+	--db-transportation-ev-on-origin-default: light-dark(
+		var(--db-transportation-ev-on-origin-light-default),
+		var(--db-transportation-ev-on-origin-dark-default)
+	);
+	--db-transportation-ev-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-ev-7),
+		var(--db-transportation-ev-8)
+	);
+	--db-transportation-ferry-origin-default: light-dark(
+		var(--db-transportation-ferry-origin-light-default),
+		var(--db-transportation-ferry-origin-dark-default)
+	);
+	--db-transportation-ferry-origin-hovered: light-dark(
+		var(--db-transportation-ferry-origin-light-hovered),
+		var(--db-transportation-ferry-origin-dark-hovered)
+	);
+	--db-transportation-ferry-origin-pressed: light-dark(
+		var(--db-transportation-ferry-origin-light-pressed),
+		var(--db-transportation-ferry-origin-dark-pressed)
+	);
+	--db-transportation-ferry-on-origin-default: light-dark(
+		var(--db-transportation-ferry-on-origin-light-default),
+		var(--db-transportation-ferry-on-origin-dark-default)
+	);
+	--db-transportation-ferry-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-ferry-7),
+		var(--db-transportation-ferry-8)
+	);
+	--db-transportation-ice-origin-default: light-dark(
+		var(--db-transportation-ice-origin-light-default),
+		var(--db-transportation-ice-origin-dark-default)
+	);
+	--db-transportation-ice-origin-hovered: light-dark(
+		var(--db-transportation-ice-origin-light-hovered),
+		var(--db-transportation-ice-origin-dark-hovered)
+	);
+	--db-transportation-ice-origin-pressed: light-dark(
+		var(--db-transportation-ice-origin-light-pressed),
+		var(--db-transportation-ice-origin-dark-pressed)
+	);
+	--db-transportation-ice-on-origin-default: light-dark(
+		var(--db-transportation-ice-on-origin-light-default),
+		var(--db-transportation-ice-on-origin-dark-default)
+	);
+	--db-transportation-ice-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-ice-7),
+		var(--db-transportation-ice-8)
+	);
+	--db-transportation-ic-ec-origin-default: light-dark(
+		var(--db-transportation-ic-ec-origin-light-default),
+		var(--db-transportation-ic-ec-origin-dark-default)
+	);
+	--db-transportation-ic-ec-origin-hovered: light-dark(
+		var(--db-transportation-ic-ec-origin-light-hovered),
+		var(--db-transportation-ic-ec-origin-dark-hovered)
+	);
+	--db-transportation-ic-ec-origin-pressed: light-dark(
+		var(--db-transportation-ic-ec-origin-light-pressed),
+		var(--db-transportation-ic-ec-origin-dark-pressed)
+	);
+	--db-transportation-ic-ec-on-origin-default: light-dark(
+		var(--db-transportation-ic-ec-on-origin-light-default),
+		var(--db-transportation-ic-ec-on-origin-dark-default)
+	);
+	--db-transportation-ic-ec-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-ic-ec-7),
+		var(--db-transportation-ic-ec-8)
+	);
+	--db-transportation-ld-bus-origin-default: light-dark(
+		var(--db-transportation-ld-bus-origin-light-default),
+		var(--db-transportation-ld-bus-origin-dark-default)
+	);
+	--db-transportation-ld-bus-origin-hovered: light-dark(
+		var(--db-transportation-ld-bus-origin-light-hovered),
+		var(--db-transportation-ld-bus-origin-dark-hovered)
+	);
+	--db-transportation-ld-bus-origin-pressed: light-dark(
+		var(--db-transportation-ld-bus-origin-light-pressed),
+		var(--db-transportation-ld-bus-origin-dark-pressed)
+	);
+	--db-transportation-ld-bus-on-origin-default: light-dark(
+		var(--db-transportation-ld-bus-on-origin-light-default),
+		var(--db-transportation-ld-bus-on-origin-dark-default)
+	);
+	--db-transportation-ld-bus-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-ld-bus-7),
+		var(--db-transportation-ld-bus-8)
+	);
+	--db-transportation-re-rb-origin-default: light-dark(
+		var(--db-transportation-re-rb-origin-light-default),
+		var(--db-transportation-re-rb-origin-dark-default)
+	);
+	--db-transportation-re-rb-origin-hovered: light-dark(
+		var(--db-transportation-re-rb-origin-light-hovered),
+		var(--db-transportation-re-rb-origin-dark-hovered)
+	);
+	--db-transportation-re-rb-origin-pressed: light-dark(
+		var(--db-transportation-re-rb-origin-light-pressed),
+		var(--db-transportation-re-rb-origin-dark-pressed)
+	);
+	--db-transportation-re-rb-on-origin-default: light-dark(
+		var(--db-transportation-re-rb-on-origin-light-default),
+		var(--db-transportation-re-rb-on-origin-dark-default)
+	);
+	--db-transportation-re-rb-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-re-rb-7),
+		var(--db-transportation-re-rb-8)
+	);
+	--db-transportation-s-bahn-origin-default: light-dark(
+		var(--db-transportation-s-bahn-origin-light-default),
+		var(--db-transportation-s-bahn-origin-dark-default)
+	);
+	--db-transportation-s-bahn-origin-hovered: light-dark(
+		var(--db-transportation-s-bahn-origin-light-hovered),
+		var(--db-transportation-s-bahn-origin-dark-hovered)
+	);
+	--db-transportation-s-bahn-origin-pressed: light-dark(
+		var(--db-transportation-s-bahn-origin-light-pressed),
+		var(--db-transportation-s-bahn-origin-dark-pressed)
+	);
+	--db-transportation-s-bahn-on-origin-default: light-dark(
+		var(--db-transportation-s-bahn-on-origin-light-default),
+		var(--db-transportation-s-bahn-on-origin-dark-default)
+	);
+	--db-transportation-s-bahn-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-s-bahn-7),
+		var(--db-transportation-s-bahn-8)
+	);
+	--db-transportation-subway-origin-default: light-dark(
+		var(--db-transportation-subway-origin-light-default),
+		var(--db-transportation-subway-origin-dark-default)
+	);
+	--db-transportation-subway-origin-hovered: light-dark(
+		var(--db-transportation-subway-origin-light-hovered),
+		var(--db-transportation-subway-origin-dark-hovered)
+	);
+	--db-transportation-subway-origin-pressed: light-dark(
+		var(--db-transportation-subway-origin-light-pressed),
+		var(--db-transportation-subway-origin-dark-pressed)
+	);
+	--db-transportation-subway-on-origin-default: light-dark(
+		var(--db-transportation-subway-on-origin-light-default),
+		var(--db-transportation-subway-on-origin-dark-default)
+	);
+	--db-transportation-subway-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-subway-7),
+		var(--db-transportation-subway-8)
+	);
+	--db-transportation-taxi-origin-default: light-dark(
+		var(--db-transportation-taxi-origin-light-default),
+		var(--db-transportation-taxi-origin-dark-default)
+	);
+	--db-transportation-taxi-origin-hovered: light-dark(
+		var(--db-transportation-taxi-origin-light-hovered),
+		var(--db-transportation-taxi-origin-dark-hovered)
+	);
+	--db-transportation-taxi-origin-pressed: light-dark(
+		var(--db-transportation-taxi-origin-light-pressed),
+		var(--db-transportation-taxi-origin-dark-pressed)
+	);
+	--db-transportation-taxi-on-origin-default: light-dark(
+		var(--db-transportation-taxi-on-origin-light-default),
+		var(--db-transportation-taxi-on-origin-dark-default)
+	);
+	--db-transportation-taxi-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-taxi-7),
+		var(--db-transportation-taxi-8)
+	);
+	--db-transportation-tram-origin-default: light-dark(
+		var(--db-transportation-tram-origin-light-default),
+		var(--db-transportation-tram-origin-dark-default)
+	);
+	--db-transportation-tram-origin-hovered: light-dark(
+		var(--db-transportation-tram-origin-light-hovered),
+		var(--db-transportation-tram-origin-dark-hovered)
+	);
+	--db-transportation-tram-origin-pressed: light-dark(
+		var(--db-transportation-tram-origin-light-pressed),
+		var(--db-transportation-tram-origin-dark-pressed)
+	);
+	--db-transportation-tram-on-origin-default: light-dark(
+		var(--db-transportation-tram-on-origin-light-default),
+		var(--db-transportation-tram-on-origin-dark-default)
+	);
+	--db-transportation-tram-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-tram-7),
+		var(--db-transportation-tram-8)
+	);
+	--db-transportation-walk-origin-default: light-dark(
+		var(--db-transportation-walk-origin-light-default),
+		var(--db-transportation-walk-origin-dark-default)
+	);
+	--db-transportation-walk-origin-hovered: light-dark(
+		var(--db-transportation-walk-origin-light-hovered),
+		var(--db-transportation-walk-origin-dark-hovered)
+	);
+	--db-transportation-walk-origin-pressed: light-dark(
+		var(--db-transportation-walk-origin-light-pressed),
+		var(--db-transportation-walk-origin-dark-pressed)
+	);
+	--db-transportation-walk-on-origin-default: light-dark(
+		var(--db-transportation-walk-on-origin-light-default),
+		var(--db-transportation-walk-on-origin-dark-default)
+	);
+	--db-transportation-walk-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-walk-7),
+		var(--db-transportation-walk-8)
+	);
+	--db-transportation-unknown-origin-default: light-dark(
+		var(--db-transportation-unknown-origin-light-default),
+		var(--db-transportation-unknown-origin-dark-default)
+	);
+	--db-transportation-unknown-origin-hovered: light-dark(
+		var(--db-transportation-unknown-origin-light-hovered),
+		var(--db-transportation-unknown-origin-dark-hovered)
+	);
+	--db-transportation-unknown-origin-pressed: light-dark(
+		var(--db-transportation-unknown-origin-light-pressed),
+		var(--db-transportation-unknown-origin-dark-pressed)
+	);
+	--db-transportation-unknown-on-origin-default: light-dark(
+		var(--db-transportation-unknown-on-origin-light-default),
+		var(--db-transportation-unknown-on-origin-dark-default)
+	);
+	--db-transportation-unknown-on-bg-basic-emphasis-70-default: light-dark(
+		var(--db-transportation-unknown-7),
+		var(--db-transportation-unknown-8)
+	);
+	--db-poi-db-services-origin-default: light-dark(
+		var(--db-poi-db-services-origin-light-default),
+		var(--db-poi-db-services-origin-dark-default)
+	);
+	--db-poi-db-services-origin-hovered: light-dark(
+		var(--db-poi-db-services-origin-light-hovered),
+		var(--db-poi-db-services-origin-dark-hovered)
+	);
+	--db-poi-db-services-origin-pressed: light-dark(
+		var(--db-poi-db-services-origin-light-pressed),
+		var(--db-poi-db-services-origin-dark-pressed)
+	);
+	--db-poi-db-services-on-origin-default: light-dark(
+		var(--db-poi-db-services-on-origin-light-default),
+		var(--db-poi-db-services-on-origin-dark-default)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-90-default: light-dark(
+		var(--db-poi-db-services-4),
+		var(--db-poi-db-services-10)
+	);
+	--db-poi-db-services-on-bg-basic-emphasis-100-default: light-dark(
+		var(--db-poi-db-services-1),
+		var(--db-poi-db-services-12)
+	);
+	--db-poi-db-services-bg-basic-transparent-semi-default: light-dark(
+		color-mix(in srgb, transparent 92%, var(--db-poi-db-services-6)),
+		color-mix(in srgb, transparent 84%, var(--db-poi-db-services-9))
+	);
+}

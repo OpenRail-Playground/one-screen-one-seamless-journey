@@ -1,0 +1,1043 @@
+@property --db-transportation-airplane-7 {
+	syntax: '<color>';
+	initial-value: #00857f;
+	inherits: true;
+}
+
+@property --db-transportation-airplane-8 {
+	syntax: '<color>';
+	initial-value: #00a29b;
+	inherits: true;
+}
+
+@property --db-transportation-airplane-origin-light-default {
+	syntax: '<color>';
+	initial-value: #00a099;
+	inherits: true;
+}
+
+@property --db-transportation-airplane-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #00dcd2;
+	inherits: true;
+}
+
+@property --db-transportation-airplane-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #00bdb5;
+	inherits: true;
+}
+
+@property --db-transportation-airplane-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #00a099;
+	inherits: true;
+}
+
+@property --db-transportation-airplane-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #00dcd2;
+	inherits: true;
+}
+
+@property --db-transportation-airplane-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #00bdb5;
+	inherits: true;
+}
+
+@property --db-transportation-airplane-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #000908;
+	inherits: true;
+}
+
+@property --db-transportation-airplane-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #000908;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-7 {
+	syntax: '<color>';
+	initial-value: #ef001b;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-8 {
+	syntax: '<color>';
+	initial-value: #ff5358;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-origin-light-default {
+	syntax: '<color>';
+	initial-value: #c50014;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #590004;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #98000d;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #c50014;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #590004;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #98000d;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #fff8f8;
+	inherits: true;
+}
+
+@property --db-transportation-bikesharing-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #fff8f8;
+	inherits: true;
+}
+
+@property --db-transportation-bus-7 {
+	syntax: '<color>';
+	initial-value: #9f5bba;
+	inherits: true;
+}
+
+@property --db-transportation-bus-8 {
+	syntax: '<color>';
+	initial-value: #b47ace;
+	inherits: true;
+}
+
+@property --db-transportation-bus-origin-light-default {
+	syntax: '<color>';
+	initial-value: #814997;
+	inherits: true;
+}
+
+@property --db-transportation-bus-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #371c42;
+	inherits: true;
+}
+
+@property --db-transportation-bus-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #623673;
+	inherits: true;
+}
+
+@property --db-transportation-bus-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #814997;
+	inherits: true;
+}
+
+@property --db-transportation-bus-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #371c42;
+	inherits: true;
+}
+
+@property --db-transportation-bus-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #623673;
+	inherits: true;
+}
+
+@property --db-transportation-bus-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #fbf8fc;
+	inherits: true;
+}
+
+@property --db-transportation-bus-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #fbf8fc;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-7 {
+	syntax: '<color>';
+	initial-value: #ad6600;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-8 {
+	syntax: '<color>';
+	initial-value: #d17d00;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-origin-light-default {
+	syntax: '<color>';
+	initial-value: #f39200;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #ffd9c3;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #ffb47b;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #f39200;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #ffd9c3;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #ffb47b;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #100500;
+	inherits: true;
+}
+
+@property --db-transportation-carsharing-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #100500;
+	inherits: true;
+}
+
+@property --db-transportation-ev-7 {
+	syntax: '<color>';
+	initial-value: #da2a89;
+	inherits: true;
+}
+
+@property --db-transportation-ev-8 {
+	syntax: '<color>';
+	initial-value: #f553a2;
+	inherits: true;
+}
+
+@property --db-transportation-ev-origin-light-default {
+	syntax: '<color>';
+	initial-value: #9b1b60;
+	inherits: true;
+}
+
+@property --db-transportation-ev-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #3b0522;
+	inherits: true;
+}
+
+@property --db-transportation-ev-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #731146;
+	inherits: true;
+}
+
+@property --db-transportation-ev-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #9b1b60;
+	inherits: true;
+}
+
+@property --db-transportation-ev-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #3b0522;
+	inherits: true;
+}
+
+@property --db-transportation-ev-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #731146;
+	inherits: true;
+}
+
+@property --db-transportation-ev-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #fff;
+	inherits: true;
+}
+
+@property --db-transportation-ev-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #fff;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-7 {
+	syntax: '<color>';
+	initial-value: #257fa8;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-8 {
+	syntax: '<color>';
+	initial-value: #2e9acb;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-origin-light-default {
+	syntax: '<color>';
+	initial-value: #309fd1;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #96d2fb;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #3abbf5;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #309fd1;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #96d2fb;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #3abbf5;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #01080f;
+	inherits: true;
+}
+
+@property --db-transportation-ferry-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #01080f;
+	inherits: true;
+}
+
+@property --db-transportation-ice-7 {
+	syntax: '<color>';
+	initial-value: #6c778e;
+	inherits: true;
+}
+
+@property --db-transportation-ice-8 {
+	syntax: '<color>';
+	initial-value: #8491ac;
+	inherits: true;
+}
+
+@property --db-transportation-ice-origin-light-default {
+	syntax: '<color>';
+	initial-value: #282d37;
+	inherits: true;
+}
+
+@property --db-transportation-ice-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #5d677b;
+	inherits: true;
+}
+
+@property --db-transportation-ice-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #3c4351;
+	inherits: true;
+}
+
+@property --db-transportation-ice-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #282d37;
+	inherits: true;
+}
+
+@property --db-transportation-ice-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #5d677b;
+	inherits: true;
+}
+
+@property --db-transportation-ice-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #3c4351;
+	inherits: true;
+}
+
+@property --db-transportation-ice-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #f9f9fb;
+	inherits: true;
+}
+
+@property --db-transportation-ice-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #f9f9fb;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-7 {
+	syntax: '<color>';
+	initial-value: #727782;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-8 {
+	syntax: '<color>';
+	initial-value: #8a919e;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-origin-light-default {
+	syntax: '<color>';
+	initial-value: #646973;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #2c2f34;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #4d5159;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #646973;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #2c2f34;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #4d5159;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #f9f9fa;
+	inherits: true;
+}
+
+@property --db-transportation-ic-ec-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #f9f9fa;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-7 {
+	syntax: '<color>';
+	initial-value: #d43882;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-8 {
+	syntax: '<color>';
+	initial-value: #ed5c9b;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-origin-light-default {
+	syntax: '<color>';
+	initial-value: #e93e8f;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #f3a0be;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #ef75a6;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #e93e8f;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #f3a0be;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #ef75a6;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #160209;
+	inherits: true;
+}
+
+@property --db-transportation-ld-bus-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #160209;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-7 {
+	syntax: '<color>';
+	initial-value: #73777e;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-8 {
+	syntax: '<color>';
+	initial-value: #8b9199;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-origin-light-default {
+	syntax: '<color>';
+	initial-value: #afb4bb;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #eaebed;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #cccfd4;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #afb4bb;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #eaebed;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #cccfd4;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #070708;
+	inherits: true;
+}
+
+@property --db-transportation-re-rb-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #070708;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-7 {
+	syntax: '<color>';
+	initial-value: #33873a;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-8 {
+	syntax: '<color>';
+	initial-value: #40a448;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-origin-light-default {
+	syntax: '<color>';
+	initial-value: #2a7230;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #0e3211;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #1e5723;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #2a7230;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #0e3211;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #1e5723;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #fff;
+	inherits: true;
+}
+
+@property --db-transportation-s-bahn-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #fff;
+	inherits: true;
+}
+
+@property --db-transportation-subway-7 {
+	syntax: '<color>';
+	initial-value: #1d6ff7;
+	inherits: true;
+}
+
+@property --db-transportation-subway-8 {
+	syntax: '<color>';
+	initial-value: #638bfa;
+	inherits: true;
+}
+
+@property --db-transportation-subway-origin-light-default {
+	syntax: '<color>';
+	initial-value: #1455c0;
+	inherits: true;
+}
+
+@property --db-transportation-subway-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #042052;
+	inherits: true;
+}
+
+@property --db-transportation-subway-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #0c3f92;
+	inherits: true;
+}
+
+@property --db-transportation-subway-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #1455c0;
+	inherits: true;
+}
+
+@property --db-transportation-subway-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #042052;
+	inherits: true;
+}
+
+@property --db-transportation-subway-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #0c3f92;
+	inherits: true;
+}
+
+@property --db-transportation-subway-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #fff;
+	inherits: true;
+}
+
+@property --db-transportation-subway-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #fff;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-7 {
+	syntax: '<color>';
+	initial-value: #8c7600;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-8 {
+	syntax: '<color>';
+	initial-value: #aa8f00;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-origin-light-default {
+	syntax: '<color>';
+	initial-value: #ffd800;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #bfa200;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #dfbc00;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #ffd800;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #bfa200;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #dfbc00;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #0a0700;
+	inherits: true;
+}
+
+@property --db-transportation-taxi-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #0a0700;
+	inherits: true;
+}
+
+@property --db-transportation-tram-7 {
+	syntax: '<color>';
+	initial-value: #c2516c;
+	inherits: true;
+}
+
+@property --db-transportation-tram-8 {
+	syntax: '<color>';
+	initial-value: #d77187;
+	inherits: true;
+}
+
+@property --db-transportation-tram-origin-light-default {
+	syntax: '<color>';
+	initial-value: #a9455d;
+	inherits: true;
+}
+
+@property --db-transportation-tram-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #4f1c28;
+	inherits: true;
+}
+
+@property --db-transportation-tram-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #833447;
+	inherits: true;
+}
+
+@property --db-transportation-tram-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #a9455d;
+	inherits: true;
+}
+
+@property --db-transportation-tram-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #4f1c28;
+	inherits: true;
+}
+
+@property --db-transportation-tram-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #833447;
+	inherits: true;
+}
+
+@property --db-transportation-tram-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #fcf8f9;
+	inherits: true;
+}
+
+@property --db-transportation-tram-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #fcf8f9;
+	inherits: true;
+}
+
+@property --db-transportation-walk-7 {
+	syntax: '<color>';
+	initial-value: #6f7880;
+	inherits: true;
+}
+
+@property --db-transportation-walk-8 {
+	syntax: '<color>';
+	initial-value: #88929c;
+	inherits: true;
+}
+
+@property --db-transportation-walk-origin-light-default {
+	syntax: '<color>';
+	initial-value: #d7dce1;
+	inherits: true;
+}
+
+@property --db-transportation-walk-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #9aa6b1;
+	inherits: true;
+}
+
+@property --db-transportation-walk-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #b7c1ca;
+	inherits: true;
+}
+
+@property --db-transportation-walk-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #d7dce1;
+	inherits: true;
+}
+
+@property --db-transportation-walk-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #9aa6b1;
+	inherits: true;
+}
+
+@property --db-transportation-walk-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #b7c1ca;
+	inherits: true;
+}
+
+@property --db-transportation-walk-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #060709;
+	inherits: true;
+}
+
+@property --db-transportation-walk-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #060709;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-7 {
+	syntax: '<color>';
+	initial-value: #727782;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-8 {
+	syntax: '<color>';
+	initial-value: #8a919e;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-origin-light-default {
+	syntax: '<color>';
+	initial-value: #646973;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #2c2f34;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #4d5159;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #646973;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #2c2f34;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #4d5159;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #f9f9fa;
+	inherits: true;
+}
+
+@property --db-transportation-unknown-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #f9f9fa;
+	inherits: true;
+}
+
+@property --db-poi-db-services-1 {
+	syntax: '<color>';
+	initial-value: #02143f;
+	inherits: true;
+}
+
+@property --db-poi-db-services-4 {
+	syntax: '<color>';
+	initial-value: #0b378e;
+	inherits: true;
+}
+
+@property --db-poi-db-services-6 {
+	syntax: '<color>';
+	initial-value: #1655d1;
+	inherits: true;
+}
+
+@property --db-poi-db-services-9 {
+	syntax: '<color>';
+	initial-value: #94a7fc;
+	inherits: true;
+}
+
+@property --db-poi-db-services-10 {
+	syntax: '<color>';
+	initial-value: #b9c4fd;
+	inherits: true;
+}
+
+@property --db-poi-db-services-12 {
+	syntax: '<color>';
+	initial-value: #eaedfe;
+	inherits: true;
+}
+
+@property --db-poi-db-services-origin-light-default {
+	syntax: '<color>';
+	initial-value: #0c3992;
+	inherits: true;
+}
+
+@property --db-poi-db-services-origin-light-hovered {
+	syntax: '<color>';
+	initial-value: #01061d;
+	inherits: true;
+}
+
+@property --db-poi-db-services-origin-light-pressed {
+	syntax: '<color>';
+	initial-value: #052565;
+	inherits: true;
+}
+
+@property --db-poi-db-services-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #0c3992;
+	inherits: true;
+}
+
+@property --db-poi-db-services-origin-dark-hovered {
+	syntax: '<color>';
+	initial-value: #01061d;
+	inherits: true;
+}
+
+@property --db-poi-db-services-origin-dark-pressed {
+	syntax: '<color>';
+	initial-value: #052565;
+	inherits: true;
+}
+
+@property --db-poi-db-services-on-origin-light-default {
+	syntax: '<color>';
+	initial-value: #fff;
+	inherits: true;
+}
+
+@property --db-poi-db-services-on-origin-dark-default {
+	syntax: '<color>';
+	initial-value: #fff;
+	inherits: true;
+}
