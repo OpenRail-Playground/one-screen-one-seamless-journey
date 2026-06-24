@@ -325,3 +325,22 @@ db-notification {
 .connection-list li {
   display: block;
 }
+
+
+/* === adjustments === */
+
+#milestone-icon {
+  background: #00005C;
+  color: #fff;
+  height: 100%;
+  display: block;
+  align-self: stretch;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
