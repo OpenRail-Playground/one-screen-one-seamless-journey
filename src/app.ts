@@ -25,6 +25,7 @@ import './components/milestone-card.js';
 import './components/dot-indicator.js';
 import './components/swipe-container.js';
 import './components/map-view.js';
+import './components/arrival-screen.js';
 
 export class RailNavApp extends HTMLElement {
   private routeData: StationRoute | null = null;
@@ -101,6 +102,9 @@ export class RailNavApp extends HTMLElement {
         break;
       case 'navigation':
         this.showNavigation();
+        break;
+      case 'arrival':
+        this.showArrival();
         break;
       default:
         this.showConfirmation();
@@ -203,6 +207,13 @@ export class RailNavApp extends HTMLElement {
       screen.busStopLocation = this.routeData?.busStopLocation ?? null;
       screen.routeGeoJSON = this.routeData?.routeGeoJSON ?? null;
     }
+  }
+
+  /**
+   * Shows the ArrivalScreen after the user has reached the bus stop.
+   */
+  private showArrival(): void {
+    this.innerHTML = `<arrival-screen></arrival-screen>`;
   }
 
   /**

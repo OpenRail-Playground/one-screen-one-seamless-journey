@@ -310,6 +310,9 @@ export class NavigationScreen extends HTMLElement {
           this._currentMilestoneIndex++;
           appState.setState({ currentMilestoneIndex: this._currentMilestoneIndex });
           this._updateMilestoneView();
+        } else {
+          // Last milestone reached → show arrival screen
+          window.location.hash = '#arrival';
         }
       });
     }
@@ -372,6 +375,8 @@ export class NavigationScreen extends HTMLElement {
                   this._currentMilestoneIndex++;
                   appState.setState({ currentMilestoneIndex: this._currentMilestoneIndex });
                   this._updateMilestoneView();
+                } else {
+                  window.location.hash = '#arrival';
                 }
               });
             }
