@@ -16,6 +16,7 @@ import { appState } from './state.js';
 import { routeDataService } from './services/route-data-service.js';
 
 // Import all screen components so they register their custom elements
+import './components/qr-scanner-screen.js';
 import './components/journey-confirmation-screen.js';
 import './components/connection-overview-screen.js';
 import './components/navigation-preview-screen.js';
@@ -48,7 +49,7 @@ export class RailNavApp extends HTMLElement {
     const platformId = params.platform;
 
     if (!stationId || !platformId) {
-      this.showError('Der QR-Code konnte nicht gelesen werden. Bitte versuchen Sie es erneut.');
+      this.showScan();
       return;
     }
 
@@ -86,6 +87,9 @@ export class RailNavApp extends HTMLElement {
     appState.setState({ currentScreen: screen });
 
     switch (screen) {
+      case 'scan':
+        this.showScan();
+        break;
       case 'confirmation':
         this.showConfirmation();
         break;
@@ -101,6 +105,13 @@ export class RailNavApp extends HTMLElement {
       default:
         this.showConfirmation();
     }
+  }
+
+  /**
+   * Shows the QR Scanner screen when no station/platform params are present.
+   */
+  private showScan(): void {
+    this.innerHTML = `<qr-scanner-screen></qr-scanner-screen>`;
   }
 
   /**

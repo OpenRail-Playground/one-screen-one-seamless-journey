@@ -27,6 +27,7 @@ export type AccessibilityFeature =
 
 /** Screen identifiers for hash-based routing */
 export type Screen =
+  | 'scan'
   | 'confirmation'
   | 'connections'
   | 'preview'

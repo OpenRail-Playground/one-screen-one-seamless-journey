@@ -24,7 +24,8 @@
     "@db-ux/db-theme-illustrative-icons": "^3.3.0",
     "@db-ux/wc-core-components": "^4.12.1",
     "leaflet": "^1.9.4",
-    "leaflet-polylinedecorator": "^1.6.0"
+    "leaflet-polylinedecorator": "^1.6.0",
+    "qr-scanner": "^1.4.2"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.21",

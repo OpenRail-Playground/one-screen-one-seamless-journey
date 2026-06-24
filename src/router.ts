@@ -11,6 +11,7 @@ import type { Router } from './types/router';
 
 /** Valid screen identifiers that can appear in the URL hash */
 const VALID_SCREENS: ReadonlySet<Screen> = new Set([
+  'scan',
   'confirmation',
   'connections',
   'preview',
