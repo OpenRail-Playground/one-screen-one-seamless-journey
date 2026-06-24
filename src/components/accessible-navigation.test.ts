@@ -18,7 +18,7 @@ import { RouteDataServiceImpl, routeDataService } from '../services/route-data-s
 import { renderMilestoneCard } from './milestone-card.js';
 
 // Load the real WIEN-HBF route data for integration testing
-import routeData from '../../data/routes/WIEN-HBF.json';
+import routeData from '../../public/data/routes/WIEN-HBF.json';
 
 const stationRoute = routeData as unknown as StationRoute;
 

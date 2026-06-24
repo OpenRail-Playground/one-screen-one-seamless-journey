@@ -1,7 +1,7 @@
 /**
- * Type declaration for the DB UX Stencil web component loader.
- * The package exports defineCustomElements from its main entry point.
+ * Type declaration for the DB UX web component bundle loader.
+ * The bundle entry eagerly imports all components and exports defineCustomElements.
  */
-declare module '@db-ux/wc-core-components' {
-  export function defineCustomElements(win?: Window, options?: unknown): Promise<void>;
+declare module '@db-ux/wc-core-components/bundle/index.js' {
+  export function defineCustomElements(options?: unknown): void;
 }

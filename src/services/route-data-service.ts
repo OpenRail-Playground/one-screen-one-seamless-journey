@@ -26,7 +26,7 @@ export class RouteDataServiceImpl implements RouteDataService {
       return cached;
     }
 
-    const url = `/data/routes/${encodeURIComponent(stationId)}.json`;
+    const url = `${import.meta.env.BASE_URL}data/routes/${encodeURIComponent(stationId)}.json`;
 
     let response: Response;
     try {
