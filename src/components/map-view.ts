@@ -18,6 +18,7 @@
 
 import * as L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import 'leaflet-polylinedecorator';
 import type { Milestone } from '../types/index';
 import { geolocationService } from '../services/geolocation-service';
 
@@ -27,6 +28,17 @@ import { geolocationService } from '../services/geolocation-service';
  * @param milestones - Array of milestones with distanceMeters values
  * @returns Object with totalMeters (sum of distances) and durationMinutes (total / 1.2 m/s, in minutes)
  */
+/**
+ * Converts a GeoJSON position [longitude, latitude, ?elevation] to a
+ * Leaflet-compatible [latitude, longitude] tuple.
+ *
+ * @param coord - GeoJSON coordinate in [lng, lat, ?elevation] order
+ * @returns Leaflet [lat, lng] tuple
+ */
+export function geoJSONCoordToLatLng(coord: GeoJSON.Position): [number, number] {
+  return [coord[1], coord[0]];
+}
+
 export function calculateWalkingInfo(milestones: Milestone[]): {
   totalMeters: number;
   durationMinutes: number;
@@ -141,6 +153,32 @@ export class MapViewComponent extends HTMLElement {
           text-align: center;
           font: var(--db-type-body-md);
         }
+        .map-marker {
+          width: 32px;
+          height: 32px;
+          border-radius: 50% 50% 50% 0;
+          transform: rotate(-45deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: var(--db-border-width-sm) solid transparent;
+        }
+        .map-marker--start {
+          background-color: #1a7a3c;
+          border-color: #ffffff;
+        }
+        .map-marker--end {
+          background-color: #ec0016;
+          border-color: #ffffff;
+        }
+        .map-marker__label {
+          transform: rotate(45deg);
+          color: #ffffff;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 1;
+        }
+
       </style>
     `;
   }
@@ -182,43 +220,93 @@ export class MapViewComponent extends HTMLElement {
 
     const bounds = L.latLngBounds([]);
 
-    // Draw a line connecting start and target pins
-    if (this._exitLocation && this._busStopLocation) {
-      const polyline = L.polyline(
-        [
-          [this._exitLocation.lat, this._exitLocation.lng],
-          [this._busStopLocation.lat, this._busStopLocation.lng],
-        ],
-        {
-          color: '#ec0016',
-          weight: 4,
-          opacity: 0.8,
-        }
-      ).addTo(this._map);
+    if (this._routeGeoJSON && this._routeGeoJSON.coordinates.length >= 2) {
+      // Draw route from GeoJSON LineString (coordinates are [lng, lat, ?elevation])
+      const latlngs = this._routeGeoJSON.coordinates.map(geoJSONCoordToLatLng);
+
+      const polyline = L.polyline(latlngs, {
+        color: '#ec0016',
+        weight: 4,
+        opacity: 0.8,
+      }).addTo(this._map);
       bounds.extend(polyline.getBounds());
+
+      L.polylineDecorator(polyline, {
+        patterns: [
+          {
+            offset: '10%',
+            repeat: '15%',
+            symbol: L.Symbol.arrowHead({
+              pixelSize: 10,
+              polygon: false,
+              pathOptions: {
+                color: '#ec0016',
+                weight: 4,
+                opacity: 0.8,
+              },
+            }),
+          },
+        ],
+      }).addTo(this._map);
+
+      // Start marker at first coordinate
+      const startCoord = this._routeGeoJSON.coordinates[0];
+      const startTitle = 'Gleis 5';
+      const startIcon = L.divIcon({
+        className: '',
+        html: `<div class="map-marker map-marker--start"><span class="map-marker__label">A</span></div>`,
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -34],
+      });
+      const startMarker = L.marker([startCoord[1], startCoord[0]], { title: startTitle, icon: startIcon }).addTo(this._map);
+      startMarker.bindPopup(`<strong>${startTitle}</strong>`);
+
+      // End marker at last coordinate
+      const endCoord = this._routeGeoJSON.coordinates[this._routeGeoJSON.coordinates.length - 1];
+      const endTitle = 'Wien Hauptbahnhof Regionalbusbahnhof';
+      const endIcon = L.divIcon({
+        className: '',
+        html: `<div class="map-marker map-marker--end"><span class="map-marker__label">B</span></div>`,
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -34],
+      });
+      const endMarker = L.marker([endCoord[1], endCoord[0]], { title: endTitle, icon: endIcon }).addTo(this._map);
+      endMarker.bindPopup(`<strong>${endTitle}</strong>`);
+    } else {
+      // Fallback: straight line between exit and bus stop
+      if (this._exitLocation && this._busStopLocation) {
+        const polyline = L.polyline(
+          [
+            [this._exitLocation.lat, this._exitLocation.lng],
+            [this._busStopLocation.lat, this._busStopLocation.lng],
+          ],
+          { color: '#ec0016', weight: 4, opacity: 0.8 }
+        ).addTo(this._map);
+        bounds.extend(polyline.getBounds());
+      }
+
+      if (this._exitLocation) {
+        const exitMarker = L.marker(
+          [this._exitLocation.lat, this._exitLocation.lng],
+          { title: 'Gleis 5' }
+        ).addTo(this._map);
+        exitMarker.bindPopup('<strong>Gleis 5</strong>');
+        bounds.extend([this._exitLocation.lat, this._exitLocation.lng]);
+      }
+
+      if (this._busStopLocation) {
+        const busStopMarker = L.marker(
+          [this._busStopLocation.lat, this._busStopLocation.lng],
+          { title: 'Wien Hauptbahnhof Regionalbusbahnhof' }
+        ).addTo(this._map);
+        busStopMarker.bindPopup('<strong>Wien Hauptbahnhof Regionalbusbahnhof</strong>');
+        bounds.extend([this._busStopLocation.lat, this._busStopLocation.lng]);
+      }
     }
 
-    // Add exit marker
-    if (this._exitLocation) {
-      const exitMarker = L.marker(
-        [this._exitLocation.lat, this._exitLocation.lng],
-        { title: 'Gleis 5' }
-      ).addTo(this._map);
-      exitMarker.bindPopup('<strong>Gleis 5</strong>');
-      bounds.extend([this._exitLocation.lat, this._exitLocation.lng]);
-    }
-
-    // Add bus stop marker
-    if (this._busStopLocation) {
-      const busStopMarker = L.marker(
-        [this._busStopLocation.lat, this._busStopLocation.lng],
-        { title: 'Wien Hauptbahnhof Regionalbusbahnhof' }
-      ).addTo(this._map);
-      busStopMarker.bindPopup('<strong>Wien Hauptbahnhof Regionalbusbahnhof</strong>');
-      bounds.extend([this._busStopLocation.lat, this._busStopLocation.lng]);
-    }
-
-    // Fit map to bounds if we have markers or polyline
+    // Fit map to bounds
     if (bounds.isValid()) {
       this._map.fitBounds(bounds, { padding: [30, 30] });
     }
